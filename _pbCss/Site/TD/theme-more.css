@@ -357,9 +357,9 @@ div.siteWideFtr p {
     line-height: 1.6em;
 }
 img.footerL {
-    max-height:45px;
+    max-height:60px;
     height: auto;
-    max-width:120px;
+    max-width:200px;
 }
 @media screen and (max-width:750px) {
     div.siteWideFtr {
