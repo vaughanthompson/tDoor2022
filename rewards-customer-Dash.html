@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html cklass="no-js">
+<head>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/_pbFonts/Site/TD/icomoon/style.css" type="text/css">
+    <link rel="stylesheet" href="/_pbFonts/roboto/fonts.css" type="text/css">
+
+    <link href="/_pbCss/_core/normalize.css" rel="stylesheet" />
+    <link href="/_pbCss/_core/jquery-ui.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/layout.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme-more.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/forms.css" rel="stylesheet" />
+
+
+    <!-- scripts all pages -->
+    <script src="/_pbScripts/_core/jquery-1.11.2.min.js"></script>
+    <script src="/_pbScripts/_core/jquery-ui.js"></script>
+    <script src="/_pbScripts/_core/modernizr-2.8.3.js"></script>
+
+    <!-- tests -->
+    <script type="text/javascript">Modernizr.load([{
+            test: Modernizr.mq('only all'),
+            nope: '/_pbScripts/_core/respond.js'
+            // https://github.com/scottjehl/Respond
+},
+{
+            test: window.matchMedia,
+            nope: '/_pbScripts/_core/media.match.min.js'
+            // load mediaMatch polyfill
+},
+            // load enquire and js media queries
+            '/_pbScripts/_core/enquire.min.js',
+            '/_pbScripts/_core/waypoints.js',
+            '/_pbScripts/Site/TD/jsmediaqueries.js'
+]
+);</script>
+
+</head>
+
+<body id="top">
+
+
+
+
+
+    <script>$(document).ready(function() {
+            // for in-page scrolling to named anchors e.g. top link
+            $.localScroll({
+                target: 'body',
+                queue: false,
+                hash: false,
+                duration: 500,
+                easing: 'easeOutQuad'
+            });
+});</script>
+    <!--[if lt IE 9]>
+        <div class="timeToUpdate">
+        This web application may use web standards that are not supported by your current web browser. <a href="http://www.browsehappy.com">Please consider upgrading</a>
+        </div>
+    <![endif]-->
+
+    <div id="mobileHeader">
+        <div>
+        <a href="/" class="logo"><img src="/_pbImages/Site/TD/svg/logo.svg" title="TransDiesel" alt="TransDiesel" border="0"></a>
+        <h1>Portal</h1>
+        </div>
+        <a href="#" class="buttonIcon" id="navClose"><i class="icon-cross2"></i></a>
+        <a href="#" class="buttonIcon" id="navMenu"><i class="icon-menu"></i></a>
+    </div>
+    <div id="navSpcr">&nbsp;</div>
+
+
+    <aside id="asideMenu">
+
+        <a href="/" class="logo"><img src="/_pbImages/Site/TD/svg/logo.svg" title="TransDiesel" alt="TransDiesel" border="0"></a>
+        <h1>Portal</h1>
+        <p class="small">Updated: 07:00:00 2/5/18</p>
+
+        <h3>User</h3>
+        <nav>
+            <a href="/order/clear"><i class="icon-user"></i>My Dashboard</a>
+            <a href="/order/drafts"><i class="icon-logout"></i>Change Customer</a>
+        </nav>
+
+        <h3>Orders</h3>
+        <nav>
+            <a href="/order/clear"><i class="icon-basket"></i>Create Order</a>
+            <a href="/order/drafts"><i class="icon-brush"></i>Drafts (0)</a>
+            <a href="/order/processing"><i class="icon-arrows-ccw"></i>Processing (1)</a>
+            <a href="/favourites"><i class="icon-heart2"></i>Favourites</a>
+        </nav>
+
+        <h3>Quotes</h3>
+        <nav>
+            <a class="" href="/order/clear?nextOrderType=Quote"><i class="icon-clipboard"></i>Create Quote</a>
+            <a class="" href="/order/quotes"><i class="icon-paste"></i>Current (0)</a>
+        </nav>
+
+        <h3>History</h3>
+        <nav>
+            <a href="/order/history"><i class="icon-download"></i>My Orders</a>
+            <a href="/order/history"><i class="icon-copy"></i>All (Translog)</a>
+        </nav>
+
+        <h3>Rewards</h3>
+        <nav>
+            <a href="/rewards-home.html"><i class="icon-gift"></i>Browse Shop</a>
+        </nav>
+
+        <h3>References <a href="#" class="inline-icon" id="expand-1"><i class="icon-open"></i></a><a href="#" class="inline-icon" id="close-1"><i class="icon-close"></i></a></h3>
+        <nav class="collapsible" id="collapse-1">
+            <a href="http://www.transdiesel.com/eni-oil-lubricant-recommend.html" target="_blank"><i class="icon-barrel"></i>Oil &amp; lubricants</a>
+            <a href="http://bit.ly/Racorsearch" target="_blank"><i class="icon-filter"></i>Parker Racor filters</a>
+            <a href="https://www.sakurafilter.com/index.php/product" target="_blank"><i class="icon-filter"></i>Sakura filters</a>
+            <a href="https://catalog.mann-filter.com/EU/eng" target="_blank"><i class="icon-filter"></i>Mann filters</a>
+            <a href="http://www.donaldsontoolbox.com.au/search/crossreference/index/1" target="_blank"><i class="icon-filter"></i>Donaldson filters</a>
+        </nav>
+
+    </aside>
+
+
+
+    <header class="clearfix">
+        <div>
+            <h2>
+                Translog Ltd<span>...</span>
+            </h2>
+            <a href="change-the-active-customer">(change)</a>
+        </div>
+
+        <nav>
+            <a href="/customer/setcurrent"><i class="icon-user"></i>Vaughan</a>
+            <a href="/support"><i class="icon-social-whatsapp"></i>Help</a>
+            <a href="/pbAdmin/Site?siteId=1" target="_blank"><i class="icon-gear-a"></i>Admin Site</a>
+            <a href="/account/logoff"><i class="icon-logout"></i>Logout</a>
+        </nav>
+    </header>
+
+
+
+     <div class="line">
+        <svg width="100%" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dotted-line">
+            <line stroke-dasharray="2, 4" x1="0" y1="6" x2="100%" y2="6" style="stroke-width: 16px;"></line>
+        </svg>
+    </div>
+
+
+    <!-- trigger up icon  -->
+    <div class="showTop" id="beginContent"></div>
+
+
+
+    <!-- a href="#top" id="toTop" class="buttonIcon"><i class="icon-up"></i></a -->
+    <!-- defer -->
+    <script type="text/javascript" src="/_pbPackages/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js" defer></script>
+    <script type="text/javascript" src="/_pbPackages/jquery.localScroll-1.4.0/jquery.localScroll.min.js" defer></script>
+    <script type="text/javascript" src="/_pbScripts/_core/easing.js" defer></script>
+    <script>if (!Modernizr.svg) {
+            $('img[src*="svg"]').attr('src', function() {
+                return $(this).attr('src').replace('.svg', '.png');
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <main role="main" class=" clearfix">
+
+
+
+
+
+
+
+
+        <article id="mainContentHolder">
+
+
+
+            <header class="clearfix col-2">
+                <section>
+                    <h1>Hi Vaughan Thompson</h1>
+                    <p><span class="status-update red">NEW</span> Polos added to the rewards shop. <a href="">Visit Shop</a></p>
+                </section>
+
+                <section>
+                    <p class="small">
+                        Logged in as user: vaughan (vaughan@pixlbox.co.nz)&nbsp;
+                        <span>
+                            <a href="">Change Password</a><br />
+                            <a href="">Contact support</a> to change username or associated email address.
+                        </span>
+                    </p>
+                </section>
+            </header>
+
+
+
+            <!-- recent activity and favourite summaries -->
+            <article class="clearfix col-2">
+                <section>
+                    <h2>Recent Orders</h2>
+
+                    <!-- begin table -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Invoice #</td>
+                                <td>Order #</td>
+                                <td>Your Ref.</td>
+                                <td>Status</td>
+                                <td>Due</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyResults">
+                            <tr class="resultRow progress" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow " onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow " onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow progress" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow " onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow " onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end table -->
+
+
+
+                    <br />
+                    <br />
+                    <div class="rewards-teaser loyalty">
+                        <a href="/rewards-Checkout-2.html" class="float-right">Cart (0)</a>
+                        <h2>TransDiesel Rewards</h2>
+
+                        <div class="row">
+                            <div>
+                                <div class="balance-widget">
+                                    <h6 class="go-red">Points Bal</h6>
+                                    <h1 class="go-red">128000</h1>
+                                    <h6>This Month</h6>
+                                    <h3>1234</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Get this now:</h4>
+                                <a href="/rewards-home.html">
+                                    <img src="/_pbImages/Site/TD/loyalty/thumbs/cap.png" />
+                                </a>
+
+                                <p>Peak cap (x10 Black)</p>
+                            </div>
+                            <div>
+                                <h4 class="go-red">Close to:</h4>
+                                <a href="/shop">
+                                    <img src="/_pbImages/Site/TD/loyalty/thumbs/backpack.png" />
+                                </a>
+                                <p>Metro Backpack (Black)</p>
+                            </div>
+                        </div>
+
+                        <a href="/rewards-home.html">Go to the rewards shop</a>&nbsp;&nbsp;
+                        <a href="/rewards-faq.html"><span>How it works</span></a>&nbsp;&nbsp;
+                        <a href="/rewards-bal.html"><span>Points history</span></a>
+                    </div>
+                    <br />
+
+
+
+                </section>
+
+                <section>
+                    <h2>My Favourites</h2>
+                    <!-- begin table -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Invoice #</td>
+                                <td>Order #</td>
+                                <td>Your Ref.</td>
+                                <td>Status</td>
+                                <td>Due</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyResults">
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end table -->
+
+
+
+
+                    <br />
+                    <br />
+
+
+                    <h2>My Drafts</h2>
+                    <!-- begin table -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Invoice #</td>
+                                <td>Order #</td>
+                                <td>Your Ref.</td>
+                                <td>Status</td>
+                                <td>Due</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyResults">
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                            <tr class="resultRow" onclick="showHideDetail('SCN023549');" style="cursor: pointer;">
+                                <td>SCN023549 </td>
+                                <td>SO566359 </td>
+                                <td>E NTFYH F</td>
+                                <td>Settled <i class="icon-tick progress"></i></td>
+                                <td>20 Jun 2018</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end table -->
+                </section>
+            </article>
+
+
+
+            <footer class="clearfix">
+                <section></section>
+            </footer>
+
+
+        </article>
+    </main>
+
+
+    <div style="height:130px" class="hideDesktop">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">$(document).ready(function() {
+            // ToDo: Put into own .js file and minify / bundle
+            $("#txtQuickSearch").focus(function() {
+                $("#asideMenu").addClass("hideMobile");
+            });
+
+            $("#txtQuickSearch").blur(function() {
+                $("#asideMenu").removeClass("hideMobile");
+            });
+
+            $("#btnQuickSearch").click(function() {
+                $(this).addClass("activeLink");
+                $("#btnBulkSearch").removeClass("activeLink");
+                $("#divBulkSearch").hide();
+                $("#divQuickSearch").show();
+            });
+
+            $("#btnBulkSearch").click(function() {
+                $(this).addClass("activeLink");
+                $("#btnQuickSearch").removeClass("activeLink");
+                $("#divBulkSearch").show();
+                $("#divQuickSearch").hide();
+            });
+});
+
+
+////////// Quick Search ///////////////////////////////////////
+function getLabel(code, brand, desc, group, id) {
+            if (id != null) {
+                return code + ' [' + brand + ' ' + desc + ' ' + group + ']';
+            }
+
+            return code + ' (Query)';
+}
+
+$(document).ready(function() {
+            $("#txtQuickSearch").autocomplete({
+
+                search: function(event, ui) {
+                    $("#quickSearchStatus").html("Loading results...");
+                },
+                response: function(event, ui) {
+                    $("#quickSearchStatus").html("");
+                },
+
+                source: function(request, response) {
+                    $.ajax({
+                        url: '/Product/AutoCompleteProduct',
+                        dataType: "json",
+                        data: {
+                            term: request.term,
+                            maxResults: 100
+                        },
+                        success: function(data) {
+                            response($.map(data, function(product) {
+                                return {
+                                    value: product.Code,
+                                    label: getLabel(product.Code, product.Brand, product.Description, product.Group, product.ProductId),
+                                    productid: product.ProductId,
+                                    productcode: product.Code,
+                                    productdesc: product.Description,
+                                    productbrand: product.Brand,
+                                    productgroup: product.Group,
+                                    productunit: product.Unit
+                                };
+                            }));
+                        }
+                    });
+                },
+                minLength: 3,
+                select: function(event, ui) {
+                    $(this).val("");
+                    $("#quickSearchStatus").html("Loading...");
+
+                    // Get the ProductSearchResultSet html
+                    var orderType = $("#hidOrderType").val();
+                    $.post("/Order/AddItemToCurrentOrder", { productCode: ui.item.productcode, quantity: 1, isSelected: true, orderType: orderType })
+                        .done(function(data) {
+
+                            document.location = "/product/search?orderId=" + data.Data;
+
+                        });
+
+                    return false;
+                },
+                selectFirst: true, // automatically select first item in list
+                change: function(event, ui) {
+                    if (ui.item == null) {
+                        //here is null if entered value is not match in suggestion list
+                        $(this).val((ui.item ? ui.item.id : ""));
+                    }
+                }
+            });
+
+
+});</script>
+    <script src="/_pbScripts/Site/TD/td.product.search.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+

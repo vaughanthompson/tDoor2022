@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ordering and forms */
+
+div.cartLogo {margin:0px auto;}
+
+div.ordering {margin-top:1em;}
+
+fieldset {margin:0em 0em 2em 0em; border-color:rgba(0,0,0,0.2);}
+
+textarea { overflow-y:auto; min-height:80px;}
+
+input[readonly] {opacity:0.5;}
+
+select, input, textarea, select {padding:10px;}
+
+input[type=submit] {margin-top:10px; margin-bottom:10px;}
+
+select option, div.ordering select option {padding:3px;}
+
+select option:first-child, 
+div.ordering select option:first-child {font-weight:600;}
+
+input[type=submit], div.ordering input[type=submit] {padding:10px 20px;}
+
+article.product.other section h1 {font-size:1.5em;}
+
+img.loading {display:inline-block; margin-bottom:0; margin-top:0;}
+
+div.ordering select, 
+div.ordering input {margin:5px;}
+
+label h3 {margin:1em 0 0.5em 0;}
+label p {display:inline-block;}
+
+input[type=checkbox] { margin-right:7px;}
+
+
+table {margin-bottom:2em; width:100%; text-align:left;}
+table thead {border-bottom:1px solid #444444;}
+table tbody, table tr {border-bottom:1px dotted #444444;}
+table tbody, table tr:last-child {border-bottom:none;}
+
+
+
+
+
+
+body.cart select, 
+body.contact select, 
+body.cart textarea, 
+body.contact textarea, 
+body.shop textarea {width:90%; margin-bottom:1em;}
+
+body.cart td select  {width:auto; margin-bottom:0;}
+
+body.cart input[type=text], 
+body.cart input[type=password], 
+body.contact input[type=text], 
+body.shop input[type=text] {width:90%; margin-bottom:1em;}
+
+body.shop textarea, 
+body.shop input[type=text] {width:80%; margin-bottom:1em;}
+
+
+fieldset select.short, fieldset input[type=text].short {width:45%;}
+
+
+
+
+article.validationMessage { background-color:#ffffff;  background-color:rgba(255,255,255,0.4);  font-size:105%;}
+article.validationMessage section.validationSuccess { margin:0; background-color:rgba(33,99,0,0.2); color:#390; padding-left:10%; padding-right:10%;  padding-top:2em;padding-bottom:1.5em; width:80% ;}
+section.validationSuccess a, section.validationSuccess a:hover, section.validationSuccess a:visited { color:#390;}
+
+div.validation-summary-errors span {display:block;}
+article.validationMessage section.input-validation-error, div.validation-summary-errors {background-color:rgba(255,0,0,0.2); color:#ff0000; padding-left:10%; padding-right:10%;  padding-top:2em;padding-bottom:1.5em; width:80% ;}
+label.input-validation-error { color:#ff0000;}
+input.input-validation-error, select.input-validation-error, textarea.input-validation-error {border: 1px solid #ff0000; color:#ff0000;}
+
+
+
+
+
+
+div.validation-summary-errors span:before {
+	font-family: 'FontAwesome';	
+	content: "\f00d";
+	margin-right:0.5em;
+}
+
+div.validation-summary-errors li {
+	padding:0.7em 1em 0.7em 0em; 
+	line-height:140%; 
+	border-top-color:rgba(255,255,255,0.5); 
+	border-bottom-color:rgba(0,0,0,0.1); 
+	list-style-type:none;
+	font-weight:300;
+	}
+div.validation-summary-errors li:before {
+	font-family: 'FontAwesome';	
+	content: "\f138";
+	margin-right:0.5em ;
+}
+
+.validation-summary-valid {display:none;}
+
+
+
+div.g-recaptcha {margin:1em auto; display:inline-block;}
+
+
+
+article.progressBar {margin-top:0em; margin-bottom:2em; background-color:#ffffff; background-color:rgba(0,0,0,0.05);}
+article.progressBar div {  width:23%; float:left; padding:1em 1%;  font-size:70%; color:rgba(0,0,0,0.35);}
+article.progressBar div span { display:none;}
+article.progressBar div i {font-size:301%; display:block; margin-bottom:0.2em;}
+article.progressBar div.progress { opacity:1.0; background-color:#390; background-color:rgba(33,99,0,0.8); color:#ffffff;}
+article.progressBar div.complete { opacity:1.0; color:#390;}
+
+table td:first-child {padding:1em;}
+body.cart table td picture,
+body.cart table td picture img {width:90px;}
+body.cart table tr.cartTotal td {font-weight:bold;text-transform:uppercase;}
+body.cart table tr.cartTotal td span {font-weight:normal; text-transform:none; font-size:90%;}
+body.cart table tr:last-child {border-bottom: 2px solid #000000;}
+
+
+
+
+
+/* reCapture mobile width workaround and small device overrides */
+@media screen and (max-width:400px) {
+div.recaptchaPlacehold {min-height:120px; margin-top:1em;}	
+div.g-recaptcha {left:3%; position:absolute;}
+div.validation-summary-errors {text-align:left;}
+div.validation-summary-errors li:before, div.validation-summary-errors span:before {content:""; margin-right:0;}
+
+input[type=text],
+body.cart input[type=text], 
+body.cart input[type=password], 
+body.contact input[type=text], 
+body.shop input[type=text] {width:80%; padding:5%;}
+
+input[type=submit] {/*width:90%;*/ padding:5%;}
+}
+
+
+@media screen and (max-width:600px) {
+/* format tables for smaller width */
+body.cart table .fontAwesome { -webkit-border-radius: 8px; -moz-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px; width:auto;}
+body.cart table .fontAwesome span {display:inline-block;}
+body.cart table .fontAwesome i {padding-right:10px;}
+body.cart table tr.cartTotal td:first-child, body.cart table tr.cartTotal td:last-child /*, body.cart table tr.cartTotal span*/ { display:none;}
+body.cart table tr.cartTotal td.cartTitle {text-align:center; color:#000000; margin:1em 0 0px 0; }
+}
+
+
+@media screen and (max-width:900px) {
+/* format tables for smaller width */
+table thead {display: none;}
+body.cart table tbody {padding:0;}
+body.cart table tr { display: block; border-bottom: 1px dotted #444444; padding-bottom:0.5em; margin-bottom:0.5em;}
+
+body.cart table td {display: block; text-align: center; border-bottom: none; padding:0.1em 0.5em 0.8em 0.5em;}
+body.cart table td:first-child {font-weight:bold;}
+body.cart table td:last-child {border-bottom: none; padding-top:0;}
+body.cart table td p {font-size:90%;}
+body.cart table td:before {content: attr(data-label); /*float: left;*/ text-transform: uppercase; padding-right:5px; opacity:0.5;}
+
+body.cart table td picture,
+body.cart table td picture img {width:200px; margin:0 auto 0px auto;}
+
+table th {padding:0.6em 0.5em; }
+table td {padding:0.6em 0.5em; }	
+}
+
+
+
+
+
+
+@media screen and (min-width:600px) {
+article.progressBar div span { display:inline-block;}
+p.editInForm {float:right; margin-right:5%; margin-bottom:0; margin-top:20px;}
+}
+
+
+@media screen and (min-width:900px) { /* tablet */
+article.progressBar div { font-size:105%;}
+article.progressBar div i {font-size:110%; display:inline-block; margin-right:10px; margin-bottom:0em;}
+
+body.cart table td picture,
+body.cart table td picture img {margin-bottom:0px !important;}
+
+div.validation-summary-errors {}
+div.validation-summary-errors li {
+	padding:0.7em 1em 0.7em 0em; 
+	border-top:none; 
+	border-bottom:none; 
+	display:inline-block;
+
+	}
+	
+
+table th {padding:0.9em 1em 0.9em 0em; line-height:140%; vertical-align:bottom;}
+table td {padding:0.9em 1em 0.9em 0em; line-height:140%;vertical-align:top;}	
+
+}
+
+
+
+

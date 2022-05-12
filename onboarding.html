@@ -1,0 +1,453 @@
+﻿<!---------------->
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/_pbFonts/Site/TD/icomoon/style.css" type="text/css">
+    <link rel="stylesheet" href="/_pbFonts/roboto/fonts.css" type="text/css">
+
+    <link href="/_pbCss/_core/normalize.css" rel="stylesheet" />
+    <link href="/_pbCss/_core/jquery-ui.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/layout.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme-more.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/forms.css" rel="stylesheet" />
+
+    <!--  link href="/_pbCss/Site/TD/theme-carlin.css" rel="stylesheet" /> -->
+
+
+    <!-- scripts all pages -->
+    <script src="/_pbScripts/_core/jquery-1.11.2.min.js"></script>
+    <script src="/Scripts/jquery-ui-1.11.4.js"></script>
+    <script src="/_pbScripts/_core/modernizr-2.8.3.js"></script>
+
+    <!-- tests -->
+    <script type="text/javascript">Modernizr.load([{
+            test: Modernizr.mq('only all'),
+            nope: '/_pbScripts/_core/respond.js'
+            // https://github.com/scottjehl/Respond
+},
+{
+            test: window.matchMedia,
+            nope: '/_pbScripts/_core/media.match.min.js'
+            // load mediaMatch polyfill
+},
+            // load enquire and js media queries
+            '/_pbScripts/_core/enquire.min.js',
+            '/_pbScripts/_core/waypoints.js',
+            '/_pbScripts/Site/TD/jsmediaqueries.js'
+]
+);</script>
+
+
+
+
+    <style>
+
+        hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            line-height: 1.1em;
+            text-decoration: none;
+            font-size: 1em;
+            margin-bottom: 0.7em;
+            color: #ec1c24;
+        }
+
+        .finishedButton {
+            /*display: none;*/
+        }
+
+        .divSection {
+            padding-top:1em;
+            padding-bottom:5em;
+        }
+
+            .divSection h2 {
+                padding-top: 0.5em;
+                font-size:1.9em;
+                font-weight:700;
+            }
+
+
+        .divSection p {
+            width:80%;
+            font-weight:300;
+            line-height:1.5em;
+        }
+
+        @media screen and (min-width:1200px) { /* desktop */
+            .finishedButton {
+                float: right;
+                display: block;
+            }
+        }
+
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe, .embed-container object, .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        div.tabs {
+            margin-top:15px;
+            margin-bottom:15px;
+        }
+        div.tabs, div.title {
+            display:flex;
+        }
+        div.tabs a {
+            flex-grow:1;
+            margin-right:20px;
+        }
+        div.title {
+            margin-top:30px;
+            align-items:flex-end;
+            justify-content:flex-start;
+        }
+        div.title a {
+            margin-left:auto;
+        }
+
+        .tabbutton {
+        background-color:#dedede;
+         position:relative;
+         height:60px;
+         line-height:60px;
+         text-align:center;
+         padding:0;
+         display:block;
+         padding-left:10px;
+         font-size:1em;
+         color:#222222;
+        }
+        .tabbutton:before {
+            content: "";
+            position: absolute;
+            right: -15px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 15px solid #dedede;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+        }
+        div.tabs a:last-child {
+            margin-right:0;
+            padding-right:10px;
+        }
+        div.tabs a:last-child:before {
+            border: none;
+        }
+
+        .tabbutton.sectionSelected {
+            color: #ffffff;
+            background-color: #ec1c24;
+            text-decoration: none;
+            font-weight:800;
+        }
+        .tabbutton.sectionSelected:before {
+            border-left-color: #ec1c24;
+        }
+
+        body {
+            background-color:#efefef;
+        }
+
+        @media screen and (max-width:700px) { /* desktop */
+            div.tabs, div.title {
+                flex-direction:column;
+            }
+            div.title {
+                margin-top: 10px;
+                align-items: flex-start;
+            }
+            div.title a {
+                margin-left: 0;
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+            div.tabs a, div.tabs a:last-child {
+                margin-right:0;
+                padding: 0;
+                margin-bottom: 2px;
+                flex-wrap: wrap;
+            }
+            div.tabs a:before {
+                border:none;
+
+            }
+        }
+
+
+    </style>
+
+
+</head>
+
+<body id="top">
+
+
+
+
+
+
+
+    <!-- a href="#top" id="toTop" class="buttonIcon"><i class="icon-up"></i></a -->
+    <!-- defer -->
+    <script type="text/javascript" src="/_pbPackages/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js" defer></script>
+    <script type="text/javascript" src="/_pbPackages/jquery.localScroll-1.4.0/jquery.localScroll.min.js" defer></script>
+    <script type="text/javascript" src="/_pbScripts/_core/easing.js" defer></script>
+
+    <script>if (!Modernizr.svg) {
+            $('img[src*="svg"]').attr('src', function() {
+                return $(this).attr('src').replace('.svg', '.png');
+            });
+}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="newUser" class="simpleForm">
+        <div>
+            <section>
+                <a href="/customer/dashboard"><img src="/_pbImages/Site/TD/svg/logo.svg" title="TransDiesel" alt="TransDiesel" border="0"></a>
+                <h1 class="issue"><strong>PORTAL</strong></h1>
+                <div class="clearfix"></div>
+                <svg width="100%" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dotted-line">
+                    <line stroke-dasharray="2, 4" x1="0" y1="6" x2="100%" y2="6" style="stroke-width: 16px;"></line>
+                </svg>
+
+
+
+                <div class="title">
+                    <h2 style="font-size:4em; font-weight:300;">Getting Started</h2>
+                    <a href="javascript:void(0);">Skip to login</a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="tabs">
+                    <a id="a1" href="javascript:void(0);" class="sectionSelected tabbutton" onclick="showSection(1);">Intro</a>
+                    <a id="a2" href="javascript:void(0);" class=" tabbutton" onclick="showSection(2);">Your Dashboard</a>
+                    <a id="a3" href="javascript:void(0);" class=" tabbutton" onclick="showSection(3);">Ordering</a>
+                    <a id="a4" href="javascript:void(0);" class=" tabbutton" onclick="showSection(4);">Favourites</a>
+                    <a id="a5" href="javascript:void(0);" class=" tabbutton" onclick="showSection(5);">Get Quotes</a>
+                    <a id="a6" href="javascript:void(0);" class=" tabbutton" onclick="showSection(6);">Invoice History</a>
+
+                </div>
+
+
+
+                <div style="border-bottom:1px solid black;margin-bottom:20px;"></div>
+
+                <div class="divSection" id="divSection1">
+                    <h2>Welcome to the Transdiesel Customer Portal</h2>
+                    <p>Trade-tested and designed by us for NZ conditions, the portal offers a set of both convienient and powerful inventory ordering tools for all TransDiesel customers. </p>
+                    <p>Take the time to look through this guide and familiarise yourself with the system and discover more about features like:</p>
+                    <p><strong>Ease of use. Secure. Live Pricing. Accurate Availability. Bulk Orders. Quote Request. Order &amp; Dispatch Status. Favourite Orders. Save Draft Orders.</strong></p>
+
+                    <br />
+
+                    <h2>New user?</h2>
+                    <p>Hi there! Take a look at this quick video, explaing how to get into the portal:</p>
+                    <br />
+                    <div>
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed//c0do3mBFDFY' frameborder='0' allowfullscreen></iframe></div>
+                    </div>
+                </div>
+
+
+                <div class="divSection" id="divSection2" style="display:none;">
+                    <h2>A Personalised Dashboard</h2>
+                    <p>The portal dashboard offers quick access to all features with simple, informative navigation as well as "at a glance" recent orders, favourites and live quotes. Get a closer look below:</p>
+                    <br />
+                    <div>
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed//c0do3mBFDFY' frameborder='0' allowfullscreen></iframe></div>
+                    </div>
+                </div>
+
+                <div class="divSection" id="divSection3" style="display:none;">
+                    <h2>Ordering</h2>
+                    <p>
+                        <strong>Flexible order entry and search.</strong> Single product? Bulk list? Upload a file? Plus if you don't know the entire part number we can help you find it. 
+                        <strong>Check pricing and availability 24 hours a day.</strong> View live pricing and the stock availability at your local branch and nationwide. 
+                        <strong>Place your orders online anytime.</strong> Place orders online at your convenience and monitor their progress.<br /><br />
+                        <strong>Watch some demonstration videos below...</strong>
+                    </p>
+
+                    <br />
+
+                    <h2>Draft Orders</h2>
+                    <p>
+                        <strong>Save in-progress orders.</strong> Once you've started an order and searched on some items, you can save your progress if you need to pause the order creation.  
+                        <strong>Automatically save progress.</strong> If you're pulled away from your order and forget to save we'll do it for you!
+                    </p>
+
+                    <br />
+
+                    <h2>Processing Orders</h2>
+                    <p>Once you've successfully created and submitted an order you can check it's progress with us at anytime via the dashboard and also inside the Orders > Processing section on the left menu.</p>
+
+
+                    <br />
+                    <br />
+                    <h3>Video. Create Order: Searching for products.</h3>
+                    <p>Demos of quick and bulk searching</p>
+                    <br />
+                    <div>
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed//c0do3mBFDFY' frameborder='0' allowfullscreen></iframe></div>
+                    </div>
+
+                    <br />
+                    <br />
+                    <h3>Video. Create Order: Search Results.</h3>
+                    <p>Demo of a completed search and the items you'll see.</p>
+                    <br />
+                    <div>
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed//c0do3mBFDFY' frameborder='0' allowfullscreen></iframe></div>
+                    </div>
+
+                    <br />
+                    <br />
+                    <h3>Video. Create Order: Price / Availability.</h3>
+                    <p>Reviewing order prices and stock availability of your items.</p>
+                    <br />
+                    <div>
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed//c0do3mBFDFY' frameborder='0' allowfullscreen></iframe></div>
+                    </div>
+
+                </div>
+
+
+                <div class="divSection" id="divSection4" style="display:none;">
+                    <h3>Favourites</h3>
+                    <p>
+                        <strong>Save repeat or favourite orders.</strong> The portal allows you to save your favourite or repeat orders, which can then be re-ordered or edited. Complete a search from within "Create Order" and then choose "Save Favourites" from the navigation found near the bottom of the screen.
+                        <strong>Single Product or Set?</strong> Favourites are handy for creating a base order from which to add more incidental products, saving valuable time re-keying product numbers for frequentely ordered items.
+                    </p>
+                </div>
+
+
+                <div class="divSection" id="divSection5" style="display:none;">
+                    <h3>Request a Quote</h3>
+                    <p><strong>Our equivalent of "Price-check aisle 4!"</strong> Create and save quotations within the portal. Select "Create Quote" from the left menu to start. These easily convert into orders once you've received and are happy to proceed.</p>
+                </div>
+
+
+                <div class="divSection" id="divSection6" style="display:none;">
+                    <h2>View your full order history</h2>
+                    <p>The portal will save your full order history, for you to check at any time.</p>
+
+                    <br />
+
+                    <h2>Invoices</h2>
+                    <p>View and download copies of invoices for all of your company orders</p>
+                </div>
+
+
+
+                <div style="border-bottom:1px solid black;margin-bottom:0px;"></div>
+
+                <div class="title">
+                   <p>*Access these guides at any time from within the help section, located in the top navigation once logged in.</p>
+
+                    <a href="javascript:void(0);">Skip to login</a>
+                </div>
+                <br /><br />
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">$(document).ready(function() {
+            $(".finishedLink").click(function() {
+                $(this).css("color", "black");
+                $(this).unbind("click");
+
+                $.post("/account/completedonboarding")
+                    .done(function(data) {
+                    });
+                document.location = "/customer/dashboard";
+            })
+});
+
+function showSection(id) {
+            var selectedIdentifier = "sectionSelected";
+            $("." + selectedIdentifier).removeClass(selectedIdentifier);
+            $("#a" + id).addClass(selectedIdentifier);
+            $(".divSection").hide();
+            $("#divSection" + id).fadeIn("fast");
+}</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+

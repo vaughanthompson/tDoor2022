@@ -1,0 +1,684 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <title>TradeDoor. TransDiesel Customer Accounts Portal</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/_pbFonts/Site/TD/icomoon/style.css" type="text/css">
+    <link rel="stylesheet" href="/_pbFonts/roboto/fonts.css" type="text/css">
+
+    <link href="/_pbCss/_core/normalize.css" rel="stylesheet" />
+    <link href="/_pbCss/_core/jquery-ui.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/layout.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme-more.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/forms.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme-carlin.css" rel="stylesheet" />
+
+
+    <!-- scripts all pages -->
+    <script src="/_pbScripts/_core/jquery-1.11.2.min.js"></script>
+    <script src="/Scripts/jquery-ui-1.11.4.js"></script>
+    <script src="/_pbScripts/_core/modernizr-2.8.3.js"></script>
+
+    <!-- tests -->
+    <script type="text/javascript">Modernizr.load([{
+            test: Modernizr.mq('only all'),
+            nope: '/_pbScripts/_core/respond.js'
+            // https://github.com/scottjehl/Respond
+        },
+        {
+            test: window.matchMedia,
+            nope: '/_pbScripts/_core/media.match.min.js'
+            // load mediaMatch polyfill
+        },
+            // load enquire and js media queries
+            '/_pbScripts/_core/enquire.min.js',
+            '/_pbScripts/_core/waypoints.js'
+        ]
+        );</script>
+
+
+</head>
+
+<body id="top">
+
+    <div class="cta">
+        <div class="majorActions">
+            <a href="javascript:void(0);" class="inlineButton btnSaveDraft">Save Draft</a>
+            <a href="javascript:void(0);" class="inlineButton btnSaveList">Save List</a>
+            <a href="javascript:void(0);" class="inlineButton btnSaveAndContinue" data-ordertype="Created">Continue</a>
+            <input type="hidden" id="OrderType" value="Created" />
+        </div>
+        <div id="divSaved" style="display:none;">
+            <h5><i class="icon-check-circle" ></i> Saved Okay</h5>
+        </div>
+        <div id="divSaving" style="display:none;">
+            <h5><i class="spinner icon-spinner3"></i> Processing, please wait.</h5>
+        </div>
+    </div>
+
+
+ 
+
+
+    <script>$(document).ready(function() {
+            // for in-page scrolling to named anchors e.g. top link
+            $.localScroll({
+                target: 'body',
+                queue: false,
+                hash: false,
+                duration: 500,
+                easing: 'easeOutQuad'
+            });
+});</script>
+    <!--[if lt IE 9]>
+        <div class="timeToUpdate">
+        This web application may use web standards that are not supported by your current web browser. <a href="http://www.browsehappy.com">Please consider upgrading</a>
+        </div>
+    <![endif]-->
+
+
+    <header class="clearfix">
+        <a href="/" class="logo"><img src="/_pbImages/Site/TD/svg/logo.svg" title="TransDiesel" alt="TransDiesel" border="0"></a>
+        <h1>Portal</h1>
+        <p class="small">Updated: 07:00:00 2/5/18</p>
+
+
+
+        <div>
+            <h2>
+                Power Farming Canterbury<span>...</span>
+            </h2>
+            <a href="change-the-active-customer">(change)</a>
+        </div>
+
+        <nav>
+            <a href="/customer/setcurrent"><i class="icon-user"></i>Vaughan</a>
+            <a href="/support"><i class="icon-social-whatsapp"></i>Help</a>
+            <a href="/pbAdmin/Site?siteId=1" target="_blank"><i class="icon-gear-a"></i>Admin Site</a>
+            <a href="/account/logoff"><i class="icon-logout"></i>Logout</a>
+        </nav>
+    </header>
+
+
+
+   
+
+    <!-- trigger up icon  -->
+    <div class="showTop" id="beginContent"></div>
+
+
+
+    <!-- a href="#top" id="toTop" class="buttonIcon"><i class="icon-up"></i></a -->
+    <!-- defer -->
+    <script type="text/javascript" src="/_pbPackages/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js" defer></script>
+    <script type="text/javascript" src="/_pbPackages/jquery.localScroll-1.4.0/jquery.localScroll.min.js" defer></script>
+    <script type="text/javascript" src="/_pbScripts/_core/easing.js" defer></script>
+    <script>if (!Modernizr.svg) {
+            $('img[src*="svg"]').attr('src', function() {
+                return $(this).attr('src').replace('.svg', '.png');
+            });
+}</script>
+
+
+
+
+
+
+
+<aside id="asideMenu">
+    
+    <h3>User</h3>
+    <nav>
+        <a href="/customer/dashboard"><i class="icon-user"></i>My Dashboard</a>
+    </nav>
+
+    <h3>Orders</h3>
+    <nav>
+        <a href="/order/clear"><i class="icon-basket "></i>Create Order</a>
+        <a href="/order/drafts"><i class="icon-brush" ></i>Drafts (0)</a>
+        <a href="/order/processing"><i class="icon-arrows-ccw "></i>Processing (0)</a>
+        <a href="/order/lists"><i class="icon-heart2 "></i>Favourites (5)</a>
+
+    </nav>
+
+    <h3>Quotes</h3>
+    <nav>
+        <a class="" href="/order/clear?nextOrderType=Quote"><i class="icon-clipboard"></i>Create Quote</a>
+        <a class="" href="/order/quotes"><i class="icon-paste"></i>Current (7)</a>
+    </nav>
+
+    <h3>Account & History</h3>
+    <nav>
+        <a href="/order/statements"><i class="icon-create "></i>Statement <span style="font-weight:bold;">(new)</span></a>
+        <a href="/order/processed"><i class="icon-copy"></i>Portal Orders</a>
+        <a href="/order/history"><i class="icon-download "></i>All Orders/Invoices</a>
+    </nav>
+
+   
+        <h3>Rewards</h3>
+        <nav>
+            <a href="/loyalty/products"><i class="icon-gift"></i>Browse Shop</a>
+            <a href="/loyalty/faq"><i class="icon-book"></i>Rewards FAQ</a>
+        </nav>
+    
+
+
+    <h3>References <a href="#" class="inline-icon" id="expand-1"><i class="icon-open"></i></a><a href="#" class="inline-icon" id="close-1"><i class="icon-close"></i></a></h3>
+    <nav class="collapsible" id="collapse-1">
+        <a href="http://www.transdiesel.com/eni-oil-lubricant-recommend.html" target="_blank"><i class="icon-barrel"></i>Oil &amp; lubricants</a>
+        <a href="http://bit.ly/Racorsearch" target="_blank"><i class="icon-filter"></i>Parker Racor filters</a>
+        <a href="http://www.sakurafilters.com.au/search-part.html" target="_blank"><i class="icon-filter"></i>Sakura filters</a>
+        <a href="https://catalog.mann-filter.com/EU/eng" target="_blank"><i class="icon-filter"></i>Mann filters</a>
+        <a href="http://www.donaldsontoolbox.com.au/search/crossreference/index/1" target="_blank"><i class="icon-filter"></i>Donaldson filters</a>
+        <a href="https://www.kohlerplus.com/" target="_blank"><i class="icon-air"></i>Kohler Engine parts lookup</a>
+    </nav>
+
+</aside>
+
+
+
+
+
+
+
+    <main role="main" class="resultsBulk clearfix">
+        <article id="mainContentHolder">
+ 
+           
+
+
+
+
+            <aside class="clearfix">
+                <div class="reference">
+                    <input type="text" id="txtPoNumber" name="poNumber" class="" placeholder="Your Purchase Order # / Ref">
+                </div>
+
+                <section class="search">
+                    <div class="searchInput clearfix">
+                        <input type="text" name="" placeholder="Begin typing to search" id="txtQuickSearch">
+                        <div id="quickSearchStatus">
+                        </div>
+                    </div>
+                </section>
+            </aside>
+            <header class="clearfix">
+                <section>
+                    <h1>Search Results</h1>
+                </section>
+            </header>
+            <article class="col-1 clearfix">
+                <section>
+                    <table class="results">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Your Search
+                                </th>
+                                <th>
+                                    Desc
+                                </th>
+                                <th>
+                                    Catg
+                                </th>
+                                <th>
+                                    Qty
+                                </th>
+                                <th colspan="3">
+                                    Unit
+                                </th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody id="directMatchesHeader">
+                            <tr>
+                                <th colspan="7" class="progress">
+                                    Matched
+                                </th>
+                            </tr>
+                        </tbody>
+
+                        <!-- end part and option search result -->
+                        <!-- part and option search result - alts -->
+                        <tbody id="trResult_i7966789">
+                            <tr class="resultRow progress">
+                                <td class="result-product-col">
+                                    <div>
+                                        172A64-72190
+                                    </div>
+                                </td>
+                                <td class="result-product-col">
+                                    <div>
+                                        <strong>Yanmar.</strong> BUSH BOOM CYL BTM
+                                    </div>
+
+                                </td>
+                                <td class="result-product-col">
+                                    Spare Parts
+                                </td>
+                                <td>
+                                    <input type="number" name="qty" value="1" id="txtQuantity_i7966789">
+                                </td>
+                                <td>
+                                    EA
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);" class="delete btnDeleteResult" data-id="_i7966789">Delete</a>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="AddProduct_i7966789" class="chkProductCodeOriginalQuery" data-id="_i7966789" value="172A64-72190" data-prodid="29819" checked="checked" />
+                                    <label for="AddProduct_i7966789" class="progress">
+                                        <span></span>
+                                        OK
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody class="optionRows" style="display:none;" id="trResultPartialMatches_i7966789">
+                            <tr class="resultRow">
+                                <td>
+                                    <strong>172A64-72190</strong>
+                                </td>
+                                <td>
+                                    <strong>Yanmar.</strong> BUSH BOOM CYL BTM
+                                </td>
+                                <td>
+                                    Spare Parts
+                                </td>
+                                <td>
+                                    <input type="number" name="qty" value="1" id="txtQuantity_product_48812602">
+                                </td>
+                                <td colspan="2">
+                                    EA
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="AddProduct_product_48812602" data-id="_product_48812602" data-prodid="29819" class="chkProductCodeMatchFor_i7966789 chkProductCodeMatch" value="172A64-72190" />
+                                    <label for="AddProduct_product_48812602" class="progress"><span></span>OK</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody id="partialMatchesHeader" style="display:none;">
+                            <tr>
+                                <th colspan="7" class="issue">
+                                    Partial Matches
+                                </th>
+                            </tr>
+                        </tbody>
+
+
+                    </table>
+                </section>
+            </article>
+            <footer class="clearfix">
+                <section></section>
+            </footer>
+        </article>
+    </main>
+
+
+
+    <div class="siteWideFtr">
+    <div class="brands">
+        <div><img src="/_pbImages/Site/TD/logos/volvo.png"></div>
+        <div><img src="/_pbImages/Site/TD/logos/yanmar.png"></div>
+        <div><img src="/_pbImages/Site/TD/logos/terexF.png"></div>
+        <div><img src="/_pbImages/Site/TD/logos/sennebogan.png"></div>
+        <div><img src="/_pbImages/Site/TD/logos/allisonT.png"></div>
+        <div><img src="/_pbImages/Site/TD/logos/perkins.png"></div>
+        <div><img src="/_pbImages/Site/TD/logos/kohler.png"></div>
+        <div><img src="/_pbImages/Site/TD/logos/shell-1.png"></div>  
+    </div>
+    <br>
+    <p>
+        All enquiries: <a href="mailto:tradedoor@transdiesel.co.nz?subject=TradeDoor Enquiry">tradedoor@transdiesel.co.nz</a> or Phone 0800 484 267. Copyright 2020. <a href="/">Privacy Policy</a> <a href="/">Terms of Trade</a>
+    </p>
+    <br>
+    <br>
+    <img src="/_pbImages/Site/TD/logos/Tradedoor.png" hspace="15" class="footerL">
+    <img src="/_pbImages/Site/TD/logos/transD-logo.png" hspace="15" class="footerL">
+</div>
+
+
+
+
+
+    <div style="height:130px" class="hideDesktop">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">enableNavigateWarning();
+
+
+function enableNavigateWarning() {
+            // Enable navigation prompt
+            window.onbeforeunload = function() {
+                return true;
+            };
+
+}
+
+function disableNavigateWarning() {
+            // Remove navigation prompt
+            window.onbeforeunload = null;
+}
+
+
+function getLabel(code, brand, desc, group, id) {
+            if (id != null) {
+                return code + ' [' + brand + ' ' + desc + ' ' + group + ']';
+            }
+
+            return code + ' (Query)';
+}
+
+// This to go in ProductSearch .js
+$(document).ready(function() {
+
+            $("#txtQuickSearch").focus(function() {
+                $("#asideMenu").addClass("hideMobile");
+            });
+
+            $("#txtQuickSearch").blur(function() {
+                $("#asideMenu").removeClass("hideMobile");
+            });
+
+            $("#txtQuickSearch").autocomplete({
+
+                search: function(event, ui) {
+                    $("#quickSearchStatus").html("Loading results...");
+                },
+                response: function(event, ui) {
+                    $("#quickSearchStatus").html("");
+                },
+
+                source: function(request, response) {
+                    $.ajax({
+                        url: '/Product/AutoCompleteProduct',
+                        dataType: "json",
+                        data: {
+                            term: request.term,
+                            maxResults: 100
+                        },
+                        success: function(data) {
+                            response($.map(data, function(product) {
+                                return {
+                                    value: product.Code,
+                                    label: getLabel(product.Code, product.Brand, product.Description, product.Group, product.ProductId),
+                                    productid: product.ProductId,
+                                    productcode: product.Code,
+                                    productdesc: product.Description,
+                                    productbrand: product.Brand,
+                                    productgroup: product.Group,
+                                    productunit: product.Unit
+                                    //,
+                                    //upn: user.Upn,
+                                    //managerupn: user.ManagerUpn
+                                    //manager2: user.Manager2,
+                                    //managerupn2: user.ManagerUpn2
+                                };
+                            }));
+                        }
+                    });
+                },
+                minLength: 3,
+                select: function(event, ui) {
+                    //$(this).val(ui.item.value);
+                    //$("#quickSearchStatus").html("");
+                    $(this).val("");
+                    $("#quickSearchStatus").html("<b>" + ui.item.value + "</b> added to search results.");
+
+                    // Get the ProductSearchResultSet html
+                    $.post("/Product/GetProductSearchResultSet", { code: ui.item.productcode })
+                        .done(function(data) {
+
+                            if (ui.item.productid != null) {
+                                $("#directMatchesHeader").show();
+                                $("#directMatchesHeader").after(data);
+                                $("#directMatchesHeader").fadeOut("fast");
+                                $("#directMatchesHeader").fadeIn("fast");
+                            }
+                            else {
+                                $("#partialMatchesHeader").show();
+                                $("#partialMatchesHeader").after(data);
+                                $("#partialMatchesHeader").fadeOut("fast");
+                                $("#partialMatchesHeader").fadeIn("fast");
+                            }
+
+                            $("#trNoItems").hide();
+                            // Setup the click events etc on the newly added element.
+                            setupElementEvents();
+
+
+                        });
+
+                    return false;
+                },
+                selectFirst: true, // automatically select first item in list
+                change: function(event, ui) {
+                    if (ui.item == null) {
+                        //here is null if entered value is not match in suggestion list
+                        $(this).val((ui.item ? ui.item.id : ""));
+                    }
+                }
+            });
+
+
+});
+//////////////
+
+$(document).ready(function() {
+
+            $(".btnSaveAndContinue").click(function() {
+                saveAndContinue();
+            });
+
+            $(".btnSaveDraft").click(function() {
+                saveDraft(false);
+            });
+
+            $(".btnSaveList").click(function() {
+                saveList(false);
+            });
+
+            setupElementEvents();
+
+
+});
+
+function saveAndContinue() {
+            disableNavigateWarning();
+            //var orderType = $(this).attr("data-ordertype");
+            var orderType = $("#OrderType").val();
+
+            // save order as draft
+            var redirectToStockAndPricing = true;
+
+            // Show saving message again as new page loads.
+            savingStart();
+
+            if (orderType == "Quote") {
+                saveQuote(redirectToStockAndPricing);
+            }
+            else {
+                saveDraft(redirectToStockAndPricing);
+            }
+}
+
+function setupElementEvents() {
+            $(".btnPartialMatches").unbind("click");
+            $(".btnPartialMatches").click(function() {
+                var id = getDataId(this);
+                var tr = $("#trResultPartialMatches" + id);
+                if (tr.is(":visible")) {
+                    tr.hide();
+                } else {
+                    tr.show();
+                }
+            });
+
+            $(".btnDeleteResult").unbind("click");
+            $(".btnDeleteResult").click(function() {
+                var id = getDataId(this);
+                deleteResult(id);
+            });
+
+}
+
+function saveQuote(redirectToStockAndPricing) {
+            var orderType = "Quote";
+            var orderItemDetails = [];
+            orderItemDetails = addOrderItemDetailsForList(orderItemDetails);
+            saveOrder(orderType, orderItemDetails, redirectToStockAndPricing);
+}
+
+function saveList(redirectToStockAndPricing) {
+            var orderType = "List";
+            var orderItemDetails = [];
+            orderItemDetails = addOrderItemDetailsForList(orderItemDetails);
+            saveOrder(orderType, orderItemDetails, redirectToStockAndPricing);
+}
+
+function saveDraft(redirectToStockAndPricing) {
+            var orderType = "Draft";
+
+            // When saving a draft, need to save both the items that have been checked along with any search items that are NOT checked.
+            // If checked, saved as 'IsSelected = true', if NOT checked saved as 'IsSelected = false'
+            // This is so that when this screen is loaded again in DRAFT state the items that were not selected can still be displayed for resolving
+            var orderItemDetails = [];
+            orderItemDetails = addOrderItemDetailsForDraft(orderItemDetails);
+            saveOrder(orderType, orderItemDetails, redirectToStockAndPricing);
+}
+
+function addOrderItemDetailsForList(orderItemDetails) {
+
+            // Add all items from the original query, but check if they are selected or not
+            $("input.chkProductCodeOriginalQuery:checkbox").each(function() {
+                var dataId = $(this).attr("data-id");
+                var isSelected = $(this).is(":checked");
+
+                // First check that none of the 'child/match' items (if they exist) are checked for this search term.
+                if (isSelected) {
+                    var orderItem = createOrderItem(this, isSelected);
+                    orderItemDetails.push(orderItem);
+                }
+            });
+
+            // Any any matches that are ticked
+            $("input.chkProductCodeMatch:checkbox:checked").each(function() {
+                var orderItem = createOrderItem(this, true);
+                orderItemDetails.push(orderItem);
+            });
+
+            return orderItemDetails;
+}
+
+function addOrderItemDetailsForDraft(orderItemDetails) {
+
+            // Add all items from the original query, but check if they are selected or not
+            $("input.chkProductCodeOriginalQuery:checkbox").each(function() {
+
+
+                var dataId = $(this).attr("data-id");
+                var isSelected = $(this).is(":checked");
+
+                // First check that none of the 'child/match' items (if they exist) are checked for this search term.
+                if (!isSelected && $(".chkProductCodeMatchFor" + dataId + ":checked").length > 0) {
+                    // Don't save as child is selected so user has resolved this item.
+                }
+                else {
+                    // Add as has not yet been resolved OR is a direct match(not children/matches)
+                    var orderItem = createOrderItem(this, isSelected);
+                    orderItemDetails.push(orderItem);
+                }
+
+            });
+
+            // Any any matches that are ticked
+            $("input.chkProductCodeMatch:checkbox:checked").each(function() {
+                var orderItem = createOrderItem(this, true);
+                orderItemDetails.push(orderItem);
+            });
+
+            return orderItemDetails;
+}
+
+function createOrderItem(element, isSelected) {
+            var code = $(element).val();
+            var dataId = $(element).attr("data-id");
+            var prodId = $(element).attr("data-prodid");
+            var quantity = $("#txtQuantity" + dataId).val();
+            var orderItem = { code: code, quantity: quantity, isSelected: isSelected, productId: prodId };
+            return orderItem;
+}
+
+function saveOrder(orderType, orderItemDetails, redirectToStockAndPricing) {
+            savingStart();
+            var poNumber = $("#txtPoNumber").val();
+            $.post("/Order/SaveFromSearch", { orderType: orderType, poNumber: poNumber, orderItemDetails: orderItemDetails })
+                .done(function(data) {
+
+                    if (redirectToStockAndPricing) {
+                        document.location = '/order/stock-pricing';
+                    }
+                    else {
+                        savingComplete();
+                    }
+
+                });
+}
+
+function savingStart() {
+            $("#divSaved").hide();
+            $("#divSaving").show();
+}
+
+function savingComplete() {
+            $("#divSaving").hide();
+            $("#divSaved").show();
+}
+
+function deleteResult(id) {
+            var tr = $("#trResult" + id);
+            var tr2 = $("#trResultPartialMatches" + id);
+
+            tr.remove();
+            tr2.remove();
+}
+
+function selectAll() {
+            $(".chkSelectResult").each(function() {
+                if (!this.checked) {
+                    $(this).prop("checked", "checked");
+                }
+            });
+}
+
+function getDataId(element) {
+            return $(element).attr("data-id");
+}</script>
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+/* remfonts.css version 1.0 */
+
+
+
+
+body { 
+	font-family: "Gotham", Helvetica, Arial;
+	font-weight:300;
+}
+
+
+/********************************************************************************/
+/* 2. Typography */
+/********************************************************************************/
+p { font-size:1rem;}
+
+
+
+h1 {font-weight:800;}
+h2 {font-weight:600;}
+h3 {font-weight:500;}
+h4 {font-weight:400;}
+h5 {font-weight:300;}
+h6 {font-weight:300;}
+
+
+h1 {font-size:1.6rem;}
+h2 {font-size:1.4rem;}
+h3 {font-size:1.2rem;}
+h4 {font-size:1.1rem;}
+h5 {font-size:1rem;}
+h6 {font-size:1rem;}
+
+
+@media screen and (max-width:400px) { /* mob */
+html {
+	font-size: 20px;   /* 1rem = 16px  */
+}
+}
+
+@media screen and (min-width:900px) { /* tablet */
+html {font-size:18px;}
+h1 {font-size:3em;} /* em based override */
+}
+
+
+@media screen and (min-width:1200px) { /* desktop */
+html {font-size:17px;}
+
+}
+
+
+@media screen and (min-width:1650px) { /* large desktop */
+html {font-size:16px;}
+}
+

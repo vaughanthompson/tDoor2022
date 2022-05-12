@@ -1,0 +1,742 @@
+@charset "utf-8";
+/* CSS Document */
+/* theme.css version 2.0 */
+
+
+/* 1. Generic core.css overrides / resets */
+/* 2. Typography */
+/* 3. Iconography and logos */
+/* 4. Site-wide structure */
+/* 5. Site-wide elements */
+/* 6. Page specific styles */
+/* 7. Media queries */
+
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 1. Generic core.css overrides / resets */
+/********************************************************************************/
+
+
+body { 
+	background-color:#2a2a2a;
+	font-family: "ProximaNova", Helvetica, Arial;
+	color:#c0c0c0;
+	font-weight:300;
+	font-size:0.88em;
+	letter-spacing:0.11em;
+	line-height:1.45em;
+}
+
+ul li, ol li {text-align:left; list-style-type:none;}
+ol li {padding-bottom:4em;padding-right:0em; }
+ul li {padding-right:0em; padding-bottom:2em; padding-top:1em;}
+
+table {margin-bottom:2em; width:100%; text-align:left;}
+table thead {border-bottom:1px solid #444444;}
+table tbody, table tr {border-bottom:1px dotted #444444;}
+table tbody, table tr:last-child {border-bottom:none;}
+table th {padding:0.9em 1em 0.9em 0em; line-height:140%; vertical-align:bottom;}
+table td {padding:0.9em 1em 0.9em 0em; line-height:140%;vertical-align:top;}
+
+div#pixlbox a {text-decoration:none; text-transform:uppercase; letter-spacing:0;}
+div#pixlbox svg path, div#pixlbox svg polygon {fill:rgba(255,255,255,1.0);}
+
+hr {border-color:#999999; border-bottom:none;}
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 2. Typography */
+/********************************************************************************/
+p {margin:1em auto 1em auto;font-size:0.96em;line-height:1.5em;}
+p.small {font-size:90%; }
+nav p {margin-bottom:1em;}
+
+h1,h2,h3,h4,h5,h6 { margin:2px 0; text-transform:uppercase;}
+
+h1 {line-height:1.1em; font-weight:200; font-size:2.7em; letter-spacing:0.45em; margin-left:0.45em;}
+h2 {line-height:1.1em; font-weight:700;font-size:1.72em; letter-spacing:0.4em; margin-left:0.4em; margin-bottom:0.45em;}
+h3 {line-height:1.3em; font-weight:600; font-size:1.18em; letter-spacing:0.30em; margin-left:0.35em; margin-bottom:0.25em;}
+h4 {line-height:1.3em; font-weight:400; font-size:0.98em; letter-spacing:0.3em; margin-left:0.3em; margin-bottom:0.1em;}
+h5 {line-height:1.40em; font-weight:600;font-size:0.8em;}
+h6 {line-height:1.45em; font-weight:400;font-size:0.7em;}
+
+span.h1 {line-height:1.3em;		font-weight:600;	font-size:2.7em;	letter-spacing:0.45em; margin-left:0.45em;}
+span.h2 {line-height:1.2em;	font-weight:600;	font-size:2.05em;	letter-spacing:0.37em; margin-left:0.37em;}
+span.h3 {line-height:1.2em; 	font-weight:600;	font-size:1.91em;	letter-spacing:0.30em; margin-left:0.30em;}
+span.h4 {line-height:1.1em; 	font-weight:700;	font-size:1.45em;	letter-spacing:0.45em; margin-left:0.45em;}
+span.h5 {line-height:1em;	font-weight:600;	font-size:1.15em;	letter-spacing:0.35em; margin-left:0.35em;}
+span.h6 {line-height:1em;		font-weight:600;	font-size:0.97em;	letter-spacing:0.35em; margin-left:0.35em;}
+
+span.h1, span.h2, span.h3, span.h4, span.h5, span.h6 {display:block;}
+
+div#feature h1 { line-height:1.3em; font-weight:400; font-size:1.18em; letter-spacing:0.35em; margin-left:0.35em; margin-bottom:1.4em;}
+div#feature h2 { line-height:1.1em; font-weight:200; font-size:2.7em; letter-spacing:0.45em; margin-left:0.45em;}
+div#feature h3 { line-height:1.15em; font-weight:600;font-size:1.72em; letter-spacing:0.4em; margin-left:0.4em;}
+div#feature h4 { line-height:1.3em; font-weight:400; font-size:0.98em; letter-spacing:0.3em; margin-left:0.3em;}
+div#feature h5 { line-height:1.40em; font-weight:600;font-size:0.8em;}
+div#feature h6 { line-height:1.45em; font-weight:400;font-size:0.7em;}
+
+#navContainer h4 {color:#bd1919;}
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { margin-left:0 !important; padding:0 !important; font-weight:700;}
+
+body.shop div#feature h1 {line-height:1.1em; font-weight:200; font-size:2.7em; letter-spacing:0.45em; margin-left:0.45em; margin-bottom:0.7em;}
+body.shop div#feature h2 {line-height:1.3em; font-weight:400; font-size:1.18em; letter-spacing:0.35em; margin-left:0.35em; margin-bottom:1.4em;color:#bd1919;}
+article#shopGrid h3 {color:#bd1919;}
+
+a:link, a:visited {color:#ffffff;/*opacity:0.8;*/}
+a:hover, a:active {color:#dedede; opacity:1.0;}
+a.activeLink {color:#ffffff !important; text-decoration:none; opacity:1.0; font-weight:700;}
+body.dayTheme main a.activeLink {color:#262626 !important;}
+
+header {line-height:1.40em; font-weight:600; font-size:0.8em;}
+header nav a, header nav h4 {background-color:rgba(33,33,33,1.0);background-color:#333333\9; border-top:1px solid rgba(255,255,255,0.1); border-bottom:1px solid rgba(0,0,0,1.0); text-shadow:none;  border:none;}
+header a {display:inline-block; padding:17px; text-decoration:none; text-transform:uppercase; line-height:1.8em;}
+header a.logo {color:#999999;}
+header a.logo strong {color:#ffffff;}
+header a.logo span {margin-left:35px;line-height:1.8em;}
+header nav h4 {color:#aeaeae;}
+header nav a:link, header nav a:visited {color:#ffffff;}
+footer a, footer a:visited, footer nav a, footer nav a:visited {color:#ffffff; text-decoration:underline; border:none; }
+footer nav h4 {color:#ffffff; }
+footer nav a, footer nav a:visited {line-height:1.7em; padding:0.5em 5%;}
+
+footer nav h4 {margin-top:2em;}
+
+article#mainContentHolder h2 {background-image:url(/_pbImages/Site/maorihoney/icons/m.png); background-repeat:no-repeat; background-position:50% 100%; padding-bottom:25px;}
+
+
+
+
+
+
+/********************************************************************************/
+/* 3. Iconography and Logos */
+/********************************************************************************/
+a.logoType {display:block; margin:0.5em auto 0.5em auto;}
+
+div#fallbackLogo { background-image:url(/_pbImages/Site/maorihoney/maorihoneyREV.png); background-repeat:no-repeat; background-size:100% auto;}
+footer div#fallbackLogo { background-image:url(/_pbImages/Site/maorihoney/maorihoneyREV.png);}
+
+header a.logoType *, footer a.logoType * {fill:#ffffff; opacity:1.0;}
+footer a.logoMark {height:40px;}
+a.logoMark, a.logoType {text-decoration:none;}
+
+header a.logo svg#logotype {display:inline-block; width:54px; height:54px; position:absolute; top:0; left:0;}
+
+img.paymentIcon {width:55px; margin:1em 0px 1em 0px; opacity:0.9;}
+
+/* fontAwesome Iconography */
+/* fontAwesome Iconography */
+/* fontAwesome namespacing support for Black Tie */
+	.fa-fw {
+	  width: 1.28571429em;
+	  text-align: center;
+	} 
+	
+	.fa {
+	  display: inline-block;
+	  font: normal normal normal 14px/1 "Black Tie";
+	  font-size: inherit;
+	  vertical-align: -14.28571429%;
+	  text-rendering: auto;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	  transform: translate(0, 0);
+	}
+	
+	.fab {
+	  font-family: "Font Awesome Brands";
+	}
+/* fontAwesome namespacing support for Black Tie */
+
+	.fontAwesome {  background-color:rgba(255,255,255,1.0); background-color:#ffffff\9; background:none; border:1px solid #ffffff;   -webkit-border-radius: 8px; -moz-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px;  text-decoration:none;}
+	span.fontAwesome {background:none; border:1px solid #e8272a; color:#bd1919;}
+	/* uncomment to show just icons for mobile nav */
+	.fontAwesome {padding:7px; width:auto; height:auto; text-align:center; -webkit-border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; border-radius: 0; border:none;}
+	.fontAwesome span, #toTop span {display:none;}
+	.fontAwesome i {padding-right:0px;  margin-right:0 !important; line-height:120%;} 
+	
+	a#toTop i.fa { padding:10px; margin-right:0;  font-size:1em;}
+	a#MHclose i.fa { padding:10px; margin-right:0;  font-size:1em;}
+	a#MHNavTrigger i.fa { padding:10px; margin-right:0;  font-size:1.5em;}
+	
+	a#promptDown {border:1px solid #ffffff; opacity:0.3;}
+	a#promptDown i.fa { padding:5px 5px 5px 7px; margin-right:0;  font-size:1em;}
+	
+	#MHNavTrigger.fontAwesome {background-color:rgba(0,0,0,0.7);}	
+	body.dayTheme #toTop.fontAwesome {background-color:rgba(0,0,0,1.0);}
+
+	#socialLinks .fontAwesome {border:none;}
+	#socialLinks .fontAwesome:hover {color:#bd1919;}
+	
+	/* remove comment below to hide icons on main nav [mobile]
+	nav i.fa {display:none;} */
+	
+	/* remove comment below to hide social link icons [mobile]
+	section#socialLinks a i.fa {display:none;} */
+	
+/* fontAwesome Iconography */
+/* fontAwesome Iconography */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 4. Site-wide structure */
+/********************************************************************************/
+aside {padding-left:0%; padding-right:0%;}
+
+header:not(#contentHeader) { background-color:rgba(22,22,22,0.9);background-color:#222222\9; padding:0; height:55px;}
+footer:not(#contentFooter) { background-color:rgba(189,25,25,1.0);background-color:#bd1919\9; color:#ffffff;}
+
+section, footer nav, footer div, footer div section {margin-bottom:1.5em;}
+footer div {padding:0; margin:0;}
+article header {margin-bottom:0em;}
+
+body div#container {padding-top:55px;}
+
+div#shop {height:70px;}
+
+body.shop article#shopGrid section {padding:2em 1%;}
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 5. Site-wide elements */
+/********************************************************************************/
+
+/* day / night theming */
+/* day / night theming */
+	.switchedContent {display:none;}
+	body.dayTheme .dayContent {display:block;}
+	body.nightTheme .nightContent {display:block;}
+	
+	body.dayTheme main {background-color:#f1f1f1; color:#444444;}
+	body.dayTheme main a {color:#444444;}
+	body.dayTheme main a.button {color:#444444;}
+	body.dayTheme main a.button:hover {color:#f1f1f1;}
+	body.dayTheme article#mainContentHolder article section:not(:first-child):after, article#mainContentHolder article section:not(:first-child):after {background: #dddddd; background:rgba(0,0,0,0.15); }
+/* day / night theming */
+/* day / night theming */
+
+
+/* navigation handing */
+a#MHNavTrigger {display:inline-block;}
+a#toTop {right:0; bottom:0;display:none; position:fixed; z-index:9999;}
+a#MHclose { left:0; right:0; top:0; display:inline-block;}
+#navContainer {text-align:left; background: #212121;}
+#navContainer nav a {display:block;}
+#navContainer #navContainerInner {padding:0 15px;text-align:center;}
+
+
+#containPromptDown {display:block; position:relative; text-align:center; width:100%;}
+#containPromptDown a#promptDown {position: absolute; z-index:1000; left:50%; margin-left:-20px; top:-80px;}
+body.shop #containPromptDown {display:none;}
+
+
+header section {padding:0; margin:0; width:100%; display:inline-block; }
+header #language .selection a, header #theme .selection a {display:none;}
+header #language .selection a.activeLink, header #theme .selection a.activeLink {display:inline-block;}
+
+header section a.cart,
+header section #language,
+header section #navTrigger {float:right;}
+
+header#topHeader { position:fixed; z-index:10000; width:100%; top:0;}
+
+picture.small {width:45% !important; margin:1em auto !important;}
+picture.smallRound {width:30% !important; margin:3em auto 3em auto !important;}
+picture.smallRound img {-webkit-border-radius: 50%; -moz-border-radius: 50%; -o-border-radius:  50%; border-radius:  50%;}
+
+article.col-3 picture.small {width:55% !important; margin:2em auto !important;}
+
+
+
+
+/* call to action button styling */
+a.button { 
+	margin:2em 0.3em 2em 0.3em; 
+	display:block; 
+	text-align:center;   
+	padding:0.8em 4em 0.8em 4em; 
+	border:2px solid #444444; 
+	text-decoration:none; 
+	text-transform:none; 
+	letter-spacing:0.07em; 
+	font-weight:700; 
+	font-size:100%;
+}
+a.button:hover { background-color:rgba(68,68,68,1.0); background-color:#444444\9; opacity:1; color:#ffffff;}
+a.button img {margin-right:0.7em;}
+a.button {display:inline-block;}
+a.button:visited {border:2px solid #444444;}
+
+div#feature a.button {border-color:#ffffff; color:#ffffff;}
+div#feature a.button:hover {border-color:#ffffff; background-color:#ffffff; color:#444444;}
+
+footer:not(#contentFooter) a.button { border:2px solid #bd1919;  margin:0; font-weight:400; padding:0.6em 1em 0.6em 1em; }
+footer:not(#contentFooter) a.button:hover { background-color:#ffffff; border-color:#ffffff; color:#bd1919; }
+footer:not(#contentFooter) a.button.activeLink, footer a.button.activeLink:hover { background:none; border-color:#bd1919; border-bottom-color:#ffffff; opacity:1.0; font-weight:700;}
+
+#navContainer a.button { border:2px solid #212121;  margin:0; font-weight:400; padding:0.6em 0.5em 0.6em 0.5em; font-size:0.8em; }
+#navContainer a.button:hover { background-color:#c0c0c0; border-color:#c0c0c0; color:#212121; }
+#navContainer a.button.activeLink, #navContainer a.button.activeLink:hover { background:none; border-color:#212121; border-bottom-color:#c0c0c0; opacity:1.0; font-weight:700;color:#c0c0c0;}
+
+
+
+
+
+
+
+/* feature area and slider */
+div#feature {background-color:rgba(0,0,0,1.0);/*display:none;*/}
+div#feature div.carousel-item.even {background-color:rgba(0,0,0,0.1);}
+div#feature article.contrast * { color:#777777; color:rgba(0,0,0,0.8); }
+div#feature article picture {width:30%; margin:0px auto;}
+
+div#feature * { color:#ffffff;}
+div#feature a.button {border-color:#ffffff; color:#ffffff;}
+div#feature a.button:hover {border-color:#ffffff; background-color:#ffffff; color:#292929 !important;}
+div#feature a.button:visited {border-color:#ffffff;}
+
+div#feature {/*background-color:rgba(255,255,255,0.5);*/ background-color:#000000;}
+div#feature {display:none;} /* turn off by default */
+
+#containPromptDown {display:block; position:relative; text-align:center; width:100%;}
+#containPromptDown a#promptDown {position: absolute; z-index:30000; left:50%; margin-left:-19px; top:-100px;}
+body.shop #containPromptDown {display:none;}
+/*div#feature div.picturefill-background {opacity:0.6;}*/
+
+
+@media screen and (max-width:400px) { /* hide arrow down for small screens */
+	#containPromptDown {display:none;}
+	div#feature article section {padding:0 !important;/*vertical-align: bottom!important;*/}
+	div#feature article section div {/*background-color:rgba(0,0,0,0.5);*/width:90%; padding:1.5em 5% 2em 5%; margin:0; text-align:center;}
+	
+}
+@media screen and (min-height: 250px) { /* carousel media queries */
+	html, body {min-height:100%; height:100%;}
+	div#feature {display:block;} /* show if minimum screen height of 250px is reached */
+	div#feature article {padding:0;display: table; height:100%; width:100%; z-index:50; position:relative;}
+	div#feature article section {padding:0em 5%; display: table-cell; vertical-align: middle;} /* vertical center aligning - remove and replace with flexbox in 2016 */
+	body.shop div#feature article section {padding:0em 5% 100px 5% !important;}
+	body.home div#feature article section { padding:0em 15% 0px 15% !important;}
+	
+	div#feature div.picturefill-background {height:101%; width:100%; position:absolute; background-position:100% !important 100% !important;}
+	div#feature, div#feature div.owl-stage-outer, div#feature article {min-height:450px; height:60vh; position:relative; overflow:hidden;} /* default size for small screens */
+	div#feature.fullscreen, div#feature.fullscreen div.owl-stage-outer, div#feature.fullscreen article {width:100%; min-height:100%; height:100vh;}	 /* fullscreen not subject to following min width test */
+}
+/* carousel height check */
+@media screen and (min-height: 600px) and (min-width:600px) {
+	/* pixlbox defaults */
+	div#feature.small, div#feature.small div.owl-stage-outer, div#feature.small article {height:220px; height:28vh; position:relative; overflow:hidden;}
+	div#feature.default, div#feature.default div.owl-stage-outer, div#feature.default article {height:380px; height:50vh; position:relative; overflow:hidden;}
+	div#feature.large, div#feature.large div.owl-stage-outer, div#feature.large article {height:500px; height:70vh; overflow:hidden;}
+	/* site overrides */
+	div#feature.small, div#feature.small div.owl-stage-outer, div#feature.small article {height:400px; height:45vh; position:relative; overflow:hidden;}
+	div#feature.default, div#feature.default div.owl-stage-outer, div#feature.default article {height:550px; height:70vh; position:relative; overflow:hidden;}
+	div#feature.large, div#feature.large div.owl-stage-outer, div#feature.large article {height:700px; height:95vh; overflow:hidden;}
+}
+@media screen and (min-width:900px) {
+	div#feature article section {padding:0em 20%;;width:80%; margin:0 auto;}
+	div#feature div.picturefill-background {opacity:1.0;}
+	body.home div#feature article section {padding:0em 5%;}	
+}
+@media screen and (min-width:1000px) { /* desktop */
+	div#feature article.left section div {margin-left:10%; text-align:center; /*background-color:rgba(0,0,0,0.4);*/ width:35%; padding:1.5em 1em;}
+	div#feature article.right section div {margin-right:10%; text-align:center; /*background-color:rgba(0,0,0,0.4);*/ width:35%; padding:1.5em 1em; float:right;}
+}
+@media screen and (min-width:1200px) { /* desktop */
+	div#feature article section {width:40%; padding:0em 30%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+		
+		
+		
+/* ordering and forms */
+div.ordering {}
+
+select, input, div.ordering select, div.ordering input[type=submit] {font-family:"ProximaNova";}
+select option, div.ordering select option {font-family:"ProximaNova";}
+select option:first-child, div.ordering select option:first-child {font-family:"ProximaNova";}
+input[type=submit], textarea, div.ordering input[type=submit] {}
+
+body.shop select, 
+body.shop input, 
+body.shop input[type=submit] {color:#262626;}
+
+body.shop input[type=submit] {padding:12px;}
+
+
+label h3 { text-align:left; width:90%; margin-left:5%;}
+body.contact select, body.contact textarea, body.shop textarea {}
+body.contact input[type=text], body.shop input[type=text] {}
+body.shop textarea, body.shop input[type=text] {}
+div.ordering span, span.validationitem {}
+
+article.progressBar div { color:#111111;}
+article.progressBar div.progress {background-color:#111111;color:#ffffff;}
+article.progressBar div.complete { color:#111111;}
+
+div.validation-summary-errors li {
+	border-top-color:rgba(255,255,255,0.5); 
+	border-bottom-color:rgba(0,0,0,0.1); 
+}
+
+
+
+
+div#socialLinks { margin-bottom:2.4em;}
+
+/* iframe and video content responsive */
+.mediaWrapper {position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden; background-color:#dedede; margin-bottom:4em;}			
+.mediaWrapper iframe {position: absolute; top:0; left: 0; width: 100%; height: 100%;}
+
+
+
+/* sitewide aside and tabbed content */
+aside#independantContent {
+	padding:0; 
+	background-color:#555555; 
+	background-image:url(/_pbImages/Site/maorihoney/wood-tile.jpg);
+	width:100%;
+	overflow:hidden;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+aside#independantContent  div.square {
+    /*width: 6.25%; -- see media queries following --
+    padding: 6.25%;*/
+    box-sizing: border-box;
+    position: relative;
+	float:left;
+	overflow:hidden;
+	margin:-1px; border:1px solid #000000;
+
+}
+aside#independantContent:hover {
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+}
+
+aside#independantContent div.square div.squareContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+	width:100%;
+	height:100%;
+	text-transform:uppercase; 
+}
+
+aside#independantContent div.square div.squareContent a {
+	text-decoration:none; 
+	display:block;
+	height:100%;
+	background-color:rgba(0,0,0,0.4);
+	/* using flex display */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex; 
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items:center;
+	opacity:0.8;
+
+}
+
+aside#independantContent div.square div.squareContent a.reversed {
+	background-color:#ffffff; background-color:rgba(255,255,255,0.4);
+	color:#111111;
+}
+aside#independantContent div.square div.squareContent a.reversed:hover {
+	background-color:rgba(255,255,255,0.3);
+}
+aside#independantContent div.square div.squareContent a:hover {background-color:rgba(0,0,0,0.7); opacity:1;}
+
+aside#independantContent div.square div.squareContent span.centerContent {
+	width:100%;
+	/* position: relative; top: 37%; -webkit-transform: translateY(-63%); -ms-transform: translateY(-63%); transform: translateY(-63%);*/
+	display:block;
+}
+div#asideLogo {width:60%; height:60%; margin:0px auto; }
+aside#independantContent svg#icon-moon {height:40%; width:40%; position:absolute; top:30%; left:30%; opacity:0.8;}
+aside#independantContent svg#icon-sun {height:40%; width:40%; position:absolute; top:30%; left:30%; opacity:0.3;}
+aside#independantContent div.square:hover svg#icon-moon path {fill:#ffffff;}
+aside#independantContent div.square:hover svg#icon-sun path {fill:#865b00;}
+
+/**** media queries for aside panels only ****/
+
+@media screen and (min-width:300px) {aside#independantContent  div.square { width: 25%;  padding: 25%;}}
+@media screen and (max-width:600px) {aside#independantContent  div.square.lowPriority {display:none;}}
+@media screen and (min-width:600px) {aside#independantContent  div.square { width: 12.5%;  padding: 12.5%;}}
+@media screen and (min-width:1100px) {aside#independantContent  div.square { width: 6.25%;  padding: 6.25%;}}
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 6. Page specific styles */
+/********************************************************************************/
+
+article#mainContentHolder picture img, aside picture img {width:100%; height:auto;}
+div.imageCustomContainer picture {width:50%; float:left;}
+div.imageCustomContainer {text-align:center; margin:0.5em 0 2.5em 0;}
+aside div.imageCustomContainer picture { width:33.3%;}
+div.imageCustomContainer img {margin:-1px; border:1px solid #cccccc;}
+
+body.fyi article#mainContentHolder article section p {text-align:left;}
+
+article.col-3 section picture, article.col-4 section picture {display:block;}
+
+
+body.nightTheme article#shopGrid section {background-color:#333333; background-color:rgba(255,255,255,0.05); }
+body.dayTheme article#shopGrid section {background-color:#ffffff; background-color:rgba(255,255,255,1.0);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 7. Media queries */
+/********************************************************************************/
+@media screen and (max-width:400px) {/* phone adjustments */
+h1, div#feature h1 {font-size:1.3em; margin-left:0;}
+h2, div#feature h2 {font-size:1.2em; margin-left:0;}
+main a.button {display:block;}
+picture, img {width:80%; height:auto;}
+picture.small {width:80% !important; margin:1em auto !important;}
+picture.smallRound {width:80% !important; margin:2.5em auto 3em auto !important;}
+#containPromptDown {display:none;}
+article.col-3 section picture,
+article.col-4 section picture {margin:0px auto;}
+
+body.home div#feature article br {display:none;}
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) { 
+ /* phone. left align everything? 
+header, main, aside, nav, footer , #feature article {text-align:left;}
+header a.logoMark, header a.logoType {margin-left:5%;}
+footer a.logoMark, footer a.logoType {margin-left:0;}
+footer nav a, footer nav h4, section#socialLinks a {padding-left:0;}
+div#pixlbox {text-align:left; padding-left:0;} */
+
+/* main article.col-3 section, main article.col-4 section {text-align:left;}  override center aligning image > text side by side presentation  */
+
+h1,h2,h3,h4,h5,h6 { margin-left:0 !important;}
+
+/* compact brand for menu trigger */
+/* comment out preference for menu display */
+header a.logoMark {display:none;}
+/*header a.logoType {display:none;}*/
+header a.logoMark {max-width:60px; width:60px; height:60px; margin-top:0em; margin-bottom:0.5em;}
+header a.logoType, header div#fallbackLogo {max-width:220px; width:220px; height:25px; margin-top:0.5em; margin-bottom:1.5em;}
+footer a.logoType, footer div#fallbackLogo {max-width:90px; width:90px; height:90px; margin-top:1.5em; margin-bottom:1.5em;}
+
+/* format tables for smaller width */
+/*table thead {display: none;}*/
+table tbody {padding:0;}
+table tr { display: block; border-bottom: 1px dotted #444444; padding-bottom:1em; margin-bottom:1em;}
+table tr:last-child { border-bottom: none;}
+table td {display: block; text-align: left; border-bottom: none;}
+table td:first-child {font-weight:bold;}
+table td:last-child {border-bottom: none; padding-top:0;}
+table td p {font-size:90%;}
+table td:before {content: attr(data-label); /*float: left;*/ text-transform: uppercase; font-weight:300;}
+
+header a.logo {position:absolute;}
+header a.logo span {display:none;}
+header div#language {display:none;}
+
+article.col-3 picture.small {display:none;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px) { /* tablet */
+header {padding:0px; text-align:left;}
+header section {padding:0; margin:0; width:50%; float:right; text-align:right;}
+header section ul {margin:0; padding:0;}
+header section ul li { padding:0; border:none; display:inline-block; }
+footer nav h4 {margin-top:0em;}
+
+article.col-2 section {width:40%; float:left; margin-right:8%; margin-left:8%;}
+article.col-2 section:first-child {margin-left:2%;}
+article.col-2 section:last-child {margin-right:2%;}
+
+
+/* navigation and iconography */
+header a.logoMark, header a.logoType {display:block; background-size:100% auto; background-repeat:no-repeat; background-position:50% 50%; }
+footer a.logoType, footer div#fallbackLogo {max-width:90px; width:90px; height:90px; margin-top:1.5em; margin-bottom:1.5em;}
+div#asideLogo {width:50%; height:50%; margin:0px auto;}
+div#asideLogo div#fallbackLogo {width:110px; height:110px; margin:0px auto;}
+
+
+a:hover, a:active {text-decoration:none;}
+header nav i.fa {display:none;}	/* remove header nav icons on desktop */
+header nav a.cart i.fa {display:inline-block;}	/* cart icon stays */
+header nav a, header nav h4 {background:none; border:none;} /* adjust font size down, remove bg and theme link colour */
+header nav a:link, header nav a:visited {color:#000000;}
+header nav a:hover, header nav a:active {color:#ffffff;}
+
+main article header, main article footer {width:60%;}
+
+footer section, footer nav {text-align:left; width:26%;  margin-right:11%; margin-left:0; padding-top:3em !important; margin-top:1em !important; }
+footer nav { float:right; text-align:left; margin-right:0;}
+footer nav a { display:block; margin:0; padding-left:0; padding-bottom:0; padding-top:0;}
+footer div#credits {padding-top:1em; padding-bottom:4em;}
+
+
+
+
+body.shop section.adjustHeight {margin-top:-230px; z-index:5000; position:relative;}
+body.shop footer#contentFooter { width:30%;}
+body.shop footer#contentFooter picture img { width:60%; display:block; margin:0px auto;}
+body.shop article#shopGrid section {width:20%; float:left; margin-right:1.5%; margin-left:1.5%; margin-bottom:1.5em; margin-top:1.5em; min-height:350px; padding:2em 1%;}
+
+table td { padding-right:2em;}
+
+/* style product grid */
+article.productList ol li {clear:both;display:block;}
+article.productList ul li {width:43%; clear:none; float:left; display:block; margin-right:7%; border-bottom:none;}
+article.productList ul li:first-child {width:100%; float:none; margin-right:0;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1200px) { /* desktop */
+a:link, a:visited {color:#ffffff;opacity:0.8;}
+.fontAwesome:hover, #MHNavTrigger.fontAwesome:hover, body.dayTheme a#toTop.fontAwesome:hover {background-color:rgba(255,255,255,1.0); background-color:#ffffff\9; color:#2a2a2a;}
+
+aside {padding-left:0%; padding-right:0%;}
+main, footer {padding-left:12.5%; padding-right:12.5%;}
+
+
+
+article header, section {padding:1.5em 0 0.5em 0;}
+main {padding-top:5em; padding-bottom:5em;}
+footer {padding-top:5em; padding-bottom:5em;}
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1650px) { /* large desktop */
+
+
+
+}
+

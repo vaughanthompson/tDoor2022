@@ -1,0 +1,240 @@
+
+/* grid */
+
+article.gridlinks.iso { background-color:#666;}
+article.gridlinks section {padding:0; margin:0;}
+article.gridlinks div.gridsquare {/*padding:0; background-color:#fefefe; width:100%;*/overflow:hidden;}
+
+
+
+/*article.gridlinks div.gridsquare:nth-child(4n-3) {background-color:#f1f1f1;}
+article.gridlinks div.gridsquare:nth-child(4n-2){background-color:#f9f9f9;}
+article.gridlinks div.gridsquare:nth-child(4n-1) {background-color:#f2f2f2;}
+article.gridlinks div.gridsquare:nth-child(4n) {background-color:#e3e3e3;}
+article.gridlinks div.gridsquare:nth-child(4n+1) {background-color:#f3f3f3;}
+article.gridlinks div.gridsquare:nth-child(4n+2) {background-color:#f7f7f7;}*/
+
+article.gridlinks div.gridsquare:hover {-webkit-filter: none;-moz-filter: none; -ms-filter: none; -o-filter: none; filter: none; opacity:1.0;}
+
+article.gridlinks div.gridsquare picture, 
+article.gridlinks div.gridsquare picture img {margin:0;}
+
+article.gridlinks div.gridsquare {
+    box-sizing: border-box;
+    position: relative;
+	float:left;
+	overflow:hidden;
+	margin:0px; 
+	/*margin-left:1px; */
+	background-color:rgba(255,255,255,1.0);
+}
+article.gridlinks div.gridsquare:first-child {
+	margin-left:0px; 
+}
+
+article.gridlinks div.gridsquare div.gridsquareContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+	width:100%;
+	height:100%;
+	/*background-color:rgba(255,255,255,1.0);*/
+}
+
+
+
+article.gridlinks div.gridsquare div.gridsquareContent .contain {
+	text-decoration:none; 
+	display:block;
+	height:100%;
+	/* using flex display */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex; 
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	opacity:1.0;
+	z-index:101;
+	position:relative;
+}
+
+
+
+article.gridlinks.iso div.gridsquare div.gridsquareContent .contain {
+	-webkit-box-align: flex-end;
+	-moz-box-align: flex-end;
+	-ms-flex-align: flex-end;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	text-transform:uppercase;
+}
+
+article.gridlinks div.gridsquare div.gridsquareContent a * {
+	color:#ff0000;
+}
+
+article.gridlinks div.gridsquare div.gridsquareContent a.reversed * {
+	color:#ffffff;
+}
+
+
+article.gridlinks div.gridsquare div.gridsquareContent a hr {  height:1px; margin-top:5px; margin-bottom:5px;}
+article.gridlinks div.gridsquare div.gridsquareContent a.reversed hr { background-color:#ffffff;}
+
+/*article.gridlinks div.gridsquare div.gridsquareContent a.contain.reversed:hover {background-color:rgba(255,255,255,0.1);}
+article.gridlinks div.gridsquare div.gridsquareContent a.contain:hover {background-color:rgba(255,255,255,0.1);}*/
+
+article.gridlinks div.gridsquare div.gridsquareContent span.centerContent {
+	width:70%; padding:20px 15% 20px 15%; display:block; text-align:center; display:block;}
+
+article.gridlinks.iso div.gridsquare div.gridsquareContent span.centerContent {
+	width:90%; padding:20px 5%; display:block; text-align:center;  opacity:0.3; display:block;}
+
+
+
+article.gridlinks.panels-6 div.gridsquare:nth-child(1) {background-color:rgba(255,0,0,0.80);}
+article.gridlinks.panels-6 div.gridsquare:nth-child(2) {background-color:rgba(255,0,0,0.85);}
+article.gridlinks.panels-6 div.gridsquare:nth-child(3) {background-color:rgba(255,0,0,0.90);}
+article.gridlinks.panels-6 div.gridsquare:nth-child(4) {background-color:rgba(255,0,0,0.95);}
+article.gridlinks.panels-6 div.gridsquare:nth-child(5) {background-color:rgba(255,0,0,1.0);}
+article.gridlinks.panels-6 div.gridsquare:nth-child(6) {background-color:rgba(255,255,255,1.0);}
+
+
+article.gridlinks.iso div.gridsquare:nth-child(4n-3) {background-color:rgba(255,255,255	,0.8);}
+article.gridlinks.iso div.gridsquare:nth-child(4n-2) {background-color:rgba(255,255,255,0.1);}
+article.gridlinks.iso div.gridsquare:nth-child(4n-1) {background-color:rgba(255,255,255,0.5);}
+article.gridlinks.iso div.gridsquare:nth-child(4n) {background-color:rgba(255,255,255,0.2);}
+article.gridlinks.iso div.gridsquare:nth-child(4n+1) {background-color:rgba(255,255,255,0.4);}
+article.gridlinks.iso div.gridsquare:nth-child(4n+2) {background-color:rgba(255,255,255,0.3);}
+
+
+/*
+article.gridlinks div.gridsquare:nth-child(4n-3) span.centerContent {background-color:rgba(255,255,255,0.3);}
+article.gridlinks div.gridsquare:nth-child(4n-2) span.centerContent {background-color:rgba(255,255,255,0.4);}
+article.gridlinks div.gridsquare:nth-child(4n-1) span.centerContent {background-color:rgba(255,255,255,0.3);}
+article.gridlinks div.gridsquare:nth-child(4n) span.centerContent {background-color:rgba(255,255,255,0.4);}
+article.gridlinks div.gridsquare:nth-child(4n+1) span.centerContent {background-color:rgba(255,255,255,0.3);}
+article.gridlinks div.gridsquare:nth-child(4n+2) span.centerContent {background-color:rgba(255,255,255,0.4);}
+*/
+
+article.gridlinks div.gridsquare:hover div.gridsquareContent span.centerContent { opacity:1.0;}
+
+article.gridlinks div.gridsquare div.gridsquareContent span.centerContent a {
+	display:block;
+	padding:4px;
+	text-decoration:none; 
+}
+
+
+
+article.gridlinks div.gridsquare div.gridsquareContent picture {  z-index:100;position:absolute; width:101%; height:101%; top:-0.5%; left:-0.5%;/*left:0; bottom:0; opacity:1.0;*/}
+/*article.gridlinks div.gridsquare div.gridsquareContent picture {position:absolute; width:110%; height:110%; z-index:100; left:-5%; top:-5%; opacity:1.0;}*/
+
+article.gridlinks div.gridsquare:hover div.gridsquareContent picture {
+ opacity:1.0; width:100%; height:100%; top:0; left:0;
+}
+
+
+/*article.gridlinks div.gridsquare:hover div.gridsquareContent picture {
+-webkit-filter: blur(0px);
+-moz-filter: blur(0px);
+-o-filter: blur(0px);
+-ms-filter: blur(0px);
+filter: blur(0px);
+opacity:1.0;
+}*/
+
+article.gridlinks div.gridsquare.gridlowPriority {display:none;}
+/**** media queries for panels only ****/
+
+
+
+@media screen and (max-width:400px) {
+	article.gridlinks div.gridsquare:first-child, 
+	article.gridlinks div.gridsquare:first-child {margin-left:0px; } 
+	article.gridlinks div.gridsquare {margin-bottom:0em;overflow: visible; display:block; width:100%; padding-top:10px; padding-bottom:10px;}
+	
+	article.gridlinks div.gridsquare div.gridsquareContent {position:relative; height:auto; left:auto; top:auto;}
+	article.gridlinks div.gridsquare div.gridsquareContent span.centerContent {padding:15px 7%; width:86%; display:block; }
+	article.gridlinks div.gridsquare div.gridsquareContent span.centerContent div {text-align:left;  width:80%;}
+	article.gridlinks div.gridsquare div.gridsquareContent span.centerContent i { font-size:1.4em; position:absolute; right:7%; top:25px; }
+	
+	article.gridlinks div.gridsquare div.gridsquareContent .contain {
+	text-decoration:none; 
+	display:block;
+	height:auto;
+}
+}
+
+@media screen and (max-width:1000px) {
+	article.gridlinks div.gridsquare div.gridsquareContent picture {
+		-webkit-filter: blur(0px);
+		-moz-filter: blur(0px);
+		-o-filter: blur(0px);
+		-ms-filter: blur(0px);
+		filter: blur(0px);
+		opacity:1.0;}
+}
+
+
+
+
+
+@media screen and (min-width:400px) {
+	article.gridlinks {margin-left:0;}
+	article.gridlinks div.gridsquare { width: 25%;  padding:25%;}
+}
+
+
+@media screen and (min-width:700px) {
+	article.gridlinks.panels-6 div.gridsquare { width: 16.66%;  padding: 16.66%;}
+}
+
+
+@media screen and (min-width:900px) {
+	article.gridlinks div.gridsquare { width: 12.50%;  padding: 12.50%;} 
+	article.gridlinks div.gridsquare.portrait { width: 12.50%;  padding: 25% 12.50%;} 
+	article.gridlinks div.gridsquare.landscape { width: 12.50%;  padding: 12.50% 25%;}
+}
+
+
+@media screen and (min-width:1200px) {
+	article.gridlinks {margin-left:5%;}
+	article.gridlinks.panels-6 div.gridsquare { width: 7.9%;  padding: 7.9%;} 
+	article.gridlinks.iso div.gridsquare {-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%);}
+}
+
+
+
+
+
+
+
+/* typo */
+
+@media screen and (max-width:400px) {
+article.gridlinks h4 {  font-size:1em;}
+article.gridlinks p { font-size:0.9em;}		
+}
+
+@media screen and (min-width:400px) and (max-width:1200px) {
+article.gridlinks h4 {  font-size:1.1em;}
+article.gridlinks p { font-size:1em;}		
+}
+
+@media screen and (min-width:1200px) {
+article.gridlinks h4 {  font-size:1em;}
+article.gridlinks p { font-size:1em;}	
+}
+
+@media screen and (min-width:1500px) {
+article.gridlinks h4 {  font-size:1.15em;}
+article.gridlinks p { font-size:1.05em;}	
+}
+
+

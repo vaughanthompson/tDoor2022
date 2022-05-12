@@ -1,0 +1,17 @@
+﻿/*Added by carlin so not overwritten by VT changes*/
+select {
+    padding: 0.7em 0.9em 0.7em 0.9em;
+}
+
+.resultRow.neutral {
+    background-color: #eeeeee !important;
+    border-left: 1px solid #000000;
+}
+
+table.review, table.results, table.avails{
+    margin-bottom: 140px !important;
+}
+
+.loadingBox {
+    background: url('/_pbImages/Site/TD/AjaxLoader.gif') no-repeat right center;    
+}

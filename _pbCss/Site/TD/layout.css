@@ -1,0 +1,492 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.clear {clear:both;}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+
+body > header {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+    padding:1.5em 0 1em 0;
+}
+main          {padding:0em 5%;}
+body > footer {padding:2em 5%;}
+
+/*section {padding:2em 3%; margin-top:0em; margin-bottom:0em; border: 1px solid #000000;}*/
+
+
+
+
+
+
+@media screen and (max-width:600px) { /* small phone adjustments */
+    /*	body > header {
+		display: none;
+	}
+   
+    body > aside {
+		z-index: 5000;
+		position: fixed; 
+		bottom:0; 
+		width: 96%; 
+		min-height: 50px;
+		padding: 10px 2%;
+		text-align: center;
+	}
+    */
+	
+	main {padding-bottom: 70px;}
+}
+
+
+@media screen and (max-width:900px) { /* phone adjustments */
+.col-2 section:first-child { padding-bottom:0%;}
+.col-2 section:last-child {padding-top:0%;}
+
+.col-3 section {padding-top:1%; padding-bottom:1%;}
+.col-3 section:first-child { padding-top:2%;}
+.col-3 section:last-child {padding-bottom:2%;}
+
+.col-4 section {padding-top:0%; padding-bottom:0%;}
+.col-4 section:first-child { padding-top:2%;}
+.col-4 section:last-child {padding-bottom:2%;}
+
+.col-2-1 section {margin-top:0em;}
+}
+
+
+
+
+
+@media screen and (min-width:1100px) { /* tablet and up */
+
+
+    body > aside {
+        width: 13%;
+        float:left;
+        padding-left:2%;
+        padding-right:1%;
+        padding-top:2em;
+    }
+	body > footer {
+    padding:2em 1% 2em 1%;
+
+	}
+
+
+
+
+    main article#mainContentHolder header {
+        border-bottom: 4px solid #262626;
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+    }
+
+ 
+	main article#mainContentHolder aside {
+		margin-bottom: 3vw;
+
+	}
+
+	
+	main.dashboard article#mainContentHolder header,
+	main.dashboard article#mainContentHolder article, 
+	main.dashboard article#mainContentHolder footer {
+		display: block;
+		position: relative;
+		float: left; 
+		width: 55%;
+		margin-left:3%;
+	}
+	main.dashboard article#mainContentHolder aside {
+		display: block;
+		position: relative;
+		float: right;
+		width: 35%;
+		margin-right: 3%;
+	}
+
+
+    div.reference {
+        /*float: left;*/
+        padding-right: 5px;
+        width: 300px;
+    }
+
+	div.majorAction {
+		float: right;
+	}
+
+
+	.col-0 > section {width:94%;padding:0; margin-right:3%; margin-left:3%;}
+    .col-2 > section {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+	.col-3 > section {width:23.3%; float:left; margin-right:3%; margin-left:3%;}
+	.col-4 > section {width:16.75%; float:left; margin-right:1.5%; margin-left:1.5%;}
+
+	.col-2 > section:first-child, 
+	.col-3 > section:first-child,
+	.col-4 > section:first-child {margin-left:0;}
+
+	.col-2 > section:last-child, 
+	.col-3 > section:last-child, 
+	.col-4 > section:last-child {margin-right:0;}
+
+	.col-2-1 > section:first-child {width:59%; float:left; margin-right:3%; margin-left:0;}
+	.col-2-1 > section:last-child {width:23%; float:left; margin-right:0; margin-left:3%;}
+
+	.col-3-1 > section:first-child {width:75%; float:left; margin-right:0%; margin-left:0;}
+	.col-3-1 > section:last-child {width:20%; float:right; margin-right:0; margin-left:5%;}
+
+	.col-12 > section:first-child {  width: 8%; }
+	.col-12 > section:last-child {  width: 92%;}
+
+
+	
+	body.modal .col-1 > section {
+		width: auto;
+		padding-left:5%; 
+		padding-right:5%;
+	}
+
+}
+
+
+
+@media screen and (min-width:1200px) { /* desktop */
+
+}
+
+
+
+
+@media screen and (min-width:1650px) { /* large desktop */
+}
+
+
+
+
+
+
+/* cta bar styling */
+
+@keyframes anim-rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    display: inline-block;
+    font-size: 2em;
+    height: 1em;
+    line-height: 1;
+    animation: anim-rotate 2s infinite linear;
+    color: #262626;
+    text-shadow: 0 0 .25em rgba(255,255,255, .3);
+}
+
+.spinner--steps {
+    animation: anim-rotate 1s infinite steps(8);
+}
+
+.spinner--steps2 {
+    animation: anim-rotate 1s infinite steps(12);
+}
+
+@media screen and (max-width:600px) {
+    .hideMobile {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .hideDesktop {
+        display: none !important;
+    }
+}
+
+h5 i {
+    margin: 0 5px 0 10px;
+    vertical-align: middle;
+    font-size: 2em;
+}
+
+div#divSaved * {
+    color: #32af01;
+}
+
+div#divSaving * {
+    color: #ee8b0a;
+}
+
+
+div.majorActions,
+div#divSaved,
+div#divSaving {
+    display:inline-block;
+}
+
+div.cta {
+    z-index:10000;
+    width: 96%;
+    text-align: center;
+    padding: 15px 2%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(240,240,240,0.9);
+    border-top: 1px solid rgba(26,26,26,0.1);
+}
+
+@media screen and (max-width:600px) {
+    div.cta {
+        border-top: 1px solid rgba(26,26,26,0.3);
+        background-color: rgba(255,255,255,1.0);
+        width: 98%;
+        padding: 10px 1%;
+    }
+    div.majorActions
+     {
+        display: block;
+        font-size:80%;
+    }
+
+}
+
+
+
+
+
+
+/* 2020 updates and new content items */
+article#mainContentHolder > article {
+    margin-bottom: 1.7em;
+    padding-bottom:1.5em;
+}
+article#mainContentHolder > article:last-of-type {
+    margin-bottom: 1.5em;
+    padding-bottom:0;
+    border: none;
+}
+body > header:not(:first-child) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+body > header > div {
+    margin-right: 2vw;
+}
+body > header > div:last-child {
+    margin-right: 0;
+}
+body > header:not(:first-child) > div:first-child {
+    flex-grow: 0;
+    flex-basis: 15vw;
+    align-self: center;
+}
+body > header.login > div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+body > header.login > div:nth-child(2)  {
+    flex-basis: 70%;
+}
+body > header.login div.formRow > div p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width:97%;
+}
+body > header.login > div:last-child  {
+    text-align: center;
+}
+body > header.login > div:last-child img  {
+    margin:0px auto;
+}
+body > header.login > div:last-child a  {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 1.4em;
+}
+body > header.account > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-self: stretch;
+}
+body > header.account > div:nth-child(2),
+body > header.account > div:nth-child(3)  {
+    border-right:3px solid #f5f5ff;
+}
+body > header.account > div:last-child {
+    align-self: center;
+    flex-grow:0;
+}
+
+@media screen and (max-width:750px) {
+    body > header.account nav > strong {
+        font-size:1.1em;
+        font-weight:400;
+        margin-right: 10px;
+    }
+    body > header.account {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    body > header.account > div {
+        border: none  !important;
+        width: auto;
+        margin-right: 0;
+    }
+    body > header.account h2 {
+        padding-bottom: 10px;
+        margin-top: 0.5em;
+        font-size: 1.2em;
+        font-weight:600;
+        text-transform: uppercase;
+    }
+    body > header.account > div:last-child {
+        align-self: flex-start;
+    }
+    body > header.account nav {
+        margin-bottom: 1em;  
+        padding-bottom: 10px;      
+        border-bottom:3px solid #f5f5f5;
+    }
+}
+
+@media screen and (min-width:750px) and (max-width:1500px) {
+    body > header.account nav > strong {
+        display: block;
+        margin:5px 0 3px 0;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    body > header,
+    body > main {
+        width:auto;
+        padding:2vw 2vw;
+    }
+    article#mainContentHolder > article {
+        border-bottom: 1px solid #cccccc;
+    }
+    aside#asideMenu {
+        position: fixed;
+        left:0;
+    }
+    #asideMenu nav a {
+        display: block;
+     }
+     body > header.account > div:first-child {
+         display: none;
+     } 
+     body > header.login {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    body > header.login > div {
+        margin: 0;
+    }
+    body > header.login > div:nth-child(1) {
+        order: 1;
+        flex-basis: 50%;
+     }
+     body > header.login > div:nth-child(2) {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 1em;
+        padding-top:1em;
+        border-top: 3px solid #f5f5f5;
+     }
+     body > header.login > div:nth-child(3) {
+        order: 2;
+        flex-basis: 20%;
+        align-self: center;
+        flex-grow: 0;
+     }
+     .col-2 section:first-child {
+         margin-bottom: 1.5em;
+     }
+
+
+}
+
+@media screen and (min-width:750px) {
+    header.login div.formRow {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        width:100%;
+    }
+    header.login div.formRow > div:not(:last-child) {
+        flex-grow: 1;
+    }
+    body > header.login div.formRow > div p {
+        max-width:90%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    body > header,
+    body > main {
+        width:auto;
+        padding:2vw 2vw;
+    }
+    body > main {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex: 1 1 auto;
+        padding:4vw 2vw;
+    }
+    main > aside {
+        flex-basis: 12vw;
+        margin-right: 5vw;
+    }
+    main > article {
+        flex-basis: 80vw;
+    }
+    article#mainContentHolder > article {
+        margin-bottom: 4em;
+        padding-bottom:0;
+    }
+    #asideMenu, #asideMenu nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header.login div.formRow {
+        width:80%;
+    }
+    body > header.account nav > strong {
+        margin-right: 5px;
+    }
+    
+}

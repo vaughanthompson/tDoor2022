@@ -1,0 +1,96 @@
+﻿/*
+    Put the dialogs on the top
+*/
+.ui-dialog { z-index: 9999 !important ;}
+
+
+.cms-section-name{
+    color:green;
+}
+.cms-article-edit{
+    border: 1px dashed green;
+    margin-bottom:2px;
+    width:100%;
+}
+
+.cms-content-edit{
+    border:1px dotted #cccccc;
+    margin-bottom:1px;
+}
+
+.cms-content-edit a:link{
+    color: green;
+}
+
+.cms-content-edit a:visited{
+    color: green;
+}
+
+.cms-content-edit a:hover{
+    color: green;
+}
+
+.cms-content-edit a:active{
+    color: green;
+}
+
+
+
+
+
+
+.cms-page-edit{
+background-color:red;
+font-size:12px;    
+font-weight:bold;
+color:black;
+border-bottom: 1px solid #cccccc;
+padding-bottom:1px;
+left: 0px;
+}
+
+.cms-img-sel{
+    border:1px solid #cccccc;
+    padding: 5px;   
+}
+
+.cms-img-sel input{
+    width: 50px;
+}
+
+.cms-ico-lg{
+    display:inline-block;
+    width:32px;
+    height:32px;
+}
+
+.cms-ico{
+    display:inline-block;
+    width:25px;
+    height:25px;
+}
+
+
+.cms-remove{    
+    background-image: url('/_pbImages/_core/icons/svg/delete.svg'); 
+}
+
+.cms-edit{    
+    background-image: url('/_pbImages/_core/icons/svg/edit.svg');    
+}
+
+.cms-add{    
+    background-image: url('/_pbImages/_core/icons/svg/add.svg');
+}
+
+.cms-up{
+    background-image: url('/_pbImages/_core/icons/svg/up.svg');
+}
+
+.cms-down{    
+    background-image: url('/_pbImages/_core/icons/svg/down.svg');
+}
+
+.cms-form-control{
+    max-width:250px;
+}

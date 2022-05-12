@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+/* layout.css version 1.0 Novmeber 2015 */
+/* stripping layout out of core in preparation for SASS */
+
+body > header, 
+main,
+aside, 
+body > footer {padding:2em 5%;}
+
+section {padding:2em 3%; margin-top:0em; margin-bottom:0em;}
+
+.col-2-1 section {margin-top:2em;}
+
+
+@media screen and (max-width:400px) { /* small phone adjustments */
+}
+
+
+@media screen and (max-width:900px) { /* phone adjustments */
+.col-2 section:first-child { padding-bottom:0%;}
+.col-2 section:last-child {padding-top:0%;}
+
+.col-3 section {padding-top:1%; padding-bottom:1%;}
+.col-3 section:first-child { padding-top:2%;}
+.col-3 section:last-child {padding-bottom:2%;}
+
+.col-4 section {padding-top:0%; padding-bottom:0%;}
+.col-4 section:first-child { padding-top:2%;}
+.col-4 section:last-child {padding-bottom:2%;}
+
+.col-2-1 section {margin-top:0em;}
+}
+
+
+
+
+
+@media screen and (min-width:900px) { /* tablet and up */
+main, 
+aside, 
+footer {padding:2em 5%;}
+
+body > header {padding-top:1em; padding-bottom:1em;}
+
+main article header, 
+main article article,
+main article footer {clear:both;}
+
+.col-0 section {width:94%;padding:0; margin-right:3%; margin-left:3%;}
+.col-2 section {width:41%; float:left; margin-right:3%; margin-left:3%;}
+.col-3 section {width:23.3%; float:left; margin-right:3%; margin-left:3%;}
+.col-4 section {width:16.75%; float:left; margin-right:1.5%; margin-left:1.5%;}
+
+.col-2 section:first-child, 
+.col-3 section:first-child,
+.col-4 section:first-child {margin-left:0;}
+
+.col-2 section:last-child, 
+.col-3 section:last-child, 
+.col-4 section:last-child {margin-right:0;}
+
+.col-2-1 section:first-child {width:59%; float:left; margin-right:3%; margin-left:0;}
+.col-2-1 section:last-child {width:23%; float:left; margin-right:0; margin-left:3%;}
+
+.col-3-1 section:first-child {width:65%; float:left; margin-right:3%; margin-left:0;}
+.col-3-1 section:last-child {width:17%; float:left; margin-right:0; margin-left:3%;}
+
+body > footer section {width:40%; float:left; margin-right:5%; margin-left:5%;}
+body > footer section:last-child {float:right;}
+}
+
+
+
+@media screen and (min-width:1200px) { /* desktop */
+body > header, 
+main, 
+aside, 
+body > footer {padding-left:15%; padding-right:15%; padding-top:2.5em; padding-bottom:2.5em;}
+
+header {padding-top:2em; padding-bottom:2em;}
+
+main article header, 
+main article footer {width:80%;}
+
+.col-0 section {}
+.col-1 section {padding-left:10%; padding-right:10%;}
+.col-2 section {width:42.5%; float:left; margin-right:1.5%; margin-left:1.5%;}
+.col-3 section {width:25.33%; float:left; margin-right:1.5%; margin-left:1.5%;}
+.col-4 section {width:17%; float:left; margin-right:1.33%; margin-left:1.33%;}
+
+.col-2 section:first-child, 
+.col-3 section:first-child, 
+.col-4 section:first-child {margin-left:0;}
+
+.col-2 section:last-child, 
+.col-3 section:last-child, 
+.col-4 section:last-child {margin-right:0;}
+}
+
+
+
+
+@media screen and (min-width:1650px) { /* large desktop */
+body > header, 
+main, 
+aside, 
+body > footer {padding-left:20%; padding-right:20%; padding-top:3em; padding-bottom:3em;}
+
+header {padding-bottom:2em;}
+
+div#feature article.col-1 section {width:50%; margin:0 auto;} /* constrain feature content on very large screens */
+}
+
+
+
+
+

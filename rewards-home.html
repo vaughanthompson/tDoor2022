@@ -1,0 +1,946 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <title>TransDiesel Rewards Shop</title>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/_pbFonts/Site/TD/icomoon/style.css" type="text/css">
+    <link rel="stylesheet" href="/_pbFonts/roboto/fonts.css" type="text/css">
+
+    <link href="/_pbCss/_core/normalize.css" rel="stylesheet" />
+    <link href="/_pbCss/_core/jquery-ui.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/layout.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme-more.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/forms.css" rel="stylesheet" />
+
+    <!-- scripts all pages -->
+    <script src="/_pbScripts/_core/jquery-1.11.2.min.js"></script>
+    <script src="/_pbScripts/_core/jquery-ui.js"></script>
+    <script src="/_pbScripts/_core/modernizr-2.8.3.js"></script>
+
+    <!-- tests -->
+    <script type="text/javascript">Modernizr.load([{
+            test: Modernizr.mq('only all'),
+            nope: '/_pbScripts/_core/respond.js'
+            // https://github.com/scottjehl/Respond
+},
+{
+            test: window.matchMedia,
+            nope: '/_pbScripts/_core/media.match.min.js'
+            // load mediaMatch polyfill
+},
+            // load enquire and js media queries
+            '/_pbScripts/_core/enquire.min.js',
+            '/_pbScripts/_core/waypoints.js',
+            '/_pbScripts/Site/TD/jsmediaqueries.js'
+]
+);</script>
+
+</head>
+
+
+<body id="top" >
+    
+    
+
+    
+
+    <script>
+        $(document).ready(function () {
+            // for in-page scrolling to named anchors e.g. top link
+            $.localScroll({
+                target: 'body',
+                queue: false,
+                hash: false,
+                duration: 500,
+                easing: 'easeOutQuad'
+            });
+        });
+    </script>
+    <!--[if lt IE 9]>
+        <div class="timeToUpdate">
+        This web application may use web standards that are not supported by your current web browser. <a href="http://www.browsehappy.com">Please consider upgrading</a>
+        </div>
+    <![endif]-->
+    
+    
+    
+    <div id="mobileHeader">
+        <div>
+            <a href="/" class="logo"><img src="/_pbImages/Site/TD/logos/Tradedoor.svg" title="TradeDoor" alt="TradeDoor" border="0"></a>
+        </div>
+        <a href="#" class="buttonIcon" id="navClose"><i class="icon-cross2"></i></a>
+        <a href="#" class="buttonIcon" id="navMenu"><i class="icon-menu"></i></a>
+    </div>
+    <div id="navSpcr">&nbsp;</div>
+    
+    <header class="account">
+    
+        <div>
+            <a href="/" class="logo"><img src="/_pbImages/Site/TD/logos/Tradedoor.svg" title="TradeDoor" alt="TradeDoor" border="0"></a>
+            <h5>CUSTOMER PORTAL</h5>
+        </div>
+    
+        <div>
+                <h2>
+                    RJC Company 2019 Ltd (was Translog)
+                </h2>
+    
+            <nav>
+                    <strong>Vaughan Thompson</strong>
+                    <a href="/customer/dashboard">My Dashboard</a>
+                        <a href="/pbAdmin/Site?siteId=1" target="_blank">Admin</a>
+                    <a href="/account/changepassword">Change Password</a>
+                <a href="/customer/support">Help</a>
+    
+            </nav>
+        </div>
+    
+    
+            <div>
+                <h2 class="lite">
+                    Your Rewards
+                </h2>
+                <nav>
+                    <strong>Points Bal:</strong>
+                    <a href="/loyalty/transactions">0</a>
+                    <a href="/loyalty/products">Go to the shop</a>
+                    <a href="/customer/support">FAQ</a>
+                </nav>
+            </div>
+    
+    
+        <div>
+            <a href="/account/logoff" class="inlineButton">Logout</a>
+    
+    
+        </div>
+    
+    
+    </header>
+    
+    <!-- trigger up icon  -->
+    <div class="showTop" id="beginContent"></div>
+    
+    <!-- defer -->
+    <script type="text/javascript" src="/_pbPackages/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js" defer></script>
+    <script type="text/javascript" src="/_pbPackages/jquery.localScroll-1.4.0/jquery.localScroll.min.js" defer></script>
+    <script type="text/javascript" src="/_pbScripts/_core/easing.js" defer></script>
+    
+    
+    <script>
+        if (!Modernizr.svg) {
+            $('img[src*="svg"]').attr('src', function () {
+                return $(this).attr('src').replace('.svg', '.png');
+            });
+        }
+    </script>
+    
+    <main role="main" class=" clearfix">
+        <aside id="asideMenu">
+    
+    
+            <h3>Orders</h3>
+    
+            <nav>
+                <a href="/order/clear"><i class="icon-basket "></i>New Order</a>
+                <a href="/order/drafts"><i class="icon-brush" ></i>Drafts (0)</a>
+                <a href="/order/processing"><i class="icon-arrows-ccw "></i>Processing (0)</a>
+                <a href="/order/lists"><i class="icon-heart2 "></i>Favourites (5)</a>
+            </nav>
+    
+            <h3>Quotes</h3>
+            <nav>
+                <a class="" href="/order/clear?nextOrderType=Quote"><i class="icon-clipboard"></i>Create Quote</a>
+                <a class="" href="/order/quotes"><i class="icon-paste"></i>Current (7)</a>
+            </nav>
+    
+            <h3>Account/History</h3>
+            <nav>
+                <a href="/order/statements"><i class="icon-create "></i>Statement <span style="font-weight:bold;">(new)</span></a>
+                <a href="/order/processed"><i class="icon-copy"></i>Portal Orders</a>
+                <a href="/order/history"><i class="icon-download "></i>All Orders/Invoices</a>
+            </nav>
+            
+            <h3>Loyalty Points</h3>
+            <nav>
+                <a href="/loyalty/products"><i class="icon-copy"></i>Rewards Store</a>
+            </nav>
+    
+            <h3>Links</h3>
+            <nav>
+                <a href="/product/lubesearch"><i class="icon-barrel"></i>Shell Lube Match</a>
+                <a href="https://www.statusoilanalysis.co.nz/" target="_blank"><i class="icon-oiler"></i> Status oil sampling</a>
+                <a href="http://bit.ly/Racorsearch" target="_blank"><i class="icon-filter"></i>Parker Racor filters</a>
+                <a href="http://www.sakurafilters.com.au/search-part.html" target="_blank"><i class="icon-filter"></i>Sakura filters</a>
+                <a href="https://catalog.mann-filter.com/EU/eng" target="_blank"><i class="icon-filter"></i>Mann filters</a>
+                <a href="https://shop.donaldson.com/store/en-nz/home?_requestid=1527984" target="_blank"><i class="icon-filter"></i>Donaldson filters</a>
+                <a href="https://www.kohlerplus.com/" target="_blank"><i class="icon-air"></i>Kohler Engine parts lookup</a>
+            </nav>
+    
+        </aside>
+    
+    
+    
+        
+    
+    <style type="text/css">
+        .prod {
+            display: inline-block;
+            width: 300px;
+            /*height: 185px;*/
+            border: 1px solid black;
+            padding: 10px;
+            margin-right: 10px;
+        }
+    
+            .prod div {
+                text-align: center;
+            }
+    
+            .prod h3 {
+                text-align: center;
+            }
+    
+            .prod h5 {
+                text-align: center;
+            }
+    
+            .prod a {
+                text-decoration: none;
+            }
+    </style>
+    
+    
+    
+        <article id="mainContentHolder">
+    
+            <header class="clearfix col-1">
+                <section>
+    <div style="border:1px dashed red;padding:10px;color:red;margin-bottom:40px;display:none;" id="divAPIOffline">
+        <h2>Warning:</h2>
+        <p>The website is currently experiencing an issue connecting to the TransDiesel network - you may not be able to retrieve pricing or place new orders online until we have this resolved.</p>
+        <p>Please try again soon or <a href="/customer/support">contact support</a> for an update if the problem persists.</p>
+    </div>
+    
+        <div id="divCart" style="display:none;" class="float-right">
+            <a href="/loyalty/checkout">Cart (<span id="cartQty">0</span> <span id="cartItemsText">items</span> / <span id="cartPoints">0</span> points)</a>
+        </div>
+                    <h1>Rewards Shop <span class="go-red"><strong>0</strong> Points Available</span></h1>
+                </section>
+            </header>
+    
+            <!-- recent activity and favourite summaries -->
+            <article class="col-1 clearfix rewards product-grid">
+                <section>
+    
+                    <h2>Gadgets &amp; Accessories</h2>
+                    <hr />
+                    <div class="container">
+        <div class="product-item" id="Product_28">
+                <div class="images">
+                    <a href="/loyalty/products/28">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-A60H-KIDS-TOY_251.jpg" alt="A60H KIDS TOY" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>A60H KIDS TOY </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/28">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>1600 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_9">
+                <div class="images">
+                    <a href="/loyalty/products/9">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Backpack_29.jpg" alt="Backpack" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Backpack </h2>
+                <p class="small">
+                    Metro Backpack, complete with your choice of branding
+                <a href="/loyalty/products/9">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>450 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_13">
+                <div class="images">
+                    <a href="/loyalty/products/13">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Eco-Notepads_41.jpg" alt="Eco Notepads" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Eco Notepads </h2>
+                <p class="small">
+                    Upcycled Notebooks (10 pack)
+                <a href="/loyalty/products/13">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>650 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_10">
+                <div class="images">
+                    <a href="/loyalty/products/10">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Beer-Caddy_153.jpg" alt="Beer Caddy" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Hard Top Cooler </h2>
+                <p class="small">
+                    Hard Top Cooler
+                <a href="/loyalty/products/10">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>550 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_31">
+                <div class="images">
+                    <a href="/loyalty/products/31">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Hayden-Paddon-Peak-Cap_541.jpg" alt="Hayden Paddon Peak Cap" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Hayden Paddon Team Cap </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/31">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>270 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_18">
+                <div class="images">
+                    <a href="/loyalty/products/18">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Mens-Shell-V-Power-Race-polo_83.jpg" alt="Mens Shell V-Power Race polo" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Mens Shell V-Power Race polo </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/18">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>900 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_21">
+                <div class="images">
+                    <a href="/loyalty/products/21">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Mens-Shell-V-Power-Race-Tee_84.jpg" alt="Mens Shell V-Power Race Tee" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Mens Shell V-Power Race Tee </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/21">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>700 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_8">
+                <div class="images">
+                    <a href="/loyalty/products/8">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Peak-Cap_26.jpg" alt="Peak Cap" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Peak Cap (Pack of 10) </h2>
+                <p class="small">
+                    Peak Cap, complete with your choice of branding (10 pack)
+                <a href="/loyalty/products/8">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>1800 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_14">
+                <div class="images">
+                    <a href="/loyalty/products/14">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Polo-shirts_44.jpg" alt="Polo shirts" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Polo shirts (Pack of 10) </h2>
+                <p class="small">
+                    Stormtech H2X-Dry Polo, complete with your choice of branding (10 pack) 
+                <a href="/loyalty/products/14">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>4200 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_15">
+                <div class="images">
+                    <a href="/loyalty/products/15">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Premium-Socks---Crew_47.jpg" alt="Premium Socks - Crew" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Premium Socks - Crew (Pack of 10 pairs) </h2>
+                <p class="small">
+                    Premium cushioned socks, complete with your choice of branding (10 pack)
+                <a href="/loyalty/products/15">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>3500 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_22">
+                <div class="images">
+                    <a href="/loyalty/products/22">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Shell-V-Power-bucket-hat-Pack-of-10_85.jpg" alt="Shell V-Power bucket hat (Pack of 10)" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Shell V-Power bucket hat (Pack of 10) </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/22">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>3000 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_24">
+                <div class="images">
+                    <a href="/loyalty/products/24">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Shell-V-Power-Race-stool-and-cooler-bag_86.jpg" alt="Shell V-Power Race stool and cooler bag" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Shell V-Power Race stool and cooler bag </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/24">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>530 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_23">
+                <div class="images">
+                    <a href="/loyalty/products/23">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Shell-V-Power-Race-Team-cap-Pack-of-10_87.jpg" alt="Shell V-Power Race Team cap (Pack of 10)" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Shell V-Power Race Team cap (Pack of 10) </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/23">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>3500 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_16">
+                <div class="images">
+                    <a href="/loyalty/products/16">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Speaker_50.jpg" alt="Speaker" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Speaker </h2>
+                <p class="small">
+                    Swiss Peak 4-in-1 Speaker
+                <a href="/loyalty/products/16">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>1000 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_11">
+                <div class="images">
+                    <a href="/loyalty/products/11">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-VACUUM-DRINK-BOTTLE_35.jpg" alt="VACUUM DRINK BOTTLE" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>VACUUM DRINK BOTTLE </h2>
+                <p class="small">
+                    Mirage Vacuum Bottle - hot and cold function.
+                <a href="/loyalty/products/11">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>260 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_25">
+                <div class="images">
+                    <a href="/loyalty/products/25">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-VOLVO-ARTICULATED-HAULER-A40G_252.jpg" alt="VOLVO ARTICULATED HAULER A40G" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>VOLVO ARTICULATED HAULER A40G </h2>
+                <p class="small">
+                    Diecast model 
+                <a href="/loyalty/products/25">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>1600 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_27">
+                <div class="images">
+                    <a href="/loyalty/products/27">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-VOLVO-EXCAVATOR-EC480E_253.jpg" alt="VOLVO EXCAVATOR EC480E" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>VOLVO EXCAVATOR EC480E </h2>
+                <p class="small">
+                    Diecast model
+                <a href="/loyalty/products/27">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>1600 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_26">
+                <div class="images">
+                    <a href="/loyalty/products/26">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-VOLVO-LOADER-L150H_254.jpg" alt="VOLVO LOADER L150H" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>VOLVO LOADER L150H </h2>
+                <p class="small">
+                    Diecast model
+                <a href="/loyalty/products/26">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>1500 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_19">
+                <div class="images">
+                    <a href="/loyalty/products/19">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Womens-Shell-V-Power-Race-polo_88.jpg" alt="Womens Shell V-Power Race polo" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Womens Shell V-Power Race polo </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/19">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>900 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_20">
+                <div class="images">
+                    <a href="/loyalty/products/20">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-Womens-Shell-V-Power-Race-polo_89.jpg" alt="Womens Shell V-Power Race polo" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>Womens Shell V-Power Race polo </h2>
+                <p class="small">
+                    
+                <a href="/loyalty/products/20">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>900 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+                    </div>
+    
+                        <hr />
+                        <h2>Credit Vouchers</h2>
+                        <hr />
+                        <div class="container">
+        <div class="product-item" id="Product_6">
+                <div class="images">
+                    <a href="/loyalty/products/6">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-100-Account-Credit_20.jpg" alt="$100 Account Credit" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>$100 Account Credit </h2>
+                <p class="small">
+                    Credit your parts account with $100
+                <a href="/loyalty/products/6">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>1000 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_4">
+                <div class="images">
+                    <a href="/loyalty/products/4">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-20-Account-Credit_14.jpg" alt="$20 Account Credit" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>$20 Account Credit </h2>
+                <p class="small">
+                    Credit your parts account with $20
+                <a href="/loyalty/products/4">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>200 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_7">
+                <div class="images">
+                    <a href="/loyalty/products/7">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-200-Account-Credit_23.jpg" alt="$200 Account Credit" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>$200 Account Credit </h2>
+                <p class="small">
+                    Credit your parts account with $200
+                <a href="/loyalty/products/7">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>2000 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+        <div class="product-item" id="Product_5">
+                <div class="images">
+                    <a href="/loyalty/products/5">
+                        <img src="/_pbImages/Site/td/Uploads/PRODUCT-50-Account-Credit_17.jpg" alt="$50 Account Credit" />
+                    </a>
+                </div>
+    
+            <div class="desc">
+                <h2>$50 Account Credit </h2>
+                <p class="small">
+                    Credit your parts account with $50
+                <a href="/loyalty/products/5">more info...</a>
+            </p>
+        </div>
+        <div class="shop-cta">
+            <h3>500 <span>Points</span></h3>
+    
+                <span class="shop-btn inactive" title="You don't have enough points to get this item." onclick="alert('You do not have enough points to get this item.');">Get it</span>
+    
+    
+        </div>
+    </div>
+                        </div>
+                </section>
+    
+            </article>
+    
+            <br /><br /><br /><br />
+    
+            <footer class="clearfix">
+                <section></section>
+            </footer>
+    
+    
+        </article>
+    
+    
+    
+    
+    </main>
+    
+    
+    
+    
+    <div class="siteWideFtr">
+        <div class="brands">
+            <div><img src="/_pbImages/Site/TD/logos/volvo.png"></div>
+            <div><img src="/_pbImages/Site/TD/logos/yanmar.png"></div>
+            <div><img src="/_pbImages/Site/TD/logos/terexF.png"></div>
+            <div><img src="/_pbImages/Site/TD/logos/sennebogan.png"></div>
+            <div><img src="/_pbImages/Site/TD/logos/allisonT.png"></div>
+            <div><img src="/_pbImages/Site/TD/logos/perkins.png"></div>
+            <div><img src="/_pbImages/Site/TD/logos/kohler.png"></div>
+            <div><img src="/_pbImages/Site/TD/logos/shell-1.png"></div>
+        </div>
+        <br>
+        <p>
+            All enquiries: <a href="mailto:tradedoor@transdiesel.co.nz?subject=TradeDoor Enquiry">tradedoor@transdiesel.co.nz</a> or Phone 0800 484 267. Copyright 2020. <a href="/">Privacy Policy</a> <a href="/">Terms of Trade</a>
+        </p>
+        <br>
+        <br>
+        <img src="/_pbImages/Site/TD/logos/Tradedoor.png" hspace="15" class="footerL">
+        <img src="/_pbImages/Site/TD/logos/transD-logo.png" hspace="15" class="footerL">
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+        
+    
+    
+        <div style="height:130px" class="hideDesktop">
+        </div>
+    
+        
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+        <script src="/_pbScripts/Site/TD/td.loyalty.js" type="text/javascript"></script>
+    
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".btnAddToCart").click(function () {
+                    var productId = $(this).attr("data-id");
+                    var quantity = $("#selQuantity_" + productId).val();
+                    addToCart(productId, quantity);
+                });
+            });
+        </script>
+    
+    
+        
+        
+    
+    
+    
+        <!-- Start of LiveChat (www.livechatinc.com) code -->
+        <script type="text/javascript">
+            window.__lc = window.__lc || {};
+            window.__lc.license = 11882256;
+            (function () {
+    
+                // Only show on > 640 screen width.
+                if (screen.width > 640 === true) {
+    
+                    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    
+                    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+                }
+    
+            })();
+    
+        </script>
+    
+        <noscript>
+            <a href="https://www.livechatinc.com/chat-with/11882256/" rel="nofollow">Chat with us</a>,
+            powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+        </noscript>
+    
+    </body></html>
+
+
+
+

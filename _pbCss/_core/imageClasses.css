@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* add vertical spacing to an image */
+img.vspace {margin-top:2em; margin-bottom:2em;}
+
+/* enhancements */
+picture.imageCircle img { -webkit-border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;}
+picture.imageRounded img { -webkit-border-radius: 20%; -moz-border-radius: 20%; -o-border-radius: 20%; border-radius: 20%;}
+picture.imageButton img { -webkit-border-radius: 5%; -moz-border-radius: 5%; -o-border-radius: 5%; border-radius: 5%;}
+
+
+/* width control */
+picture.twoThirdWidth {}
+picture.twoThirdWidth img, img.twoThirdWidth { width:60%;}
+picture.oneThirdWidth {}
+picture.oneThirdWidth img, img.oneThirdWidth { width:30%;}
+
+picture.thumbnail img, img.thumbnail {width:50%; max-width:120px;}
+
+@media screen and (max-width:400px) {
+	picture.twoThirdWidth img, img.twoThirdWidth { width:auto;}
+	picture.oneThirdWidth img, img.oneThirdWidth { width:auto;}
+}
+
+@media screen and (min-width:900px) {
+	picture.thumbnail img, img.thumbnail {width:15%; max-width:120px;}
+}

@@ -1,0 +1,1111 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <title>TradeDoor. TransDiesel Customer Accounts Portal</title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/_pbFonts/Site/TD/icomoon/style.css" type="text/css">
+    <link rel="stylesheet" href="/_pbFonts/roboto/fonts.css" type="text/css">
+
+    <link href="/_pbCss/_core/normalize.css" rel="stylesheet" />
+    <link href="/_pbCss/_core/jquery-ui.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/layout.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme-more.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/forms.css" rel="stylesheet" />
+    <link href="/_pbCss/Site/TD/theme-carlin.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/_pbCss/Site/TD/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="/_pbCss/Site/TD/owl.theme.default.css">
+
+
+
+
+    <!-- scripts all pages -->
+    <script src="/_pbScripts/_core/jquery-1.11.2.min.js"></script>
+    <script src="/_pbScripts/_core/jquery-ui.js"></script>
+    <script src="/_pbScripts/_core/modernizr-2.8.3.js"></script>
+
+    <!-- tests -->
+    <script type="text/javascript">Modernizr.load([{
+            test: Modernizr.mq('only all'),
+            nope: '/_pbScripts/_core/respond.js'
+            // https://github.com/scottjehl/Respond
+},
+{
+            test: window.matchMedia,
+            nope: '/_pbScripts/_core/media.match.min.js'
+            // load mediaMatch polyfill
+},
+            // load enquire and js media queries
+            '/_pbScripts/_core/enquire.min.js',
+            '/_pbScripts/_core/waypoints.js',
+            '/_pbScripts/Site/TD/jsmediaqueries.js'
+]
+);</script>
+
+</head>
+
+
+
+
+<body id="top" >
+    
+    
+
+    
+
+    <script>
+        $(document).ready(function () {
+            // for in-page scrolling to named anchors e.g. top link
+            $.localScroll({
+                target: 'body',
+                queue: false,
+                hash: false,
+                duration: 500,
+                easing: 'easeOutQuad'
+            });
+        });
+    </script>
+    <!--[if lt IE 9]>
+        <div class="timeToUpdate">
+        This web application may use web standards that are not supported by your current web browser. <a href="http://www.browsehappy.com">Please consider upgrading</a>
+        </div>
+    <![endif]-->
+    
+    
+    
+    <div id="mobileHeader">
+        <div>
+            <a href="/" class="logo"><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/Tradedoor.svg" title="TradeDoor" alt="TradeDoor" border="0"></a>
+        </div>
+        <a href="#" class="buttonIcon" id="navClose"><i class="icon-cross2"></i></a>
+        <a href="#" class="buttonIcon" id="navMenu"><i class="icon-menu"></i></a>
+    </div>
+    <div id="navSpcr">&nbsp;</div>
+    
+    <header class="account">
+    
+        <div>
+            <a href="/" class="logo"><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/Tradedoor.svg" title="TradeDoor" alt="TradeDoor" border="0"></a>
+            <h5>CUSTOMER PORTAL</h5>
+        </div>
+    
+        <div>
+                <h2>
+                    RJC Company 2019 Ltd (was Translog)
+                </h2>
+    
+            <nav>
+                    <strong>Vaughan Thompson</strong>
+                    <a href="/customer/dashboard">My Dashboard</a>
+                        <a href="/pbAdmin/Site?siteId=1" target="_blank">Admin</a>
+                    <a href="/account/changepassword">Change Password</a>
+                <a href="/customer/support">Help</a>
+    
+            </nav>
+        </div>
+    
+    
+            <div>
+                <h2 class="lite">
+                    Your Rewards
+                </h2>
+                <nav>
+                    <strong>Points Bal:</strong>
+                    <a href="/loyalty/transactions">0</a>
+                    <a href="/loyalty/products">Go to the shop</a>
+                    <a href="/customer/support">FAQ</a>
+                </nav>
+            </div>
+    
+    
+        <div>
+            <a href="/account/logoff" class="inlineButton">Logout</a>
+    
+    
+        </div>
+    
+    
+    </header>
+    
+    <!-- trigger up icon  -->
+    <div class="showTop" id="beginContent"></div>
+    
+    <!-- defer -->
+    <script type="text/javascript" src="/_pbPackages/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js" defer></script>
+    <script type="text/javascript" src="/_pbPackages/jquery.localScroll-1.4.0/jquery.localScroll.min.js" defer></script>
+    <script type="text/javascript" src="/_pbScripts/_core/easing.js" defer></script>
+    
+    
+    <script>
+        if (!Modernizr.svg) {
+            $('img[src*="svg"]').attr('src', function () {
+                return $(this).attr('src').replace('.svg', '.png');
+            });
+        }
+    </script>
+    
+    <main role="main" class=" clearfix">
+        <aside id="asideMenu">
+    
+    
+            <h3>Orders</h3>
+    
+            <nav>
+                <a href="/order/clear"><i class="icon-basket "></i>New Order</a>
+                <a href="/order/drafts"><i class="icon-brush" ></i>Drafts (0)</a>
+                <a href="/order/processing"><i class="icon-arrows-ccw "></i>Processing (0)</a>
+                <a href="/order/lists"><i class="icon-heart2 "></i>Favourites (5)</a>
+            </nav>
+    
+            <h3>Quotes</h3>
+            <nav>
+                <a class="" href="/order/clear?nextOrderType=Quote"><i class="icon-clipboard"></i>Create Quote</a>
+                <a class="" href="/order/quotes"><i class="icon-paste"></i>Current (7)</a>
+            </nav>
+    
+            <h3>Account/History</h3>
+            <nav>
+                <a href="/order/statements"><i class="icon-create "></i>Statement <span style="font-weight:bold;">(new)</span></a>
+                <a href="/order/processed"><i class="icon-copy"></i>Portal Orders</a>
+                <a href="/order/history"><i class="icon-download "></i>All Orders/Invoices</a>
+            </nav>
+            
+            <h3>Loyalty Points</h3>
+            <nav>
+                <a href="/loyalty/products"><i class="icon-copy"></i>Rewards Store</a>
+            </nav>
+    
+            <h3>Links</h3>
+            <nav>
+                <a href="/product/lubesearch"><i class="icon-barrel"></i>Shell Lube Match</a>
+                <a href="https://www.statusoilanalysis.co.nz/" target="_blank"><i class="icon-oiler"></i> Status oil sampling</a>
+                <a href="http://bit.ly/Racorsearch" target="_blank"><i class="icon-filter"></i>Parker Racor filters</a>
+                <a href="http://www.sakurafilters.com.au/search-part.html" target="_blank"><i class="icon-filter"></i>Sakura filters</a>
+                <a href="https://catalog.mann-filter.com/EU/eng" target="_blank"><i class="icon-filter"></i>Mann filters</a>
+                <a href="https://shop.donaldson.com/store/en-nz/home?_requestid=1527984" target="_blank"><i class="icon-filter"></i>Donaldson filters</a>
+                <a href="https://www.kohlerplus.com/" target="_blank"><i class="icon-air"></i>Kohler Engine parts lookup</a>
+            </nav>
+    
+        </aside>
+    
+    
+    
+        
+    
+    
+    <link rel="stylesheet" type="text/css" href="/_pbCss/Site/TD/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="/_pbCss/Site/TD/owl.theme.default.css">
+    
+    
+    
+    
+    <article id="mainContentHolder">
+    
+    <div style="border:1px dashed red;padding:10px;color:red;margin-bottom:40px;display:none;" id="divAPIOffline">
+        <h2>Warning:</h2>
+        <p>The website is currently experiencing an issue connecting to the TransDiesel network - you may not be able to retrieve pricing or place new orders online until we have this resolved.</p>
+        <p>Please try again soon or <a href="/customer/support">contact support</a> for an update if the problem persists.</p>
+    </div>
+    
+    
+    
+    
+        <!-- recent activity and favourite summaries -->
+        <article class="clearfix col-2">
+            <section>
+    
+    
+                <div class="cnt">
+                    <h1>Hi Vaughan Thompson</h1>
+                    <br>
+    
+    
+                            <p>
+                                Check out our NEW loyalty program. Earn points with every purchase made online!
+                                    <a href="/loyalty/products">Visit Shop</a>
+                            </p>
+    
+                    <br>
+
+                    <a href="/black-friday.html"><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/blkfriday/blk-lozenge@2x.png"></a>
+
+                    <br>
+
+
+                </div>
+    
+                <div class="cnt panelled accordionLite">
+    
+                    <div class="contain">
+                        <header>
+                            <h2>Recent Orders</h2><a href="#" class="action">Expand</a>
+                        </header>
+                        <div class="detail">
+                            <!-- insert tables as we have them now on live - max of 5 items though?-->
+                                <p>You haven't made any orders yet. Click the button below to create a new order.</p>
+                            <!-- end insert -->
+                            <hr>
+                            <a class="inlineButton" href="/order/clear">New order</a>
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+    
+            </section>
+                <section>
+                    <div class="cnt panelled rewards">
+    
+                        <div class="rewardsHdr">
+                            <h2>TradeDoor Rewards</h2>
+                            <p>Earn points for every completed order, collect points to redeem for branded merch, apparel and accessories!</p>
+                        </div>
+    
+                        <div class="pointsSummary">
+                            <div class="current">
+                                <h6>Points Bal:</h6>
+                                <h3>0</h3>
+                            </div>
+                            <div class="earnedMth">
+                                <h6>Received this mth:</h6>
+                                <h3>0</h3>
+                            </div>
+                            <div class="spentMth">
+                                <h6>Spent this mth:</h6>
+                                <h3>0</h3>
+                            </div>
+                        </div>
+    
+    
+    
+    
+    
+                        <div class="featureRewards">
+    
+                                <div>
+                                    <h3>Close to:</h3>
+                                    <div class="rewardItem">
+                                        <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-20-Account-Credit_60.jpg">
+                                        <div>
+                                            <h6>$20 Account Credit</h6>
+                                            <h5>200 pts</h5>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <h3>Close to:</h3>
+                                    <div class="rewardItem">
+                                        <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-VACUUM-DRINK-BOTTLE_57.jpg">
+                                        <div>
+                                            <h6>VACUUM DRINK BOTTLE</h6>
+                                            <h5>260 pts</h5>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                        </div>
+    
+                        <div class="sliderRewards">
+                            <h3>Also in the shop:</h3>
+    
+                            <div class="rewardsSlider">
+                                <div class="related shopProduct clearance">
+                                    <article>
+                                        <div class="scontain">
+                                            <section class="home owl-carousel-rewards owl-carousel owl-theme">
+                                                    <a href="/loyalty/products/31">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Hayden-Paddon-Peak-Cap_539.jpg" alt="Hayden Paddon Team Cap">
+                                                                </div>
+                                                            </div>
+                                                            270pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/28">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-A60H-KIDS-TOY_246.jpg" alt="A60H KIDS TOY">
+                                                                </div>
+                                                            </div>
+                                                            1600pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/27">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-VOLVO-EXCAVATOR-EC480E_244.jpg" alt="VOLVO EXCAVATOR EC480E">
+                                                                </div>
+                                                            </div>
+                                                            1600pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/26">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-VOLVO-LOADER-L150H_237.jpg" alt="VOLVO LOADER L150H">
+                                                                </div>
+                                                            </div>
+                                                            1500pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/25">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-VOLVO-ARTICULATED-HAULER-A40G_238.jpg" alt="VOLVO ARTICULATED HAULER A40G">
+                                                                </div>
+                                                            </div>
+                                                            1600pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/24">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Shell-V-Power-Race-stool-and-cooler-bag_91.jpg" alt="Shell V-Power Race stool and cooler bag">
+                                                                </div>
+                                                            </div>
+                                                            530pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/23">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Shell-V-Power-Race-Team-cap-Pack-of-10_94.jpg" alt="Shell V-Power Race Team cap (Pack of 10)">
+                                                                </div>
+                                                            </div>
+                                                            3500pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/22">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Shell-V-Power-bucket-hat-Pack-of-10_92.jpg" alt="Shell V-Power bucket hat (Pack of 10)">
+                                                                </div>
+                                                            </div>
+                                                            3000pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/21">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Mens-Shell-V-Power-Race-Tee_93.jpg" alt="Mens Shell V-Power Race Tee">
+                                                                </div>
+                                                            </div>
+                                                            700pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/20">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Womens-Shell-V-Power-Race-polo_95.jpg" alt="Womens Shell V-Power Race polo">
+                                                                </div>
+                                                            </div>
+                                                            900pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/19">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Womens-Shell-V-Power-Race-polo_96.jpg" alt="Womens Shell V-Power Race polo">
+                                                                </div>
+                                                            </div>
+                                                            900pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/18">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Mens-Shell-V-Power-Race-polo_90.jpg" alt="Mens Shell V-Power Race polo">
+                                                                </div>
+                                                            </div>
+                                                            900pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/16">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Speaker_97.jpg" alt="Speaker">
+                                                                </div>
+                                                            </div>
+                                                            1000pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/15">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Premium-Socks---Crew_67.jpg" alt="Premium Socks - Crew (Pack of 10 pairs)">
+                                                                </div>
+                                                            </div>
+                                                            3500pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/14">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Polo-shirts_58.jpg" alt="Polo shirts (Pack of 10)">
+                                                                </div>
+                                                            </div>
+                                                            4200pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/13">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Eco-Notepads_62.jpg" alt="Eco Notepads">
+                                                                </div>
+                                                            </div>
+                                                            650pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/11">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-VACUUM-DRINK-BOTTLE_57.jpg" alt="VACUUM DRINK BOTTLE">
+                                                                </div>
+                                                            </div>
+                                                            260pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/10">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Beer-Caddy_152.jpg" alt="Hard Top Cooler">
+                                                                </div>
+                                                            </div>
+                                                            550pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/9">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Backpack_61.jpg" alt="Backpack">
+                                                                </div>
+                                                            </div>
+                                                            450pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/8">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-Peak-Cap_68.jpg" alt="Peak Cap (Pack of 10)">
+                                                                </div>
+                                                            </div>
+                                                            1800pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/7">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-200-Account-Credit_56.jpg" alt="$200 Account Credit">
+                                                                </div>
+                                                            </div>
+                                                            2000pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/6">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-100-Account-Credit_59.jpg" alt="$100 Account Credit">
+                                                                </div>
+                                                            </div>
+                                                            1000pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/5">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-50-Account-Credit_63.jpg" alt="$50 Account Credit">
+                                                                </div>
+                                                            </div>
+                                                            500pts
+                                                        </div>
+                                                    </a>
+                                                    <a href="/loyalty/products/4">
+                                                        <div class="item">
+                                                            <div class="holder">
+                                                                <div class="teaser">
+                                                                    <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/PRODUCT-20-Account-Credit_60.jpg" alt="$20 Account Credit">
+                                                                </div>
+                                                            </div>
+                                                            200pts
+                                                        </div>
+                                                    </a>
+                                            </section>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </section>
+    
+        </article>
+    
+    
+    
+    
+    
+    
+    
+    
+        <!-- recent activity and favourite summaries -->
+        <article class="clearfix col-1">
+            <section>
+                <div class="cnt panelled offers">
+                    <header>
+                        <section><h2>Trade Deals</h2></section>
+                                <section>
+    
+                                </section>
+                    </header>
+    
+                    <div class="offersSlider">
+                        <div class="related carouselThumbs shopProduct clearance">
+                            <article>
+                                <div class="scontain">
+                                    <section class="home owl-carousel owl-theme">
+                                        <div class="item">
+                                            <div class="holder">
+                                                    <div class="teaser">
+    
+                                                        <img src="https://transdiesel.com/_pbImages/Site/td/Uploads/Thumb-for-550045163_580.jpg" alt="HELIX HX3 20W-50 / 4L" />
+                                                    </div>
+    
+                                            <div class="shopDesc">
+                                                <div>
+                                                    <h6>SHELL HELIX&#160;ENGINE OIL HX3 20W-50/4L</h6>
+                                                </div>
+                                                <div>
+                                                    <h4>$14.00 + GST</h4>
+    
+                                                </div>
+                                            </div>
+                                            </div>
+                                                <a href="javascript:void(0);" id="AddProduct_98954" onclick="addItemToOrder('550045163', 98954)" class="inlineButton deals"> #550045163</a>
+    
+                                        </div>
+                                        <div class="item">
+                                            <div class="holder">
+                                                    <div class="teaser">
+    
+                                                        <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/Thumb-for-550050115_597.jpg" alt="HELIX HX5 15W-40 / 6L" />
+                                                    </div>
+    
+                                            <div class="shopDesc">
+                                                <div>
+                                                    <h6>SHELL HELIX&#160;DIESEL ENGINE OIL HX5 15W-40/6L</h6>
+                                                </div>
+                                                <div>
+                                                    <h4>$24.00 + GST</h4>
+    
+                                                </div>
+                                            </div>
+                                            </div>
+                                                <a href="javascript:void(0);" id="AddProduct_98995" onclick="addItemToOrder('550050115', 98995)" class="inlineButton deals"> #550050115</a>
+    
+                                        </div>
+                                        <div class="item">
+                                            <div class="holder">
+                                                    <div class="teaser">
+    
+                                                        <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/Thumb-for-550051459_589.jpg" alt="HELIX HX5 SN+ A3/B3 15W-40 / 1L" />
+                                                    </div>
+    
+                                            <div class="shopDesc">
+                                                <div>
+                                                    <h6>HELIX HX5 SN+ A3/B3 15W-40 / 1L</h6>
+                                                </div>
+                                                <div>
+                                                    <h4>$5.00 + GST</h4>
+    
+                                                </div>
+                                            </div>
+                                            </div>
+                                                <a href="javascript:void(0);" id="AddProduct_99001" onclick="addItemToOrder('550051459', 99001)" class="inlineButton deals"> #550051459</a>
+    
+                                        </div>
+                                        <div class="item">
+                                            <div class="holder">
+                                                    <div class="teaser">
+    
+                                                        <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/Thumb-for-550051844_590.jpg" alt="HELIX HX5 SN+ A3/B3 15W-40 / 4L" />
+                                                    </div>
+    
+                                            <div class="shopDesc">
+                                                <div>
+                                                    <h6>HELIX HX5 SN+ A3/B3 15W-40 / 4L</h6>
+                                                </div>
+                                                <div>
+                                                    <h4>$17.00 + GST</h4>
+    
+                                                </div>
+                                            </div>
+                                            </div>
+                                                <a href="javascript:void(0);" id="AddProduct_99006" onclick="addItemToOrder('550051844', 99006)" class="inlineButton deals"> #550051844</a>
+    
+                                        </div>
+                                        <div class="item">
+                                            <div class="holder">
+                                                    <div class="teaser">
+    
+                                                        <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/Thumb-for-550051847_591.jpg" alt="HELIX ULTRA SN 5W-40 / 1L" />
+                                                    </div>
+    
+                                            <div class="shopDesc">
+                                                <div>
+                                                    <h6>HELIX ULTRA SN 5W-40 / 1L</h6>
+                                                </div>
+                                                <div>
+                                                    <h4>$18.15 + GST</h4>
+    
+                                                </div>
+                                            </div>
+                                            </div>
+                                                <a href="javascript:void(0);" id="AddProduct_99008" onclick="addItemToOrder('550051847', 99008)" class="inlineButton deals"> #550051847</a>
+    
+                                        </div>
+                                        <div class="item">
+                                            <div class="holder">
+                                                    <div class="teaser">
+    
+                                                        <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/Thumb-for-550051850_594.jpg" alt="HELIX ULTRA SN+ 5W-40 / 4L" />
+                                                    </div>
+    
+                                            <div class="shopDesc">
+                                                <div>
+                                                    <h6>HELIX ULTRA SN+ 5W-40 / 4L</h6>
+                                                </div>
+                                                <div>
+                                                    <h4>$31.00 + GST</h4>
+    
+                                                </div>
+                                            </div>
+                                            </div>
+                                                <a href="javascript:void(0);" id="AddProduct_99009" onclick="addItemToOrder('550051850', 99009)" class="inlineButton deals"> #550051850</a>
+    
+                                        </div>
+                                        <div class="item">
+                                            <div class="holder">
+                                                    <div class="teaser">
+    
+                                                        <img src="https://cptransdiesel.co.nz/_pbImages/Site/td/Uploads/Thumb-for-550051843_619.jpg" alt="HELIX HX5 SN+15W40/209L" />
+                                                    </div>
+    
+                                            <div class="shopDesc">
+                                                <div>
+                                                    <h6>HELIX HX5 SN+15W40/209L</h6>
+                                                </div>
+                                                <div>
+                                                    <h4>$650.00 + GST</h4>
+    
+                                                </div>
+                                            </div>
+                                            </div>
+                                                <a href="javascript:void(0);" id="AddProduct_99383" onclick="addItemToOrder('550051843', 99383)" class="inlineButton deals"> #550051843</a>
+    
+                                        </div>
+                                      
+                                        
+                                    </section>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <footer class="clearfix">
+            <section></section>
+        </footer>
+    
+    
+    </article>
+    
+    
+    
+    
+    
+    
+    
+    </main>
+    
+    
+    
+    
+    <div class="siteWideFtr">
+        <div class="brands">
+            <div><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/volvo.png"></div>
+            <div><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/yanmar.png"></div>
+            <div><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/terexF.png"></div>
+            <div><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/sennebogan.png"></div>
+            <div><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/allisonT.png"></div>
+            <div><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/perkins.png"></div>
+            <div><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/kohler.png"></div>
+            <div><img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/shell-1.png"></div>
+        </div>
+        <br>
+        <p>
+            All enquiries: <a href="mailto:tradedoor@transdiesel.co.nz?subject=TradeDoor Enquiry">tradedoor@transdiesel.co.nz</a> or Phone 0800 484 267. Copyright 2020. <a href="/">Privacy Policy</a> <a href="/">Terms of Trade</a>
+        </p>
+        <br>
+        <br>
+        <img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/Tradedoor.png" hspace="15" class="footerL">
+        <img src="https://cptransdiesel.co.nz/_pbImages/Site/TD/logos/transD-logo.png" hspace="15" class="footerL">
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+        
+    
+    
+        <div style="height:130px" class="hideDesktop">
+        </div>
+    
+        
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+    
+        
+        
+        <script type="text/javascript">
+    
+            $(document).ready(function () {
+    
+                $("#lnkLubeMatch").click(function () {
+                    processLubematchProductCode();
+                });
+    
+                $("#LubeMatchClear").click(function () {
+                    clearLubematchProductCode();
+                });
+    
+            });
+    
+            function processLubematchProductCode() {
+    
+                $("#lnkLubeMatch").html("Processing...");
+    
+                $.post("/Order/AddItemToCurrentOrder", { productCode: "", quantity: 1, isSelected: true })
+                    .done(function (data) {
+                        setCookie("LubeMatchProductCode", "", -1);
+                        document.location = "/product/search?orderId=" + data.Data;
+                    });
+            }
+    
+            function clearLubematchProductCode() {
+                setCookie("LubeMatchProductCode", "", -1);
+                $("#LubeMatch").hide();
+            }
+    
+            function orderDetails(axRef, orderId) {
+                document.location = "/order/details/?orderId=" + orderId;
+            }
+    
+            function checkAPI() {
+                $.post("/pb/CheckApi")
+                    .done(function (data) {
+    
+                    })
+                    .fail(function (xhr, status, error) {
+                        $("#divAPIOffline").slideDown("slow");
+                    });
+            }
+    
+    
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+    
+        </script>
+    
+    
+    
+    
+        <!-- added for new feature content 2020 -->
+        <script type="text/javascript" src="/_pbScripts/Site/TD/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="/_pbScripts/Site/TD/easing.js"></script>
+        <script type="text/javascript" src="/_pbScripts/_core/picturefill-background.js"></script>
+    
+    
+        <script type="text/javascript">
+    
+            function addItemToOrder(productCode, productId) {
+    
+                $("#AddProduct_" + productId).html("Processing...");
+    
+                $.post("/Order/AddItemToCurrentOrder", { productCode: productCode, quantity: 1, isSelected: true })
+                    .done(function (data) {
+                        document.location = "/product/search?orderId=" + data.Data;
+                    });
+            }
+    
+            $(document).ready(function () {
+    
+    
+    
+    
+                $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    margin: 10,
+                    rewind: true,
+                    loop: false,
+                    autoplay: false,
+                    autoplayTimeout: 6000,
+                    autoplayHoverPause: true,
+                    animateOut: 'fadeOut',
+                    animateIn: 'fadeIn',
+                    touchDrag: true,
+                    mouseDrag: true,
+                    stopOnHover: false,
+                    dots: false,
+                    nav: true,
+                    navText: ["<span class='icon-left'></span>", "<span class='icon-right'></span>"],
+                    autoplaySpeed: 6000,
+                    smartSpeed: 250,
+                    fluidSpeed: 1,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            margin: 0,
+                            slideBy: 1
+                        },
+                        // breakpoint from 480 up
+                        500: {
+                            items: 3,
+                            margin: 0,
+                            slideBy: 1
+                        },
+                        // breakpoint from 768 up
+                        1100: {
+                            items: 3,
+                            margin: 0,
+                            slideBy: 1
+                        },
+                        // breakpoint from 768 up
+                        1300: {
+                            items: 4,
+                            margin: 0,
+                            slideBy: 1
+                        }
+                    }
+                });
+            });
+        </script>
+    
+    
+    
+    
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".owl-carousel-rewards").owlCarousel({
+                    items: 1,
+                    margin: 10,
+                    rewind: true,
+                    loop: false,
+                    autoplay: false,
+                    autoplayTimeout: 6000,
+                    autoplayHoverPause: true,
+                    animateOut: 'fadeOut',
+                    animateIn: 'fadeIn',
+                    touchDrag: true,
+                    mouseDrag: true,
+                    stopOnHover: false,
+                    dots: false,
+                    nav: true,
+                    navText: ["<span class='icon-left'></span>", "<span class='icon-right'></span>"],
+                    autoplaySpeed: 6000,
+                    smartSpeed: 250,
+                    fluidSpeed: 1,
+                    responsive: {
+                        0: {
+                            items: 3,
+                            margin: 0,
+                            slideBy: 1
+                        },
+                        // breakpoint from 480 up
+                        500: {
+                            items: 5,
+                            margin: 0,
+                            slideBy: 1
+                        },
+                        // breakpoint from 768 up
+                        1100: {
+                            items: 3,
+                            margin: 0,
+                            slideBy: 1
+                        },
+                        // breakpoint from 768 up
+                        1300: {
+                            items: 5,
+                            margin: 0,
+                            slideBy: 1
+                        }
+                    }
+                });
+            });
+        </script>
+    
+    
+    
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // for accordionLite -- dash only
+                $('.accordionLite a.action').click(function () {
+                    $(".accordionLite a.action").show();
+                    $(this).hide();
+                    $(".accordionLite div.detail").hide();
+                    $(this).closest('div.contain').find('div.detail').fadeTo(500, 1.0);
+                    return false;
+                });
+    
+            });
+        </script>
+    
+    
+    
+    
+        
+        
+    
+    
+    
+        <!-- Start of LiveChat (www.livechatinc.com) code -->
+        <script type="text/javascript">
+            window.__lc = window.__lc || {};
+            window.__lc.license = 11882256;
+            (function () {
+    
+                // Only show on > 640 screen width.
+                if (screen.width > 640 === true) {
+    
+                    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    
+                    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+                }
+    
+            })();
+    
+        </script>
+    
+        <noscript>
+            <a href="https://www.livechatinc.com/chat-with/11882256/" rel="nofollow">Chat with us</a>,
+            powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+        </noscript>
+    
+    </body>
+</html>
+
+
+
+

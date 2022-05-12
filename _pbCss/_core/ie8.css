@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+/* ie8 css version 1.1 */
+
+@media screen and (min-width:900px) { /* tablet and up */
+/* aside and footer : tablet and up */
+aside#independantContent section { width:28%; margin-right:2%; margin-left:4%; }
+}
+
+
+@media screen and (min-width:1200px) { /* desktop */
+/* main --> article css */
+article.col-2 section {width:44%; float:left; margin-right:3%; margin-left:5%; }
+article.col-3 section {width:27%; float:left; margin-right:2%; margin-left:4%;}
+article.col-4 section {width:20%; float:left; margin-right:2%; margin-left:3%;}
+
+article.col-0.jq-masonry section {margin-left:3%; margin-right:3%;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

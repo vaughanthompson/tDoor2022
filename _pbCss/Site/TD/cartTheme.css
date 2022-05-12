@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+/* cartTheme.css */
+
+
+/* 1. Generic core.css overrides / resets */
+/* 2. Typography */
+/* 3. Iconography and logos */
+/* 4. Site-wide structure */
+/* 5. Site-wide elements */
+/* 6. Page specific styles */
+/* 7. Media queries */
+
+
+
+/********************************************************************************/
+/* 1. Generic core.css overrides / resets */
+/********************************************************************************/
+
+
+
+body { 
+	background-color:#f1f1f1;
+	color:#444444;
+	font-family: "ProximaNova", Helvetica, Arial;
+	font-weight:300;
+	line-height:1.2em;
+	letter-spacing:0.05em;
+}
+
+ul li, ol li {text-align:left; list-style-type:none;}
+ol li {padding-bottom:4em;padding-right:0em; }
+ul li {padding-right:0em; padding-bottom:2em; padding-top:1em;}
+
+table {margin-bottom:2em; width:100%; text-align:left;}
+table thead {border-bottom:1px solid #444444;}
+table tbody, table tr {border-bottom:1px dotted #444444;}
+table tbody, table tr:last-child {border-bottom:none;}
+table th {padding:0.9em 1em 0.9em 0em; line-height:140%; vertical-align:bottom;}
+table td {padding:0.9em 1em 0.9em 0em; line-height:140%;vertical-align:middle;}
+
+div#pixlbox a {text-decoration:none; text-transform:uppercase; letter-spacing:0; color:#ffffff;}
+div#pixlbox a.logoType, div#pixlbox a.logoMark {margin-top:0;}
+div#pixlbox svg path, div#pixlbox svg polygon {fill:rgba(255,255,255,1.0);}
+
+header {padding:2.5em 5% 2em 5%;}
+
+
+
+
+
+
+/********************************************************************************/
+/* 2. Typography */
+/********************************************************************************/
+p {margin:0.4em auto 1.5em auto;font-size:0.96em;line-height:1.4em;}
+p.small {font-size:90%; }
+nav p {margin-bottom:1em;}
+
+h1,h2,h3,h4,h5,h6, label span { margin:2px 0; text-transform:uppercase;}
+
+h1 {line-height:1.1em; font-weight:200; font-size:2.7em; letter-spacing:0.35em; margin-left:0.45em;}
+h2 {line-height:1.3em; font-weight:700;font-size:1.72em; letter-spacing:0.4em; margin-left:0.4em; margin-bottom:0.3em;}
+h3, label span {line-height:1.3em; font-weight:400; font-size:1.18em; margin-bottom:0.25em;}
+h4 {line-height:1.3em; font-weight:400; font-size:0.7em; margin-bottom:0.1em;}
+h5 {line-height:1.40em; font-weight:600;font-size:0.8em;}
+h6 {line-height:1.45em; font-weight:400;font-size:0.7em;}
+
+
+a:link, a:visited {color:#444444; opacity:1.0;}
+a:hover, a:active {color:#e8272a; opacity:1.0; border-color:#e8272a;}
+
+/* call to action button styling */
+a.button { 
+	margin:1em 0.3em 0.5em 0.3em; 
+	display:block; 
+	text-align:center;   
+	padding:0.8em 2em 0.8em 2em; 
+	border:2px solid #444444; 
+	text-decoration:none; 
+	text-transform:none; 
+	letter-spacing:0.07em; 
+	font-weight:400; 
+	font-size:100%;
+}
+a.button:hover {opacity:1; color:#e8272a; border-color:#e8272a;}
+a.button img {margin-right:0.7em;}
+a.button {display:inline-block;}
+
+aside, header p, footer p {font-size:90%;}
+aside a {white-space:nowrap;}
+aside p {line-height:1.5em;}
+
+
+
+
+
+/********************************************************************************/
+/* 3. Iconography and Logos */
+/********************************************************************************/
+div.cartLogo {width:130px; height:auto; padding:5px; margin:0px auto;}
+footer div.cartLogo {width:100px;}
+
+div#fallbackLogo { background-image:url(/_pbImages/Site/maorihoney/maorihoneyREV.png); background-repeat:no-repeat; background-size:100% auto; height:130px;}
+footer div#fallbackLogo { background-image:url(/_pbImages/Site/maorihoney/maorihoneyREV.png); height:100px;}
+
+header a.logoType *, footer a.logoType * {fill:#ffffff; opacity:1.0;}
+footer a.logoMark {height:40px;}
+a.logoMark, a.logoType {text-decoration:none;}
+
+header svg#logotype {width:135px; height:135px;}
+footer svg#logotype {width:100px; height:100px;fill:#ffffff;}
+header svg#logotype path, footer svg#logotype path {fill:#ffffff;}
+header svg#logotype path#mark {fill:#B62025;}
+
+img.paymentIcon {width:40px; margin:1em 0px 1em 0px; opacity:0.9;}
+
+
+/* fontAwesome Iconography */
+/* fontAwesome Iconography */
+
+	.fontAwesome {background-color:#000000;  background-color:rgba(0,0,0,1.0); border:1px solid #ffffff;   -webkit-border-radius: 8px; -moz-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px;  text-decoration:none;}
+	span.fontAwesome {background:none; border:1px solid #e8272a; color:#bd1919;}
+	/* uncomment to show just icons for mobile nav */
+	.fontAwesome {padding:10px 12px; background:none; border:2px solid #444444;  width:auto; height:auto; text-align:center; -webkit-border-radius: 0; -moz-border-radius: 0; -o-border-radius: 0; border-radius: 0;}
+	.fontAwesome span, #toTop span {display:none;}
+	.fontAwesome i {padding-right:0px;  margin-right:0 !important; line-height:120%;} 
+		
+	/* remove comment below to hide icons on main nav [mobile]
+	nav i.fa {display:none;} */
+	
+	/* remove comment below to hide social link icons [mobile]
+	section#socialLinks a i.fa {display:none;} */
+	
+/* fontAwesome Iconography */
+/* fontAwesome Iconography */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 4. Site-wide structure */
+/********************************************************************************/
+header:not(#contentHeader) {background-color:#262626;}
+footer:not(#contentFooter) {background-color:#bd1919; background-color:rgba(189,25,25,1.0);color:#ffffff;}
+
+
+/********************************************************************************/
+/* 5. Site-wide elements */
+/********************************************************************************/
+
+aside section {padding-top:1em; padding-bottom:0em;}
+
+
+
+
+
+
+
+
+
+           
+/* ordering and forms */
+select, input, div.ordering select, div.ordering input[type=submit] {font-family:"ProximaNova";}
+select option, div.ordering select option {font-family:"ProximaNova";}
+select option:first-child, div.ordering select option:first-child {font-family:"ProximaNova";}
+
+label h3, label span { text-align:left; width:90%; margin-left:5%;}
+
+article.progressBar { background-color:#ffffff;}
+article.progressBar div { color:#262626;background-color:#ffffff;}
+article.progressBar div.progress {background-color:#262626;color:#ffffff;}
+article.progressBar div.complete { color:#262626;}
+
+div.validation-summary-errors li {
+	border-top-color:rgba(255,255,255,0.5); 
+	border-bottom-color:rgba(0,0,0,0.1); 
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 6. Page specific styles */
+/********************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************/
+/* 7. Media queries */
+/********************************************************************************/
+@media screen and (max-width:400px) {/* phone adjustments */
+h1 {font-size:1.3em;}
+h2 {font-size:1.2em; letter-spacing:0.1em}
+footer#contentFooter {padding-top:0; padding-bottom:0;}
+header {padding:1.2em 5% 0.8em 5%;}
+header svg#logotype {width:80px; height:80px;}
+}
+
+
+
+@media screen and (max-width:900px) { 
+ /* phone. left align everything? 
+header, main, aside, nav, footer , #feature article {text-align:left;}
+header a.logoMark, header a.logoType {margin-left:5%;}
+footer a.logoMark, footer a.logoType {margin-left:0;}
+footer nav a, footer nav h4, section#socialLinks a {padding-left:0;}
+div#pixlbox {text-align:left; padding-left:0;} */
+
+h1,h2 { margin-left:0 !important;}
+
+header a.logoMark {max-width:60px; width:60px; height:60px; margin-top:0em; margin-bottom:0.5em;}
+header a.logoType, header div#fallbackLogo {max-width:220px; width:220px; height:25px; margin-top:0.5em; margin-bottom:1.5em;}
+footer a.logoType, footer div#fallbackLogo {max-width:90px; width:90px; height:90px; margin-top:1.5em; margin-bottom:1.5em;}
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width:900px) { /* tablet */
+main article header, main article footer {width:90%;}
+header {padding-left:15%; padding-right:15%;}
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:1200px) { /* desktop */
+
+aside {padding-left:0%; padding-right:10%; width:17%; float:right; background:none; text-align:left;}
+main {padding-left:10%; padding-right:0%; width:58%; float:left;}
+
+footer {padding-left:12.5%; padding-right:12.5%; clear:both;}
+header {padding-left:20%; padding-right:20%;}
+
+
+article header, section {padding:1em 0 1em 0;}
+main {padding-top:3em; padding-bottom:3em;}
+footer {padding-top:3em; padding-bottom:3em;}
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1650px) { /* large desktop */
+
+header {padding-left:25%; padding-right:25%;}
+}
+
