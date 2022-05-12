@@ -109,7 +109,7 @@ select{
         #mobileHeader a.buttonIcon#navClose {
             display: none;
             background-color: rgba(0,0,0,0.0);
-            color: #ec1c24;
+            color: rgba(87,166,123,1.0);
         }
 
 
@@ -308,10 +308,10 @@ body > header h2 {
 #asideMenu h3,
 .offers header > *,
 .offers header > * > * {
-    color: #ec1c24;
+    color: rgba(87,166,123,1.0);
 }
 main article#mainContentHolder .offers header {
-    border-bottom: 2px solid #ec1c24;
+    border-bottom: 2px solid rgba(87,166,123,1.0);
     padding-bottom: 1em;
 }
 .offers header a.activeLink:link,
@@ -439,7 +439,7 @@ img.footerL {
 }
 div.slideContent h2 {
     font-weight: 300;
-    color: #ec1c24;
+    color: rgba(87,166,123,1.0);
     text-transform: uppercase; 
 }
 div.slideContent h1 {
@@ -571,18 +571,18 @@ div.shopProduct a.ctaShop {
     color: rgba(255,255,255,1.0);
 }
 div.shopProduct a.ctaShop:hover {
-    color: rgba(239,10,10,1.0);
+    color: rgba(87,166,123,1.0);
 }
 
 div.shopProduct header {
-    border-bottom:4px solid rgba(239,10,10,1.0);
+    border-bottom:4px solid rgba(87,166,123,1.0);
     width:100%;
     margin-bottom: 1.5em;    
     padding: 0;
     padding-top:0 !important;
 }
 div.shopProduct.clearance header > * {
-    color: rgba(239,10,10,1.0);
+    color: rgba(87,166,123,1.0);
 }
 div.shopProduct {
     background-color: #ffffff;
@@ -638,7 +638,7 @@ div.carouselThumbs.shopProduct div.item div.shopDesc h6 {
 }
 div.carouselThumbs.shopProduct div.item div.shopDesc h4,
 div.carouselThumbs.shopProduct div.item div.shopDesc h5 {
-    color: rgba(239,10,10,1.0);
+    color: rgba(87,166,123,1.0);
 }
 div.carouselThumbs.shopProduct div.item div.shopDesc h4 {
     font-size: 1.2em;

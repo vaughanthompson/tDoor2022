@@ -100,7 +100,7 @@ body > aside h1,
 body > aside h3,
 body > aside a:link,
 body > aside a:visited {
-    color: #ec1c24;
+    color: rgba(87,166,123,1.0);
 }
 
 #mobileHeader h1,
@@ -319,7 +319,7 @@ div#login a:link, div#login a:visited {
 }
 
 div#login a:hover, div#login a:active {
-	color: #ec1c24;
+	color: rgba(87,166,123,1.0);
 }
 
 /*
@@ -426,7 +426,7 @@ a.button:link, a.button:visited {
 	color: #404040;
 }
 a.button:hover, a.button:active {
-	color: #ec1c24;
+	color: rgba(87,166,123,1.0);
 }
 
 
@@ -472,7 +472,7 @@ a.buttonIcon:link, a.buttonIcon:visited {
 	color: #404040;
 }
 a.buttonIcon:hover, a.buttonIcon:active {
-	color: #ec1c24;
+	color: rgba(87,166,123,1.0);
 }
 
 .buttonInline { 
@@ -488,7 +488,7 @@ a.buttonIcon:hover, a.buttonIcon:active {
 	font-family:"roboto", Helvetica, Arial;
 	font-size:1em;
 }
-.buttonInline:hover {   opacity:1; color:#ec1c24 !important; border-color:#ec1c24 !important; background:none !important;cursor:pointer;}
+.buttonInline:hover {   opacity:1; color:rgba(87,166,123,1.0) !important; border-color:rgba(87,166,123,1.0) !important; background:none !important;cursor:pointer;}
 .buttonInline img {margin-right:0.7em;}
 .buttonInline {display:inline-block;}
 
@@ -513,8 +513,8 @@ a.buttonIcon:hover, a.buttonIcon:active {
 	font-weight:400;
 }
 .inlineButton.deals {
-	background-color: #ec1c24 !important;
-	border-color: #ec1c24 !important;
+	background-color: rgba(87,166,123,1.0) !important;
+	border-color: rgba(87,166,123,1.0) !important;
 	font-weight:400;
 	display: block;
 	text-align: left;
@@ -528,8 +528,8 @@ a.buttonIcon:hover, a.buttonIcon:active {
 	border-radius: 2px;
 }
 .inlineButton.deals:hover {   
-	color:#ec1c24 !important; 
-	border-color:#ec1c24 !important; 
+	color:rgba(87,166,123,1.0) !important; 
+	border-color:rgba(87,166,123,1.0) !important; 
 }
 .buttonForm::after,
 .inlineButton::after {
@@ -552,15 +552,15 @@ a.buttonIcon:hover, a.buttonIcon:active {
 }
 
 .reversed .buttonInline:hover, .buttonInline.reversed:hover {
-	border:1px solid #ec1c24 !important;
-	color:#ec1c24 !important;
+	border:1px solid rgba(87,166,123,1.0) !important;
+	color:rgba(87,166,123,1.0) !important;
 	cursor:pointer;
 }
 
 @media screen and (max-width:900px) {
 	.buttonInline, .reversed .buttonInline {
-	border:1px solid #ec1c24 !important;
-	color:#ec1c24 !important;
+	border:1px solid rgba(87,166,123,1.0) !important;
+	color:rgba(87,166,123,1.0) !important;
 	margin-bottom:0.5em;
 	margin-top:1em;
 	}
@@ -585,16 +585,16 @@ a.tabs {
 main a.activeLink:link, main a.activeLink:visited {font-weight: 700; text-decoration: none;}
 main a.activeLink:hover, main a.activeLink:active {font-weight: 700;}
 
-body header a.activeLink:link, body header a.activeLink:visited {border-bottom:6px solid #ec1c24;}
-body header a.activeLink:hover, body header a.activeLink:active {border-color:#ec1c24;}
+body header a.activeLink:link, body header a.activeLink:visited {border-bottom:6px solid rgba(87,166,123,1.0);}
+body header a.activeLink:hover, body header a.activeLink:active {border-color:rgba(87,166,123,1.0);}
 
 a.button.activeLink i {opacity: 1.0;}
-a.button.activeLink:link, a.button.activeLink:visited {color:#ec1c24; font-weight: 700;}
-a.button.activeLink:hover, a.button.activeLink:active {color:#ec1c24; font-weight: 700;}
+a.button.activeLink:link, a.button.activeLink:visited {color:rgba(87,166,123,1.0); font-weight: 700;}
+a.button.activeLink:hover, a.button.activeLink:active {color:rgba(87,166,123,1.0); font-weight: 700;}
 
 a.tabs.activeLink {background-color: rgba(0,0,0,0.05); border-color: rgba(0,0,0,0.05);}
 
-footer a.activeLink:link, footer a.activeLink:visited {color:#ec1c24;}
+footer a.activeLink:link, footer a.activeLink:visited {color:rgba(87,166,123,1.0);}
 
 
 
@@ -814,7 +814,7 @@ a#toTop {  position:fixed; right:0; bottom:0;}
 
 .fa.icon {font-size:1.8em; display:block; margin-top:0.5em; margin-bottom:0.5em;}
 .fa.icon.lightgrey {color:#efefef;}
-.fa.icon.red {color:#ec1c24;}
+.fa.icon.red {color:rgba(87,166,123,1.0);}
 
 i.large {
 	font-size: 2em;
@@ -1043,7 +1043,7 @@ body > footer {
 
 .resultRow.issue {
 	background-color: rgba(255,0,0,0.07) !important; 
-	border-left:1px solid #ec1c24;
+	border-left:1px solid rgba(87,166,123,1.0);
 }
 
 .resultRow.neutral {
@@ -1161,7 +1161,7 @@ div#centredContent div:first-child section {
     padding-bottom: 4em;
 }
 .go-red {
-    color: #ec1c24;
+    color: rgba(87,166,123,1.0);
 }
 .float-right {
     float:right;
