@@ -1,0 +1,51 @@
+
+
+@font-face {
+    font-family: 'twk';
+    src: url('TWKEverett-Thin-web.woff2') format('woff2'), url('TWKEverett-Thin-web.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('TWKEverett-Light-web.woff2') format('woff2'), url('TWKEverett-Light-web.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('TWKEverett-Regular-web.woff2') format('woff2'), url('TWKEverett-Regular-web.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('TWKEverett-Medium-web.woff2') format('woff2'), url('TWKEverett-Medium-web.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('TWKEverett-Bold-web.woff2') format('woff2'), url('TWKEverett-Bold-web.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'twk';
+    src: url('TWKEverett-Black-web.woff2') format('woff2'), url('TWKEverett-Black-web.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+

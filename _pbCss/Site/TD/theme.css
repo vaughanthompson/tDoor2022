@@ -32,17 +32,17 @@ html {
 
 body { 
 	font-weight:400;
-	font-family: "roboto", Helvetica, Arial;
+	font-family: "twk", Helvetica, Arial;
 	text-align:left;
-	letter-spacing:0.02em;
+	letter-spacing:0em;
 }
 
 
 
 
-p { font-size:1.1em; line-height:1.4em; font-weight:400; margin:0.6em 0 0.6em 0;font-family: "roboto", Helvetica, Arial;}
-.small {font-size:0.9em; line-height:1.2em;font-weight:400;}
-strong {font-weight: 900;}
+p { font-size:1em; line-height:1.4em; font-weight:300; margin:0.6em 0 0.6em 0;font-family: "twk", Helvetica, Arial;}
+.small {font-size:0.9em; line-height:1.2em;font-weight:300;}
+strong {font-weight: 700;}
 
 
 h1 {color:#282828;}
@@ -57,9 +57,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {font-family: "roboto",Helvetica, Arial;}
+h6 {font-family: "twk",Helvetica, Arial;}
 
-h1 {font-weight:300;}
+h1 {font-weight:700;}
 h2 {font-weight:600;}
 h3 {font-weight:600;}
 h4 {font-weight:600;}
@@ -142,7 +142,7 @@ select,
 input, 
 textarea,
 select option, 
-input[type=submit] {font-family:"roboto",Helvetica, Arial; font-size:1.1em; }
+input[type=submit] {font-family:"twk",Helvetica, Arial; font-size:1.1em; }
 
 
 
@@ -161,10 +161,10 @@ td p {
 
 @media screen and (min-width:400px) {
 	html {font-size:15px;}
-	h1 {font-size:2.7em;}
-	h2 {font-size:1.5em;}
-	h3 {font-size:1.3em; }
-	h4 {font-size:1.2em; }
+	h1 {font-size:2.4em;}
+	h2 {font-size:1.3em;}
+	h3 {font-size:1.1em; }
+	h4 {font-size:1.1em; }
 	h5 {font-size:1.1em; }
 	h6 {font-size:1.1em; }
 }
@@ -485,7 +485,7 @@ a.buttonIcon:hover, a.buttonIcon:active {
 	color:#555555 !important;
 	text-decoration:none;
 	font-weight:400;
-	font-family:"roboto", Helvetica, Arial;
+	font-family:"twk", Helvetica, Arial;
 	font-size:1em;
 }
 .buttonInline:hover {   opacity:1; color:rgba(87,166,123,1.0) !important; border-color:rgba(87,166,123,1.0) !important; background:none !important;cursor:pointer;}
@@ -503,8 +503,8 @@ a.buttonIcon:hover, a.buttonIcon:active {
 	color:#ffffff !important;
 	text-decoration:none;
 	font-weight:400;
-	font-family:"roboto", Helvetica, Arial;
-	font-size:1.1em;
+	font-family:"twk", Helvetica, Arial;
+	font-size:1em;
 	border-radius: 2px;
 }
 .inlineButton:last-child {
@@ -644,7 +644,7 @@ body.fixme > header {position:fixed; width:100%;z-index:2800; top:0;}
 	display:block; 
 	/*color:#ffffff;*/
 	font-size:1.05em;
-	font-family:"roboto";
+	font-family:"twk";
 	font-weight:400;
 	text-decoration:none;
 	letter-spacing:0.5px;
@@ -890,7 +890,7 @@ div.searchInput textarea {
 
 
 input {
-	font-family: "roboto";
+	font-family: "twk";
 	margin: 0.5em 0;
 }
 input[type=number] {width:70px;}

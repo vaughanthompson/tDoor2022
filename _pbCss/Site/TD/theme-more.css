@@ -444,7 +444,7 @@ div.slideContent h2 {
     text-transform: uppercase; 
 }
 div.slideContent h1 {
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase; 
     font-size:3em;
 }
@@ -645,8 +645,8 @@ div.carouselThumbs.shopProduct div.item div.shopDesc h5 {
     color: rgba(87,166,123,1.0);
 }
 div.carouselThumbs.shopProduct div.item div.shopDesc h4 {
-    font-size: 1.2em;
-    font-weight: 800;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 div.carouselThumbs.shopProduct div.item div.shopDesc h5,
 div.carouselThumbs.shopProduct div.item div.shopDesc h6 {

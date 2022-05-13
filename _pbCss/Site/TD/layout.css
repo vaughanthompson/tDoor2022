@@ -328,8 +328,7 @@ body > header.login > div:last-child img  {
     margin:0px auto;
 }
 body > header.login > div:last-child a  {
-    text-transform: uppercase;
-    font-size: 10px;
+    font-size: 1em;
     line-height: 1.4em;
 }
 body > header.account > div {
