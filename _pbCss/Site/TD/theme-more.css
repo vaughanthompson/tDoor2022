@@ -857,3 +857,30 @@ div.rewardsSlider {
         width:92vw;
     }
 }
+
+
+
+/* new user styling */
+h1.bigger {
+    color: rgba(87,166,123,1.0);
+    font-size: 3.4em;
+    font-weight: 700;
+    line-height: 0.95em;
+    letter-spacing: -1px;
+    margin-bottom: 0.35em;
+}
+
+h2.bigger {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 0.95em;
+    letter-spacing: -1px;
+    margin-bottom: 0.35em;
+}
+
+h4.brand {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 0.35em;
+    text-transform: uppercase;
+}

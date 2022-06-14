@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html class="no-js">
 <head>
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <title>TradeDoor. TDX Customer Accounts Portal</title>
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
     <!-- styles -->
-    <link rel="stylesheet" href="/_pbFonts/Site/TD/transdiesel/styles.css" type="text/css">
-    <link rel="stylesheet" href="/_pbFonts/roboto/fonts.css" type="text/css">
+    <link rel="stylesheet" href="/_pbFonts/Site/TD/icomoon/style.css" type="text/css">
+    <link rel="stylesheet" href="/_pbFonts/twk/fonts.css" type="text/css">
 
     <link href="/_pbCss/_core/normalize.css" rel="stylesheet" />
     <link href="/_pbCss/_core/jquery-ui.css" rel="stylesheet" />
@@ -16,6 +16,7 @@
     <link href="/_pbCss/Site/TD/forms.css" rel="stylesheet" />
     <link href="/_pbCss/Site/TD/theme-carlin.css" rel="stylesheet" />
 
+    
 
     <!-- scripts all pages -->
     <script src="/_pbScripts/_core/jquery-1.11.2.min.js"></script>
@@ -23,7 +24,8 @@
     <script src="/_pbScripts/_core/modernizr-2.8.3.js"></script>
 
     <!-- tests -->
-    <script type="text/javascript">Modernizr.load([{
+    <script type="text/javascript">
+        Modernizr.load([{
             test: Modernizr.mq('only all'),
             nope: '/_pbScripts/_core/respond.js'
             // https://github.com/scottjehl/Respond
@@ -40,9 +42,18 @@
         );</script>
 
 
+
 </head>
 
-<body id="top" class="">
+
+<body id="top">
+    
+    
+    
+
+
+    
+
 
 
 
@@ -51,118 +62,200 @@
 
     <!-- a href="#top" id="toTop" class="buttonIcon"><i class="icon-up"></i></a -->
     <!-- defer -->
-    <script type="text/javascript" src="/_pbPackages/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js" defer></script>
-    <script type="text/javascript" src="/_pbPackages/jquery.localScroll-1.4.0/jquery.localScroll.min.js" defer></script>
-    <script type="text/javascript" src="/_pbScripts/_core/easing.js" defer></script>
-
-    <script>if (!Modernizr.svg) {
-            $('img[src*="svg"]').attr('src', function() {
+    <script type="text/javascript" src="/_pbPackages/jquery.scrollTo-2.1.0/jquery.scrollTo.min.js" defer=""></script>
+    <script type="text/javascript" src="/_pbPackages/jquery.localScroll-1.4.0/jquery.localScroll.min.js" defer=""></script>
+    <script type="text/javascript" src="/_pbScripts/_core/easing.js" defer=""></script>
+    
+    
+    <script>
+        if (!Modernizr.svg) {
+            $('img[src*="svg"]').attr('src', function () {
                 return $(this).attr('src').replace('.svg', '.png');
             });
-}</script>
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+    <header class="login">
 
-
-
-
-
-
-
-
-
-
-
-    <div id="newUser" class="simpleForm">
         <div>
-            <section>
-
-                <img src="/_pbImages/Site/TD/svg/logo.svg" title="TransDiesel" alt="TransDiesel" border="0">
-                <h1 class="issue"><strong>PORTAL</strong></h1>
-                <div class="clearfix"></div>
-                <svg width="100%" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dotted-line">
-                    <line stroke-dasharray="2, 4" x1="0" y1="6" x2="100%" y2="6" style="stroke-width: 16px;"></line>
-                </svg>
-
-
-
-                <p><strong>Important Note.</strong> This page is for applying to become a new admin user of the TransDiesel Portal. It requires users to hold a customer account with TransDiesel Ltd AND have no pre-existing users of the portal.</p>
-
-                <p>If your organistion has an existing admin user please contact them to add you from within the portal itself. <strong>Not sure?</strong> Continue below and we'll check for you!</p>
-
-
-                <form action="/Account/Login?ReturnUrl=%2Fcustomer" class="form-horizontal" method="post" role="form">
-                    <input name="__RequestVerificationToken" type="hidden" value="DmW3A9PZMRuPjJhcnemy9jhdUeO2LsdH6ydg6apDFlVwWAkQA9jO4c2mVFHKckBTf1Y-p4YZ_HfwalpepDh23aGoM4jOd6R366yWeVHO0Bc1" />
-                    <input type="hidden" id="ReturnUrl" name="ReturnUrl" value="/customer" />
-
-                    <div class="validation-summary-valid" data-valmsg-summary="true">
-                        <span>Sorry. There are some errors:</span>
-                        <ul>
-                            <li style="display:none"></li>
-                        </ul>
-                    </div>
-                    <br>
-                    <h4>These fields are required.</h4>
-                    <input autocomplete="no" class="login" data-val="true" data-val-required="The Name field is required." id="name" name="name" placeholder="Your Name" type="text" value="" />
-                    <input autocomplete="no" class="login" data-val="true" data-val-required="The Company Name field is required." id="nameCompany" name="nameCompany" placeholder="Company Name" type="text" value="" />
-                    <br>
-                    <input autocomplete="no" class="login" data-val="true" data-val-required="The Phone field is required." id="phone" name="phone" placeholder="Phone" type="text" value="" />
-                    <input autocomplete="no" class="login" data-val="true" data-val-required="The Email field is required." id="email" name="email" placeholder="Email Address" type="text" value="" />
-                    <br>
-                    <br>
-                    <h4>Optional.</h4>
-                    <input class="login" data-val="true" data-val-required="" id="existingCustomer" name="existingCustomer" type="checkbox" value="existingCustomer" />
-                    <label for="existingCustomer">We have an existing account with TransDiesel Ltd</label>
-                    <br>
-                    <input autocomplete="no" class="login" data-val="true" data-val-required="" id="accNumber" name="accNumber" placeholder="#A/C Number (if known)" type="text" value="" />
-                    <br>
-                    <input type="submit" name="" value="Submit" class="search buttonForm">
-
-
-
-                    <hr>
-
-                    <h2>Why join?</h2>
-                    <br />
-                    <h4>Subhead key benefit</h4>
-                    <p>Sentence of copy describing benefit, sentence of copy describing benefit. </p>
-                    <br />
-                    <h4>Subhead key benefit</h4>
-                    <p>Sentence of copy describing benefit, sentence of copy describing benefit. </p>
-                    <br />
-                    <h4>Subhead key benefit</h4>
-                    <p>Sentence of copy describing benefit, sentence of copy describing benefit. </p>
-                    <br />
-                    <h4>Subhead key benefit</h4>
-                    <p>Sentence of copy describing benefit, sentence of copy describing benefit. </p>
-
-                    <hr>
-                    <br />
-                    <a href="/">Return to login page</a>
-                    <br />
-                    <br />
-                    <br />                    
-                    <br />
-                    <br />
-                    <br />
-
-                </form>
-
-            </section>
+            <a href="/" class="logo"><img src="/_pbImages/Site/TD/logos/tradedoor22@3x.png" title="TradeDoor" alt="TradeDoor" border="0"></a>
+            <h5>CUSTOMER PORTAL</h5>
         </div>
-    </div>
+
+        <div>
+           
+        </div>
+
+        <div>
+            <a href="https://www.tdxltd.co.nz" target="_blank" class="logo"><img src="/_pbImages/Site/TD/logos/TDX Primary Positive Tagline Horizontal RGB.svg" title="TDX" alt="TDX"></a>
+            <a href="https://www.tdxltd.co.nz" target="_blank" class="">tdxltd.co.nz</a>
+        </div>
+
+    </header>
+
+
+    
+    
+    
+    
+    
+    
+    <main role="main" class=" clearfix">
+    
+    
+    <article id="mainContentHolder">
 
 
 
+                <!-- recent activity and favourite summaries -->
+                <article class="clearfix col-2">
+                    <section>
+                        
+                
+                    <br>
+                    <h1 class="bigger">Why Join?</h1>
+                    <br>
+
+                   
+
+                    <h4 class="brand"> Check pricing and availability 24 hours a day</h4>
+                    <p>The portal shows live pricing and the stock availability of your local branch and nationwide.</p>
+                    <br>
+                    <h4 class="brand">Create quotations</h4>
+                    <p>Create and save quotations in the portal. They can be easily converted to orders.</p>
+                    <br>
+                    <h4 class="brand">Save repeat or favourite orders</h4>
+                    <p>The portal allows you to save your favourite or repeat orders, which can then be re-ordered or edited.</p>
+                    <br>
+                    <h4 class="brand">Full order history</h4>
+                    <p>The portal will save your full order history, for you to check at any time. </p>
+                    <br>
+                    <h4 class="brand">Get exclusive Tradedoor offers on oils, filters and more</h4>
+                    <p>Earn points with every order placed to redeem in our reward store.</p> 
+                    
+                    <br>
+                    <br>
+                    <picture style="display: block; overflow: hidden;">
+                        <img src="/_pbImages/Site/TD/11d-small.jpg" style="width: 90%; height:auto;">
+                    </picture>
+                    <br>
+                    
+       
+            </section>
+
+            <section>
+                
+                <br>
+                <h2 class="bigger">New Account Application</h2>
+                <br>
+             
+                <p><strong>Important Note.</strong> This page is for applying to become a new user of the TDX TradeDoor Portal. It requires users to hold a customer account with TDX Ltd.</p>
+                <p>If you do not hold an account with TDX Ltd, you can still register and we will contact you to open an account. <strong>Not sure?</strong> Continue below and we'll check for you!</p>
+                <hr>
+
+                    <form action="/Account/NewUser" class="form-horizontal" method="post" role="form" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="3xsmxos0VaM-TfdvtoRnn3mnNoQ06dZJ1rlI25dHOMDOHJrafS3dJXHLje_LT3tSArhBsEQlwpTC7uaE-FCi7skp6fFVDqjk0CY8rPYfHD81">        <input id="RecaptchaToken" name="RecaptchaToken" type="hidden">
+                            <input type="hidden" id="ReturnUrl" name="ReturnUrl">
+                    <div class="validation-summary-valid" data-valmsg-summary="true"><span>Sorry. There are some errors:</span>
+                    <ul><li style="display:none"></li>
+                    </ul></div>        <input type="hidden" id="ReturnUrl" name="ReturnUrl" value="/customer">
+                            <br>
+                            <h4>These fields are required.</h4>
+                    <input class="login" data-val="true" data-val-required="The Name field is required." id="Name" name="Name" placeholder="Your Name" type="text" value="">        &nbsp;
+                    <input class="login" data-val="true" data-val-required="The Company name field is required." id="CompanyName" name="CompanyName" placeholder="Company Name" type="text" value="">        <br>
+                    <input class="login" data-val="true" data-val-required="The Phone field is required." id="Phone" name="Phone" placeholder="Phone" type="text" value="">        &nbsp;
+                    <input class="login" data-val="true" data-val-email="The Email address field is not a valid e-mail address." data-val-required="The Email address field is required." id="Email" name="Email" placeholder="Email Address" type="text" value="">        <br>
+                    <input class="login" data-val="true" data-val-required="The Your location field is required." id="Location" name="Location" placeholder="Your Location" type="text" value="">        <br>
+                            <br>
+                            <div>
+                                <span style="white-space:nowrap">Request portal accesss for:&nbsp;</span>
+                                <label for="RequestedAccess_Oil" style="white-space:nowrap"><input id="RequestedAccess_Oil" type="checkbox" name="RequestedAccess" value="Oil products"> Oil products</label>
+                                &nbsp;&nbsp;
+                                <label for="RequestedAccess_Filtration" style="white-space:nowrap"><input id="RequestedAccess_Filtration" type="checkbox" name="RequestedAccess" value="Filtration products"> Filtration products</label>
+                                &nbsp;&nbsp;
+                                <label for="RequestedAccess_Spares" style="white-space:nowrap"><input id="RequestedAccess_Spares" type="checkbox" name="RequestedAccess" value="Spare parts"> Spare parts</label>
+                            </div>
+                            <br>
+                            <h4>Optional.</h4>
+                    <input class="login" data-val="true" data-val-required="The HasAccount field is required." id="HasAccount" name="HasAccount" type="checkbox" value="true"><input name="HasAccount" type="hidden" value="false">        <label for="HasAccount">We have an existing account with TDX Ltd</label>
+                            <br>
+                    <input class="login" id="AccountNumber" name="AccountNumber" placeholder="#A/C Number (if known)" type="text" value="">        <br>
+                            <input type="submit" name="" value="Submit" class="search buttonForm btnSubmit" style="display:none;">
+                            <input type="button" name="" value="Loading..." class="buttonForm btnLoading">
+                    </form>
+                    
+                
+                    
+        
+    
+        </section>
+        
+        
+
+           
+            </article>
 
 
+    </article>
 
 
-
-    <script src="/Scripts/jquery.validate.js"></script>
-    <script src="/Scripts/jquery.validate.unobtrusive.js"></script>
-
+    
+</main>
 
 
-</body>
+<hr>
+
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+        
+    
+        
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        <script src="/Scripts/jquery.validate.js"></script>
+        <script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+    
+        
+        
+    
+    
+        
+        
+    
+    
+    
+    
+    
+        </body>
 </html>
 
 
