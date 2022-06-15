@@ -883,4 +883,5 @@ h4.brand {
     font-weight: 700;
     margin-bottom: 0.35em;
     text-transform: uppercase;
+    max-width: 90%;
 }
