@@ -1061,7 +1061,7 @@ div#newUser {
     padding-top: 6em;
     padding-bottom: 3em;
 }
-
+/*
 div.simpleForm {
     min-height: 100%;
     height: 100vh;
@@ -1071,7 +1071,7 @@ div.simpleForm {
 div.simpleForm img {
    width: 50%;
 }
-
+*/
 
 div.simpleForm  input[type=checkbox] {
     display: inline-block;
@@ -1095,10 +1095,10 @@ div#centredContent div:first-child section {
 
 
 @media screen and (min-width:900px) {
-    div.simpleForm {
+    /*div.simpleForm {
         width: 70%;
         margin-left: 15%;
-    }
+    }*/
         div.simpleForm img {
             width: 300px;
             float: left;
