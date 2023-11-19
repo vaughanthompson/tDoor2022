@@ -15,6 +15,7 @@ article.blkfriday input[type=checkbox] {
 
 article.blkfriday {
     background-color: rgba(0,0,0,1.0);
+    background-image: url(/_pbImages/Site/TD/blkfriday/bg-80.jpg);
     padding:3vw;
     color: #ffffff;
     border-radius: 6px;
@@ -59,15 +60,15 @@ div.listGroup ul {
     row-gap: 1vw;
 }
 div.listGroup ul li {
-    border-bottom:1px solid red;
-    background-color: #222222;
+    border-bottom:1px solid rgba(87,166,123,1.0);
+    background-color: rgba(0,0,0,0.5);
     padding-top:10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin-bottom: 15px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-basis: 1 1 auto;
 }
 div.listGroup div.blkThumb {
@@ -78,8 +79,9 @@ div.listGroup div.blkThumb {
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 0.5vw;
-    margin-right: 1vw;
-    border-radius: 4px;
+    margin-right: 2vw;
+    border-radius: 0px;
+    padding-top: 4em;
 }
 div.listGroup div.selectItem {
     margin-left: auto;
@@ -109,11 +111,15 @@ div.listGroup div.selectItem {
         height: 50px;
         margin-right: 4vw;
     }
+    .d {
+        display: none;
+    }
 }
 
 @media screen and (min-width:1000px) {
     article.blkfriday p.introTxt {
         max-width:70%;
+        margin: 0px auto;
     }
     article.blkfriday div.imageHeader {
         display: flex;
@@ -128,10 +134,10 @@ div.listGroup div.selectItem {
         flex-basis: 60%;
     }
 
-    div.blkThumb.highlight {
+    div.blkThumb {
         width: 190px !important;
         height: 120px !important;
-        margin-right: 1vw !important;
+        /* margin-right: 1vw !important;*/
     }
 
     div.listGroup ul {
@@ -160,4 +166,57 @@ div.listGroup div.selectItem {
         padding:2vw;
     }
     */
+    .m {
+        display: none;
+    }
+}
+
+
+article.blkfriday > header {
+    text-align: center;
+    font-size: 140%;
+}
+
+div.listGroup ol {
+    margin:0;
+    padding:0;
+    margin-bottom: 1.5em;
+}
+div.listGroup ol li {
+    margin: 0;
+    padding: 2px 0;
+    line-height: 1.2em;
+    font-weight: 300;
+    border:none;
+    color: rgba(255,255,255,0.6);
+}
+
+div.titleHeader {
+    background-color: white;
+    padding:5vw;
+    margin: 0.5vw;
+}
+
+div.titleHeader h2 {
+    color: #222222;
+    font-weight: bold;
+    font-size:2em;
+}
+div.titleHeader h5 {
+    font-weight: 300;
+}
+
+@media screen and (min-width:1000px) {
+    div.titleHeader {
+        padding:1.5vw 2vw 2vw 2vw;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        column-gap: 10vw;
+    }
+
+    div.titleHeader > div {
+        flex: 1 1 auto;
+    }
+    
 }
