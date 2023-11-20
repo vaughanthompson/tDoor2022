@@ -69,7 +69,9 @@ div.listGroup ul li {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-basis: 1 1 auto;
+}
+div.listGroup ul li > div.desc {
+    flex: 0 0 60%;
 }
 div.listGroup div.blkThumb {
     width:85px;
