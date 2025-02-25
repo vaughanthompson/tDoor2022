@@ -220,5 +220,223 @@ div.titleHeader h5 {
     div.titleHeader > div {
         flex: 1 1 auto;
     }
-    
+
 }
+
+
+
+
+
+article.blkfriday.clearance {
+    background-color: white;
+    background-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 2.5em;
+}
+
+article.blkfriday.clearanceContent {
+    background-color: #e53525;
+    background-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 2em;
+}
+
+article.blkfriday.clearanceContent a {
+    color: #ffffff;
+}
+article.blkfriday.clearance h1,
+article.blkfriday.clearance h2 {
+    color: #245784;
+}
+
+article.blkfriday.clearance h1 {
+    font-size: 5vw;
+    font-weight: 1000;
+    line-height: 1.1em;
+    padding-bottom: 0;
+}
+
+article.blkfriday.clearance h2 {
+    font-weight: 1000;
+    font-size: 2.1vw;
+}
+
+article.blkfriday.clearanceContent h3 {
+    font-size: 1.4em;
+    line-height: 1.3em;
+}
+article.blkfriday.clearanceContent li h3 {
+    color: #111111;
+}
+article.blkfriday.clearanceContent li h1 {
+    color: #e53525;
+    font-weight: 1000;
+    font-size: 3.5em;
+    margin: 15px 0;
+    letter-spacing: -0.04em;
+}
+article.blkfriday.clearanceContent li h1 span {
+    font-weight: 500;
+    font-size: 40%;
+    letter-spacing: 0;
+}
+
+
+article.blkfriday.clearanceContent h3 span {
+    font-weight: 500;
+}
+article.blkfriday.clearanceContent h5 {
+    background-color: #e53525;
+    color: #ffffff;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+article.blkfriday.clearanceContent h6 {
+    font-size: 0.9em;
+}
+
+
+article.blkfriday.clearanceContent div.titleHeader {
+    background:none;
+    max-width:1200px;
+    margin: 0px auto;
+    padding: 0;
+    margin-bottom: 2em;
+    text-align: center;
+
+}
+
+article.blkfriday.clearanceContent p {
+    font-size: 1.2em;
+    text-wrap: balance;
+}
+
+div.fixedCTA {
+    background-color: rgba(255,255,255,0.95);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+div.fixedCTA div {
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+div.fixedCTA a {
+    font-size: 1.2em;
+}
+
+article.blkfriday.clearance img.logo {
+    max-width: 500px;
+    margin-bottom: 1em;
+}
+
+article.blkfriday.clearanceContent div.selectItem {
+    padding-left: 0;
+    position: relative;
+    margin-top: 0.5em;
+}
+article.blkfriday.clearanceContent div.selectItem label {
+    position: absolute;
+    font-size: 1.1em;
+    color: #e53525;
+    top: 0.5em;
+    font-weight: 700; 
+}
+article.blkfriday.clearanceContent div.selectItem label:hover {
+    cursor: pointer;
+}
+article.blkfriday.clearanceContent div.selectItem input {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+
+article.blkfriday.clearanceContent div.listGroup ul {
+    row-gap: 2em;
+}
+
+article.blkfriday.clearanceContent div.listGroup ul li {
+    border-bottom:none;
+    background-color:white;
+    padding-top:10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+article.blkfriday.clearanceContent div.listGroup div.blkThumb {
+    width:85px;
+    margin-right:1vw;
+    background-size: cover;
+}
+
+
+
+div.lozenge {
+    background-color: #245784;
+    border-radius: 50%;
+    width:110px;
+    height:110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:-20px;
+    left: -20px;
+}
+
+div.lozenge div {
+    text-align: center;
+    font-size: 30px;
+    line-height: 20px;
+}
+div.lozenge div span {
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:1000px) {
+    article.blkfriday.clearance img.logo {
+        width: 60vw;
+        margin-bottom:5px;
+    }
+    article.blkfriday.clearance h1 {
+        font-size: 8vw;
+        padding-bottom: 0;
+    }
+    article.blkfriday.clearance h2 {
+        font-size: 3.5vw;
+    }
+
+    article.blkfriday.clearance {
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+    article.blkfriday.clearanceContent {
+        padding: 2em;
+    }
+    article.blkfriday.clearanceContent div.titleHeader {
+        margin-bottom: 3em;
+    }
+    article.blkfriday.clearanceContent div.listGroup div.blkThumb {
+        width:30vw;
+        height: 30vw;
+        margin-right:3vw;
+    }
+    
+    
+
+}
+
+
