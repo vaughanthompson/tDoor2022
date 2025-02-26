@@ -439,6 +439,47 @@ div.lozenge div span {
         width:30vw;
         height: 30vw;
         margin-right:3vw;
+        background-size: contain;
+        align-self: flex-end;
+    }
+
+    article.blkfriday.clearanceContent div.listGroup ul li {
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+
+
+    article.blkfriday.clearanceContent li h1 {
+        color: #e53525;
+        font-weight: 1000;
+        font-size: 2em;
+        margin: 10px 0 5px 0;
+        letter-spacing: -0.04em;
+    }
+
+    article.blkfriday.clearanceContent h3 {
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+
+    div.lozenge {
+        width:80px;
+        height:80px;
+        top:-10px;
+        left: -5px;
+    }
+    div.lozenge div {
+        font-size: 22px;
+        line-height: 18px;
+    }
+    div.lozenge div span {
+        font-size: 12px;
+    }
+    
+
+    article.blkfriday.clearanceContent div.selectItem {
+        margin-top: 0em;
     }
     
     
