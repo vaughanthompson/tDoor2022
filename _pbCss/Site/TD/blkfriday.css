@@ -242,7 +242,13 @@ article.blkfriday.clearanceContent {
     box-shadow: none;
     padding-top: 2em;
 }
-
+article.blkfriday.clearanceContent.light {
+    background-color: #efefef;
+    background-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 2em;
+}
 article.blkfriday.clearanceContent a {
     color: #ffffff;
 }
