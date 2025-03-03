@@ -242,6 +242,18 @@ article.blkfriday.clearanceContent {
     box-shadow: none;
     padding-top: 2em;
 }
+article.blkfriday.clearance.volvo-clearance,
+article.blkfriday.clearanceContent.volvo-clearance {
+    background-color: #000000;
+}
+article.blkfriday.clearance.volvo-clearance {
+    padding-bottom: 0;
+}
+article.blkfriday.clearanceContent.volvo-clearance {
+    padding-top: 0;
+    color: #000000;
+}
+
 article.blkfriday.clearanceContent.light {
     background-color: #efefef;
     background-image: none;
@@ -255,6 +267,10 @@ article.blkfriday.clearanceContent a {
 article.blkfriday.clearance h1,
 article.blkfriday.clearance h2 {
     color: #245784;
+}
+article.blkfriday.clearance.volvo-clearance h1,
+article.blkfriday.clearance.volvo-clearance h2 {
+    color: rgba(87,166,123,1.0);
 }
 
 article.blkfriday.clearance h1 {
@@ -314,6 +330,16 @@ article.blkfriday.clearanceContent div.titleHeader {
     text-align: center;
 
 }
+article.blkfriday.clearanceContent.volvo-clearance div.titleHeader {
+    background:none;
+    max-width:1200px;
+    margin: 0px auto;
+    padding: 0;
+    margin-bottom: 4em;
+    text-align: center;
+
+}
+
 
 article.blkfriday.clearanceContent p {
     font-size: 1.2em;
@@ -485,5 +511,19 @@ div.lozenge div span {
     
 
 }
+article.blkfriday.clearanceContent.volvo-clearance a,
+article.blkfriday.clearanceContent.volvo-clearance h1 {
+    color: #000000;
+   
+}
 
 
+
+@media screen and (min-width:1000px) {
+    article.blkfriday.clearance.volvo-clearance,
+    article.blkfriday.clearanceContent.volvo-clearance {
+        max-width: 1500px;
+        margin: 0px auto;
+    }
+
+}
