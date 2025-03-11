@@ -246,10 +246,19 @@ article.blkfriday.clearance.volvo-clearance,
 article.blkfriday.clearanceContent.volvo-clearance {
     background-color: #000000;
 }
-article.blkfriday.clearance.volvo-clearance {
+article.blkfriday.clearance.yanmar-clearance,
+article.blkfriday.clearanceContent.yanmar-clearance {
+    background-color: #d61e42;
+}
+article.blkfriday.clearance.volvo-clearance,
+article.blkfriday.clearance.yanmar-clearance {
     padding-bottom: 0;
 }
 article.blkfriday.clearanceContent.volvo-clearance {
+    padding-top: 0;
+    color: #000000;
+}
+article.blkfriday.clearanceContent.yanmar-clearance {
     padding-top: 0;
     color: #000000;
 }
@@ -271,6 +280,12 @@ article.blkfriday.clearance h2 {
 article.blkfriday.clearance.volvo-clearance h1,
 article.blkfriday.clearance.volvo-clearance h2 {
     color: rgba(87,166,123,1.0);
+}
+article.blkfriday.clearance.yanmar-clearance h1 {
+    color: rgba(255,255,255,1.0);
+}
+article.blkfriday.clearance.yanmar-clearance h2 {
+    color: rgba(0,0,0,1.0);
 }
 
 article.blkfriday.clearance h1 {
@@ -330,16 +345,19 @@ article.blkfriday.clearanceContent div.titleHeader {
     text-align: center;
 
 }
-article.blkfriday.clearanceContent.volvo-clearance div.titleHeader {
+article.blkfriday.clearanceContent.volvo-clearance div.titleHeader,
+article.blkfriday.clearanceContent.yanmar-clearance div.titleHeader {
     background:none;
     max-width:1200px;
     margin: 0px auto;
-    padding: 0;
     margin-bottom: 4em;
     text-align: center;
-
 }
-
+@media screen and (max-width:1000px) {
+    article.blkfriday.clearanceContent div.titleHeader {
+        padding-top: 1em;
+    }
+}
 
 article.blkfriday.clearanceContent p {
     font-size: 1.2em;
@@ -513,15 +531,21 @@ div.lozenge div span {
 }
 article.blkfriday.clearanceContent.volvo-clearance a,
 article.blkfriday.clearanceContent.volvo-clearance h1 {
-    color: #000000;
-   
+    color: #000000; 
 }
+article.blkfriday.clearanceContent.yanmar-clearance a,
+article.blkfriday.clearanceContent.yanmar-clearance h1 {
+    color: #d61e42; 
+}
+
 
 
 
 @media screen and (min-width:1000px) {
     article.blkfriday.clearance.volvo-clearance,
-    article.blkfriday.clearanceContent.volvo-clearance {
+    article.blkfriday.clearanceContent.volvo-clearance,
+    article.blkfriday.clearance.yanmar-clearance,
+    article.blkfriday.clearanceContent.yanmar-clearance  {
         max-width: 1500px;
         margin: 0px auto;
     }
